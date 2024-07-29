@@ -78,58 +78,31 @@ The main parameters of **DiffInvex**:
    
      
 ### <a name="usage"></a>Usage 
-Here, we use **GM06990** small sample as an example [GSM455133](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM455133). The input HDF5 file [GM06990_SRR027956_Input.hdf5](Example/GM06990_SRR027956_Input.hdf5) is provided in `Example/` sub-directory. Output files are saved in `Example/GM06990_HiC` sub-directory.   
-   
-**N.B.** this sample has only ~5 million reads, we use it for testing the HiCNAtra installation. For accurate analysis, you can incorporate more biological replicates [GSE18199](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE18199).
-   
-Start Matlab, then edit and run the following set of commands based on your data [runHiCNAtraScript.m](./Scripts/runHiCNAtraScript.m).
-```
-% Define the required information for creating HiCNAtra object based on the experiment and reference genome 
-restrictionEnzyme = 'hindIII';
-maximumMoleculeLength = 500;
-readLength = 76;
-referenceGenome = 'hg19';
-
-% Add 'HiCNAtraTool' directory to Matlab search path
-HiCNAtraDirectory = 'HiCNAtraTool';
-addpath(HiCNAtraDirectory);
-
-% Define the input HDF5 file(s)
-HDF5Files = {'Example/GM06990_SRR027956_Input.hdf5'};
-
-% Create HiCNAtra object 'GM06990_HiC' with the defined parameters
-GM06990_HiC = HiCNAtra(HDF5Files, HiCNAtraDirectory, readLength, restrictionEnzyme, maximumMoleculeLength, referenceGenome);
-
-% Set more parameters (optional)
-GM06990_HiC.contactMapBinSize = 500000;
-GM06990_HiC.ploidyLevel = 'diploid';
-GM06990_HiC.outputDirectory = 'Example/GM06690_HiC';
-
-% run 'RD calculator' module (Pipeline stage 1)
-GM06990_HiC.RDcalculator;
-
-% run 'CNV caller' module (Pipeline stage 2)
-GM06990_HiC.ploidyLevel = 'diploid';
-GM06990_HiC.CNVcaller;
-
-% run 'contact map corrector' (Pipeline stage 3) module that compute and correct the contact map
-GM06990_HiC.contactMapCorrector;
-
-% save the HiCNAtraObject, so you can load it directly for further analysis.
-save('Example/GM06990_HiC.mat');
-
-% plot the CNV tracks (e.g chr11)
-chrNumber = 11;
-GM06990_HiC.CNVsTrackPlot('plot',chrNumber);
-
-% plot the raw contact map (e.g. chr1 )
-chrNumber = 1;
-GM06990_HiC.rawContactMapPlot('plot',chrNumber);
-
-% plot the HiCNAtra-corrected contact map (e.g. chr1 )
-chrNumber = 1;
-GM06990_HiC.normContactMapPlot('plot',chrNumber); 
+We provided `run_diffinvex.sh` script that could be used for testing the installation of **DiffInvex** using subsample of POG570 dataset in `example` folder.
+Users can easily modify it to run **DiffInvex** on their own data.
 
 ```
+# 1) add DiffInvex directory to the environment variable $PATH
+diffinvex_directory=../diffinvex
+diffinvex_R="$diffinvex_directory"/R
+export PATH="$PATH:$diffinvex_directory:$diffinvex_R"
 
-## HiCNAtra user manual . . . Coming soon!  
+# 2) define your input files
+data_dir="./example"
+mutation_file="$data_dir"/pog570_SBSs.csv
+annotation_file="$data_dir"/pog570_annotations.csv
+variable_file="$data_dir"/pog570_variables.txt
+gene_file="$data_dir"/cgc_tcga_genes.txt
+
+# 3) set the output directory
+output_directory=./example/pog570_diffinvex_results
+
+# 4) define DiffInvex parameters
+reference_genome=hg19
+no_cores=4
+
+# 5) run the DiffInvex framework
+bash diffinvex.sh $mutation_file $annotation_file $variable_file $gene_file $output_directory $diffinvex_directory $reference_genome $no_cores
+```
+
+## We are updating the github repo by adding more examples of using DiffInvex for different biological problems ...
