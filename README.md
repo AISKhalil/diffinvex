@@ -45,7 +45,7 @@ conda activate diffinvex_env
 Please check the provided files in `example` folder.
 
     mutation_file       - input .csv file with mutation data (single base substitutions and multi base substitutions) 
-    			in the following format: 
+			in the following format: 
                         	chrom,pos,ref,alt,Sample
                         	1,781002,G,A,PD1456
    
@@ -54,7 +54,7 @@ Please check the provided files in `example` folder.
                         	PD1456,NSCLC,1
  
     variable_file       - input .txt file with DiffInvex regression explantory variables.
-			For a regression forumla #mutations ~ isTarget + isTreated + isTarget:isTreated + tumor_type,
+    			For a regression forumla #mutations ~ isTarget + isTreated + isTarget:isTreated + tumor_type,
 			each row should contain one regression term as follows:
 				isTarget
 				isTreated
