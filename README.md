@@ -6,7 +6,7 @@
 
 Next, **DiffInvex** utilized a Poisson regression model, further regularized by a weakly-informative prior, to determine the differential excess of point mutations in target regions over the baseline regions between different condtions. This regression model can also control for confounding factors between conditions such as tumor types and for technical variation between data sourced from different cohorts.
 
-**For a full description of the method and applications, please visit [DiffInvex Manuscript](https://www.biorxiv.org/content/10.1101/2024.06.17.599362v1).**
+**For a full description of the method and applications, please check [DiffInvex Manuscript](https://www.biorxiv.org/content/10.1101/2024.06.17.599362v1).**
   
 ## Contents
 - [Download](#Download)
