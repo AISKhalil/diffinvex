@@ -81,13 +81,13 @@ The main parameters of **DiffInvex**:
 We provided `run_diffinvex.sh` script that could be used for testing the installation of **DiffInvex** using subsample of POG570 dataset in `example` folder.
 Users can easily modify it to run **DiffInvex** on their own data.
 
-1) add DiffInvex directory to the environment variable $PATH
+1) add DiffInvex directory to the environment variable $PATH:
 ```
 diffinvex_directory=../diffinvex
 diffinvex_R="$diffinvex_directory"/R
 export PATH="$PATH:$diffinvex_directory:$diffinvex_R"
 ```
-2) define your input files
+2) define your input files:
 ```
 data_dir="./example"
 mutation_file="$data_dir"/pog570_SBSs.csv
@@ -95,13 +95,13 @@ annotation_file="$data_dir"/pog570_annotations.csv
 variable_file="$data_dir"/pog570_variables.txt
 gene_file="$data_dir"/cgc_tcga_genes.txt
 ```
-# 3) set the output directory and DiffInvex parameters
+3) set the output directory and DiffInvex parameters:
 ```
 output_directory=./example/pog570_diffinvex_results
 reference_genome=hg19
 no_cores=4
 ```
-# 4) run the DiffInvex framework
+4) run the DiffInvex framework:
 ```
 bash diffinvex.sh $mutation_file $annotation_file $variable_file $gene_file $output_directory $diffinvex_directory $reference_genome $no_cores
 ```
