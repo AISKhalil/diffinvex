@@ -25,6 +25,23 @@ git clone https://github.com/AISKhalil/diffinvex.git
    
      
 ### <a name="installation"></a>Installation
+To run **DiffInvex**, it's recommended to set up an isolated conda environment to install the required packages:
+
+1. If you don't have `conda` installed, download and install [Miniconda](https://docs.conda.io/en/latest/miniconda.html) or [Anaconda](https://www.anaconda.com/products/distribution).
+
+2. Create `diffinvex_env` conda environment using the `diffinvex_env.yml` or `diffinvex_env_conda_install.sh` script:
+
+```bash
+conda env create -f diffinvex_env.yml
+```
+
+3. Activate the `diffinvex_env` conda environment:
+
+```bash
+conda activate diffinvex_env
+```
+
+
 After downloading the **HiCNAtra** directory, all the annotation files (reference genome sequence, mappability track, and GC track) should be downloaded and allocated to their corresponding sub-directories inside the **HiCNAtraTool** directory:
 - The annotations directory structure will look like this:
 
