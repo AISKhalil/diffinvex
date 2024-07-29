@@ -45,7 +45,7 @@ conda activate diffinvex_env
 Please check the provided files in `example` folder.
 
     mutation_file       - input .csv file with mutation data (single base substitutions and multi base substitutions) 
-			in the following format: 
+    in the following format: 
                         	chrom,pos,ref,alt,Sample
                         	1,781002,G,A,PD1456
    
