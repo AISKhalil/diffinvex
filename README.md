@@ -44,8 +44,7 @@ conda activate diffinvex_env
 **DiffInvex** requires 4 main files for quanifying selection and conditional selection during tumor progression.
 Please check the provided files in `example` folder.
 
-    mutation_file       - input .csv file with mutation data (single base substitutions and multi base substitutions) 
-    in the following format: 
+    mutation_file       - input .csv file with mutation data (single base substitutions and multi base substitutions) in the following format: 
                         	chrom,pos,ref,alt,Sample
                         	1,781002,G,A,PD1456
    
