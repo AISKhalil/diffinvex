@@ -1,7 +1,9 @@
 # DiffInvex: Computational framework for quantifying changes in somatic selection during cancer evolution and treatment. 
 
 **DiffInvex (Differential Introns Versus Exons)** is an R-based statistical method to identify conditional selection on point mutations between two or more time points/conditions. 
+
 **DiffInvex** first estimates the local baseline mutation rate (BMR) based on the intronic mutations in addition to UTRs and flanking intergenic mutations, controlling for the heterogeneous mutational landscape across the genome, without the need for inferring BMR from covariate information such as gene expression and replication time. Additionally, **DiffInvex** employs a locus sampling approach  to control for within-gene variation in mutation risk by matching the trinucleotide and pentanucleotide composition as well as the DNA methylation status between target (exonic) and background (intronic and intergenic) regions. 
+
 Next, **DiffInvex** utilized a Poisson regression model, further regularized by a weakly-informative prior, to determine the differential excess of point mutations in target regions over the baseline regions between different condtions. This regression model can also control for confounding factors between conditions such as tumor types and for technical variation between data sourced from different cohorts.
 
 **For a full description of the method and applications, please visit [DiffInvex Manuscript](https://www.biorxiv.org/content/10.1101/2024.06.17.599362v1).**
