@@ -53,8 +53,7 @@ Please check the provided files in `example` folder.
                         	PD1456,NSCLC,1
  
     variable_file       - input .txt file with DiffInvex regression explantory variables.
-    			For a regression forumla #mutations ~ isTarget + isTreated + isTarget:isTreated + tumor_type,
-			each row should contain one regression term as follows:
+    			For a regression forumla #mutations ~ isTarget + isTreated + isTarget:isTreated + tumor_type, each row should contain one regression term as follows:
 				isTarget
 				isTreated
 				isTarget:isTreated
