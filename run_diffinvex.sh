@@ -6,7 +6,7 @@ DiffInvex needs 4 input files:
 							1,781002,G,A,PD1456			
 	- annotation_file: input .csv file with annotations per sample (one row per sample) as follows:
 							Sample,tumor_type,isTreated
-							PD1456,NSCLC,1,0
+							PD1456,NSCLC,1
 	- variable_file: input .txt file with DiffInvex regression explantory variables 					
 					 For a regression forumla #mutations ~ isTarget + isTreated + isTarget:isTreated + tumor_type,
 					 each row should contain one regression term as follows:
