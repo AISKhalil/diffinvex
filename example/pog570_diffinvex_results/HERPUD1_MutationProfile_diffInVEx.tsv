@@ -1,0 +1,7 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr16"	56976079	56976079	"C"	"T"	23674	"HERPUD1"	"target"	1020
+"chr16"	56968984	56968984	"C"	"A"	37718	"HERPUD1"	"background"	10159
+"chr16"	56971021	56971021	"G"	"A"	25752	"HERPUD1"	"background"	10159
+"chr16"	56973668	56973668	"C"	"T"	37145	"HERPUD1"	"background"	10159
+"chr16"	56974991	56974991	"T"	"A"	23674	"HERPUD1"	"background"	10159
+"chr16"	56976650	56976650	"G"	"A"	37311	"HERPUD1"	"background"	10159

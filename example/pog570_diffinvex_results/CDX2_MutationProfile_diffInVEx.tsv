@@ -1,0 +1,5 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr13"	28526790	28526790	"G"	"A"	27647	"CDX2"	"background"	8348
+"chr13"	28547741	28547741	"C"	"A"	27504	"CDX2"	"background"	8348
+"chr13"	28553827	28553827	"G"	"A"	34121	"CDX2"	"background"	8348
+"chr13"	28563390	28563390	"G"	"A"	30504	"CDX2"	"background"	8348

@@ -1,0 +1,9 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr16"	50354251	50354251	"T"	"A"	27034	"BRD7"	"target"	1518
+"chr16"	50356117	50356117	"G"	"T"	28225	"BRD7"	"background"	15189
+"chr16"	50359306	50359306	"G"	"A"	37620	"BRD7"	"background"	15189
+"chr16"	50361948	50361948	"C"	"T"	25777	"BRD7"	"background"	15189
+"chr16"	50363006	50363006	"C"	"T"	32015	"BRD7"	"background"	15189
+"chr16"	50366627	50366627	"C"	"T"	25439	"BRD7"	"background"	15189
+"chr16"	50369261	50369261	"A"	"T"	30822	"BRD7"	"background"	15189
+"chr16"	50401413	50401413	"G"	"A"	11004	"BRD7"	"background"	15189

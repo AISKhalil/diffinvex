@@ -1,0 +1,16 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr12"	122958464	122958464	"C"	"T"	23674	"ZCCHC8"	"target"	2123
+"chr12"	122958775	122958775	"G"	"A"	17584	"ZCCHC8"	"target"	2123
+"chr12"	122964855	122964855	"C"	"T"	23674	"ZCCHC8"	"target"	2123
+"chr12"	122966488	122966488	"G"	"A"	30606	"ZCCHC8"	"target"	2123
+"chr12"	122951374	122951374	"C"	"G"	27034	"ZCCHC8"	"background"	21237
+"chr12"	122958835	122958835	"A"	"G"	25980	"ZCCHC8"	"background"	21237
+"chr12"	122959823	122959823	"C"	"G"	32034	"ZCCHC8"	"background"	21237
+"chr12"	122961741	122961741	"G"	"A"	37097	"ZCCHC8"	"background"	21237
+"chr12"	122966410	122966410	"G"	"A"	25356	"ZCCHC8"	"background"	21237
+"chr12"	122968174	122968174	"G"	"A"	32015	"ZCCHC8"	"background"	21237
+"chr12"	122970033	122970033	"C"	"A"	23674	"ZCCHC8"	"background"	21237
+"chr12"	122973506	122973506	"T"	"G"	27037	"ZCCHC8"	"background"	21237
+"chr12"	122977386	122977386	"G"	"A"	25593	"ZCCHC8"	"background"	21237
+"chr12"	122982917	122982917	"C"	"T"	37620	"ZCCHC8"	"background"	21237
+"chr12"	122985748	122985748	"G"	"A"	28494	"ZCCHC8"	"background"	21237

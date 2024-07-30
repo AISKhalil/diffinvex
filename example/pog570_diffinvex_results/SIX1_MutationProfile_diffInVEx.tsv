@@ -1,0 +1,15 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr14"	61107489	61107489	"A"	"C"	28212	"SIX1"	"background"	8662
+"chr14"	61108294	61108294	"C"	"T"	13268	"SIX1"	"background"	8662
+"chr14"	61109876	61109876	"C"	"T"	13268	"SIX1"	"background"	8662
+"chr14"	61109896	61109896	"G"	"C"	30608	"SIX1"	"background"	8662
+"chr14"	61109908	61109908	"G"	"A"	28496	"SIX1"	"background"	8662
+"chr14"	61110765	61110765	"G"	"A"	31923	"SIX1"	"background"	8662
+"chr14"	61111905	61111905	"G"	"A"	25356	"SIX1"	"background"	8662
+"chr14"	61113723	61113723	"G"	"A"	26124	"SIX1"	"background"	8662
+"chr14"	61116017	61116017	"C"	"G"	27388	"SIX1"	"background"	8662
+"chr14"	61116521	61116521	"G"	"T"	25753	"SIX1"	"background"	8662
+"chr14"	61118540	61118540	"G"	"A"	25721	"SIX1"	"background"	8662
+"chr14"	61120588	61120588	"C"	"A"	32033	"SIX1"	"background"	8662
+"chr14"	61123949	61123949	"C"	"T"	37620	"SIX1"	"background"	8662
+"chr14"	61130379	61130379	"A"	"G"	23674	"SIX1"	"background"	8662

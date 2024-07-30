@@ -1,0 +1,15 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr12"	50027427	50027427	"C"	"T"	37619	"PRPF40B"	"target"	2659
+"chr12"	50030591	50030591	"C"	"T"	25593	"PRPF40B"	"target"	2659
+"chr12"	50013827	50013827	"C"	"T"	38120	"PRPF40B"	"background"	23264
+"chr12"	50016446	50016446	"G"	"A"	28494	"PRPF40B"	"background"	23264
+"chr12"	50017042	50017042	"G"	"A"	29146	"PRPF40B"	"background"	23264
+"chr12"	50017248	50017248	"C"	"T"	27647	"PRPF40B"	"background"	23264
+"chr12"	50021957	50021957	"A"	"G"	30309	"PRPF40B"	"background"	23264
+"chr12"	50022153	50022153	"C"	"A"	38506	"PRPF40B"	"background"	23264
+"chr12"	50023747	50023747	"C"	"G"	32015	"PRPF40B"	"background"	23264
+"chr12"	50026512	50026512	"C"	"G"	37013	"PRPF40B"	"background"	23264
+"chr12"	50027196	50027196	"C"	"T"	29999	"PRPF40B"	"background"	23264
+"chr12"	50028810	50028810	"C"	"T"	11004	"PRPF40B"	"background"	23264
+"chr12"	50034094	50034094	"C"	"T"	31031	"PRPF40B"	"background"	23264
+"chr12"	50057835	50057835	"C"	"T"	30822	"PRPF40B"	"background"	23264

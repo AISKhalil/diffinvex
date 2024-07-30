@@ -1,0 +1,8 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr12"	112205578	112205578	"A"	"G"	38537	"ALDH2"	"background"	15061
+"chr12"	112213731	112213731	"G"	"A"	27339	"ALDH2"	"background"	15061
+"chr12"	112218356	112218356	"C"	"T"	14231	"ALDH2"	"background"	15061
+"chr12"	112218407	112218407	"G"	"A"	23674	"ALDH2"	"background"	15061
+"chr12"	112231042	112231042	"G"	"C"	32015	"ALDH2"	"background"	15061
+"chr12"	112234119	112234119	"C"	"G"	30897	"ALDH2"	"background"	15061
+"chr12"	112238306	112238306	"G"	"T"	30807	"ALDH2"	"background"	15061

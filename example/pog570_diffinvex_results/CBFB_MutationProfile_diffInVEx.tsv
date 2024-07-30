@@ -1,0 +1,4 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr16"	67063717	67063717	"G"	"C"	30487	"CBFB"	"target"	594
+"chr16"	67063812	67063812	"C"	"T"	29146	"CBFB"	"background"	3255
+"chr16"	67116513	67116513	"C"	"G"	25356	"CBFB"	"background"	3255

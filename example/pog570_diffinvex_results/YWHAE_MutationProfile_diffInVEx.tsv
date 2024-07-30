@@ -1,0 +1,9 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr17"	1268161	1268161	"G"	"A"	29146	"YWHAE"	"target"	735
+"chr17"	1256281	1256281	"G"	"T"	25721	"YWHAE"	"background"	7366
+"chr17"	1257124	1257124	"G"	"T"	25721	"YWHAE"	"background"	7366
+"chr17"	1258897	1258897	"G"	"C"	32015	"YWHAE"	"background"	7366
+"chr17"	1265537	1265537	"C"	"T"	18154	"YWHAE"	"background"	7366
+"chr17"	1266085	1266085	"C"	"A"	30807	"YWHAE"	"background"	7366
+"chr17"	1267801	1267801	"T"	"G"	30807	"YWHAE"	"background"	7366
+"chr17"	1267978	1267978	"C"	"T"	23676	"YWHAE"	"background"	7366

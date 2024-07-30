@@ -1,0 +1,16 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr16"	10989245	10989245	"G"	"T"	32034	"CIITA"	"target"	2988
+"chr16"	10976526	10976526	"C"	"T"	25966	"CIITA"	"background"	15389
+"chr16"	10978383	10978383	"T"	"A"	21774	"CIITA"	"background"	15389
+"chr16"	10985978	10985978	"C"	"T"	37097	"CIITA"	"background"	15389
+"chr16"	10988795	10988795	"C"	"T"	34120	"CIITA"	"background"	15389
+"chr16"	10994408	10994408	"C"	"T"	30497	"CIITA"	"background"	15389
+"chr16"	10996827	10996827	"A"	"G"	30897	"CIITA"	"background"	15389
+"chr16"	10997564	10997564	"C"	"T"	25816	"CIITA"	"background"	15389
+"chr16"	10997576	10997576	"C"	"T"	25816	"CIITA"	"background"	15389
+"chr16"	11002477	11002477	"C"	"T"	25356	"CIITA"	"background"	15389
+"chr16"	11006268	11006268	"G"	"T"	28324	"CIITA"	"background"	15389
+"chr16"	11011192	11011192	"G"	"A"	24077	"CIITA"	"background"	15389
+"chr16"	11011614	11011614	"G"	"C"	19843	"CIITA"	"background"	15389
+"chr16"	11014666	11014666	"G"	"T"	25980	"CIITA"	"background"	15389
+"chr16"	11017599	11017599	"C"	"T"	34121	"CIITA"	"background"	15389

@@ -1,0 +1,16 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr12"	121431455	121431455	"G"	"A"	33129	"HNF1A"	"target"	1944
+"chr12"	121435464	121435464	"C"	"T"	36700	"HNF1A"	"target"	1944
+"chr12"	121437333	121437333	"G"	"A"	38506	"HNF1A"	"target"	1944
+"chr12"	121401036	121401036	"G"	"A"	21932	"HNF1A"	"background"	19476
+"chr12"	121411077	121411077	"G"	"A"	34491	"HNF1A"	"background"	19476
+"chr12"	121420369	121420369	"G"	"A"	25356	"HNF1A"	"background"	19476
+"chr12"	121420954	121420954	"G"	"T"	37077	"HNF1A"	"background"	19476
+"chr12"	121423598	121423598	"G"	"A"	26851	"HNF1A"	"background"	19476
+"chr12"	121424977	121424977	"C"	"G"	32015	"HNF1A"	"background"	19476
+"chr12"	121426426	121426426	"C"	"T"	29146	"HNF1A"	"background"	19476
+"chr12"	121434741	121434741	"C"	"G"	25721	"HNF1A"	"background"	19476
+"chr12"	121436895	121436895	"G"	"C"	15844	"HNF1A"	"background"	19476
+"chr12"	121439839	121439839	"G"	"T"	18154	"HNF1A"	"background"	19476
+"chr12"	121443883	121443883	"G"	"A"	20034	"HNF1A"	"background"	19476
+"chr12"	121454837	121454837	"C"	"T"	28380	"HNF1A"	"background"	19476

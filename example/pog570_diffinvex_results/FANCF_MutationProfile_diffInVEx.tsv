@@ -1,0 +1,5 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr11"	22646423	22646423	"G"	"C"	32971	"FANCF"	"target"	986
+"chr11"	22647190	22647190	"G"	"A"	37720	"FANCF"	"target"	986
+"chr11"	22656112	22656112	"G"	"C"	37716	"FANCF"	"background"	1493
+"chr11"	22661698	22661698	"G"	"T"	25966	"FANCF"	"background"	1493

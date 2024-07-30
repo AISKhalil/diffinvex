@@ -1,0 +1,17 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr12"	69229748	69229748	"C"	"G"	29146	"MDM2"	"target"	1348
+"chr12"	69202174	69202174	"C"	"T"	25593	"MDM2"	"background"	13475
+"chr12"	69206968	69206968	"A"	"G"	32972	"MDM2"	"background"	13475
+"chr12"	69209036	69209036	"C"	"G"	37013	"MDM2"	"background"	13475
+"chr12"	69209695	69209695	"C"	"T"	11004	"MDM2"	"background"	13475
+"chr12"	69209793	69209793	"C"	"T"	37620	"MDM2"	"background"	13475
+"chr12"	69211598	69211598	"G"	"T"	27647	"MDM2"	"background"	13475
+"chr12"	69219766	69219766	"A"	"G"	30822	"MDM2"	"background"	13475
+"chr12"	69219829	69219829	"C"	"T"	32959	"MDM2"	"background"	13475
+"chr12"	69220655	69220655	"C"	"T"	38726	"MDM2"	"background"	13475
+"chr12"	69221118	69221118	"G"	"A"	29146	"MDM2"	"background"	13475
+"chr12"	69221894	69221894	"G"	"A"	27504	"MDM2"	"background"	13475
+"chr12"	69224162	69224162	"C"	"G"	37918	"MDM2"	"background"	13475
+"chr12"	69229056	69229056	"C"	"T"	29146	"MDM2"	"background"	13475
+"chr12"	69230314	69230314	"C"	"A"	29146	"MDM2"	"background"	13475
+"chr12"	69231881	69231881	"T"	"G"	19843	"MDM2"	"background"	13475

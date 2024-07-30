@@ -1,0 +1,9 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr12"	49415586	49415586	"T"	"C"	30313	"KMT2D"	"target"	704
+"chr12"	49416515	49416515	"A"	"T"	25483	"KMT2D"	"target"	704
+"chr12"	49406655	49406655	"C"	"T"	27078	"KMT2D"	"background"	7050
+"chr12"	49415212	49415212	"A"	"G"	20115	"KMT2D"	"background"	7050
+"chr12"	49419605	49419605	"C"	"G"	29146	"KMT2D"	"background"	7050
+"chr12"	49420367	49420367	"C"	"G"	32033	"KMT2D"	"background"	7050
+"chr12"	49427950	49427950	"C"	"T"	24045	"KMT2D"	"background"	7050
+"chr12"	49432633	49432633	"G"	"A"	25960	"KMT2D"	"background"	7050

@@ -1,0 +1,6 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr1"	14068519	14068519	"G"	"A"	29147	"PRDM2"	"target"	720
+"chr1"	14143218	14143218	"C"	"G"	31031	"PRDM2"	"background"	7199
+"chr1"	14143427	14143427	"G"	"T"	32571	"PRDM2"	"background"	7199
+"chr1"	14144118	14144118	"A"	"T"	30807	"PRDM2"	"background"	7199
+"chr1"	14148592	14148592	"G"	"A"	25497	"PRDM2"	"background"	7199

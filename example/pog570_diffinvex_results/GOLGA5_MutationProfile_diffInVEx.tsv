@@ -1,0 +1,16 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr14"	93290966	93290966	"G"	"C"	18880	"GOLGA5"	"target"	2276
+"chr14"	93303726	93303726	"C"	"T"	23674	"GOLGA5"	"target"	2276
+"chr14"	93274746	93274746	"G"	"C"	38501	"GOLGA5"	"background"	22782
+"chr14"	93274913	93274913	"C"	"T"	30504	"GOLGA5"	"background"	22782
+"chr14"	93277407	93277407	"A"	"G"	32971	"GOLGA5"	"background"	22782
+"chr14"	93278856	93278856	"C"	"G"	15844	"GOLGA5"	"background"	22782
+"chr14"	93282458	93282458	"G"	"A"	32274	"GOLGA5"	"background"	22782
+"chr14"	93285265	93285265	"A"	"C"	27502	"GOLGA5"	"background"	22782
+"chr14"	93290530	93290530	"A"	"G"	25437	"GOLGA5"	"background"	22782
+"chr14"	93291314	93291314	"G"	"C"	23737	"GOLGA5"	"background"	22782
+"chr14"	93298524	93298524	"G"	"C"	25356	"GOLGA5"	"background"	22782
+"chr14"	93299834	93299834	"T"	"A"	28278	"GOLGA5"	"background"	22782
+"chr14"	93301717	93301717	"A"	"G"	34121	"GOLGA5"	"background"	22782
+"chr14"	93302460	93302460	"T"	"G"	25719	"GOLGA5"	"background"	22782
+"chr14"	93304637	93304637	"G"	"C"	37249	"GOLGA5"	"background"	22782

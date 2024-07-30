@@ -1,0 +1,5 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr12"	122492776	122492776	"G"	"C"	25721	"BCL7A"	"target"	735
+"chr12"	122461524	122461524	"G"	"C"	25777	"BCL7A"	"background"	7371
+"chr12"	122468445	122468445	"G"	"T"	23674	"BCL7A"	"background"	7371
+"chr12"	122481552	122481552	"C"	"T"	36701	"BCL7A"	"background"	7371

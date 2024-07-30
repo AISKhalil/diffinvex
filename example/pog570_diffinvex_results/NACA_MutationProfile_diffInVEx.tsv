@@ -1,0 +1,3 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr12"	57106666	57106666	"C"	"A"	23674	"NACA"	"target"	684
+"chr12"	57107573	57107573	"A"	"T"	34120	"NACA"	"background"	6852

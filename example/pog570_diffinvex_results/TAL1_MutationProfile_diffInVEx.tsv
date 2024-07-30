@@ -1,0 +1,4 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr1"	47691329	47691329	"C"	"T"	37620	"TAL1"	"target"	980
+"chr1"	47673451	47673451	"G"	"A"	25440	"TAL1"	"background"	2495
+"chr1"	47681554	47681554	"C"	"T"	30635	"TAL1"	"background"	2495

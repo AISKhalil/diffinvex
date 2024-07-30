@@ -1,0 +1,12 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr14"	99640743	99640743	"G"	"C"	29999	"BCL11B"	"target"	2575
+"chr14"	99640823	99640823	"G"	"A"	13577	"BCL11B"	"target"	2575
+"chr14"	99640915	99640915	"G"	"T"	37916	"BCL11B"	"target"	2575
+"chr14"	99642654	99642654	"C"	"T"	23674	"BCL11B"	"background"	7263
+"chr14"	99701333	99701333	"C"	"A"	29147	"BCL11B"	"background"	7263
+"chr14"	99707264	99707264	"G"	"A"	33480	"BCL11B"	"background"	7263
+"chr14"	99715805	99715805	"G"	"A"	25890	"BCL11B"	"background"	7263
+"chr14"	99717761	99717761	"G"	"A"	28494	"BCL11B"	"background"	7263
+"chr14"	99719193	99719193	"G"	"A"	38537	"BCL11B"	"background"	7263
+"chr14"	99723356	99723356	"G"	"A"	38060	"BCL11B"	"background"	7263
+"chr14"	99724864	99724864	"C"	"A"	29147	"BCL11B"	"background"	7263

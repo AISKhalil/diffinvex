@@ -1,0 +1,6 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr1"	93300426	93300426	"A"	"G"	21721	"RPL5"	"target"	864
+"chr1"	93290114	93290114	"C"	"T"	31370	"RPL5"	"background"	8625
+"chr1"	93302878	93302878	"C"	"T"	27090	"RPL5"	"background"	8625
+"chr1"	93306408	93306408	"C"	"G"	21774	"RPL5"	"background"	8625
+"chr1"	93311286	93311286	"G"	"A"	25966	"RPL5"	"background"	8625

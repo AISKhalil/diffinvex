@@ -1,0 +1,3 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr14"	96176936	96176936	"G"	"C"	22597	"TCL1A"	"background"	3119
+"chr14"	96182744	96182744	"C"	"T"	25777	"TCL1A"	"background"	3119

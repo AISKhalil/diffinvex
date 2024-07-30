@@ -1,0 +1,8 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr17"	7208796	7208796	"C"	"G"	29146	"GPS2"	"background"	10625
+"chr17"	7219175	7219175	"T"	"C"	37076	"GPS2"	"background"	10625
+"chr17"	7220347	7220347	"G"	"T"	24424	"GPS2"	"background"	10625
+"chr17"	7222214	7222214	"G"	"A"	37620	"GPS2"	"background"	10625
+"chr17"	7225129	7225129	"G"	"T"	38261	"GPS2"	"background"	10625
+"chr17"	7225410	7225410	"G"	"A"	29146	"GPS2"	"background"	10625
+"chr17"	7225924	7225924	"T"	"A"	27647	"GPS2"	"background"	10625

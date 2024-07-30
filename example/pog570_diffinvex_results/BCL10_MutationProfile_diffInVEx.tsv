@@ -1,0 +1,6 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr1"	85733317	85733317	"C"	"T"	23674	"BCL10"	"target"	689
+"chr1"	85735108	85735108	"G"	"C"	38501	"BCL10"	"background"	6881
+"chr1"	85736746	85736746	"G"	"A"	32959	"BCL10"	"background"	6881
+"chr1"	85741138	85741138	"C"	"A"	30822	"BCL10"	"background"	6881
+"chr1"	85743973	85743973	"C"	"T"	25777	"BCL10"	"background"	6881

@@ -1,0 +1,17 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr14"	103338612	103338612	"G"	"T"	18625	"TRAF3"	"background"	17619
+"chr14"	103342984	103342984	"G"	"A"	38792	"TRAF3"	"background"	17619
+"chr14"	103343127	103343127	"G"	"A"	33129	"TRAF3"	"background"	17619
+"chr14"	103343591	103343591	"A"	"G"	36621	"TRAF3"	"background"	17619
+"chr14"	103343843	103343843	"G"	"A"	32408	"TRAF3"	"background"	17619
+"chr14"	103344126	103344126	"A"	"G"	36748	"TRAF3"	"background"	17619
+"chr14"	103351442	103351442	"G"	"T"	33764	"TRAF3"	"background"	17619
+"chr14"	103351785	103351785	"C"	"T"	37620	"TRAF3"	"background"	17619
+"chr14"	103351961	103351961	"T"	"C"	23673	"TRAF3"	"background"	17619
+"chr14"	103352625	103352625	"G"	"A"	28497	"TRAF3"	"background"	17619
+"chr14"	103357364	103357364	"C"	"T"	32973	"TRAF3"	"background"	17619
+"chr14"	103361231	103361231	"C"	"T"	25439	"TRAF3"	"background"	17619
+"chr14"	103363844	103363844	"A"	"T"	23674	"TRAF3"	"background"	17619
+"chr14"	103368142	103368142	"C"	"T"	26016	"TRAF3"	"background"	17619
+"chr14"	103369836	103369836	"G"	"A"	27217	"TRAF3"	"background"	17619
+"chr14"	103371236	103371236	"G"	"A"	21774	"TRAF3"	"background"	17619

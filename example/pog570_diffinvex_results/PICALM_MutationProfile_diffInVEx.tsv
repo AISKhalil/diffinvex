@@ -1,0 +1,6 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr11"	85712151	85712151	"G"	"A"	27647	"PICALM"	"target"	1998
+"chr11"	85685681	85685681	"A"	"G"	19843	"PICALM"	"background"	19983
+"chr11"	85707738	85707738	"C"	"T"	37718	"PICALM"	"background"	19983
+"chr11"	85718420	85718420	"G"	"A"	20801	"PICALM"	"background"	19983
+"chr11"	85737123	85737123	"A"	"C"	25990	"PICALM"	"background"	19983

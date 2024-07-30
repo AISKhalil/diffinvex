@@ -1,0 +1,7 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr17"	38781483	38781483	"G"	"A"	23674	"SMARCE1"	"background"	10716
+"chr17"	38785874	38785874	"C"	"G"	19843	"SMARCE1"	"background"	10716
+"chr17"	38787466	38787466	"T"	"G"	29147	"SMARCE1"	"background"	10716
+"chr17"	38788028	38788028	"G"	"A"	29146	"SMARCE1"	"background"	10716
+"chr17"	38797318	38797318	"A"	"G"	23674	"SMARCE1"	"background"	10716
+"chr17"	38799259	38799259	"T"	"C"	30822	"SMARCE1"	"background"	10716

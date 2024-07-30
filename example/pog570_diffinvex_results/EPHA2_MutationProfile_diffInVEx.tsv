@@ -1,0 +1,14 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr1"	16446447	16446447	"C"	"T"	37716	"EPHA2"	"background"	20201
+"chr1"	16460443	16460443	"G"	"A"	25664	"EPHA2"	"background"	20201
+"chr1"	16461805	16461805	"T"	"A"	21774	"EPHA2"	"background"	20201
+"chr1"	16461952	16461952	"C"	"T"	25498	"EPHA2"	"background"	20201
+"chr1"	16462435	16462435	"G"	"A"	34491	"EPHA2"	"background"	20201
+"chr1"	16464164	16464164	"C"	"T"	29146	"EPHA2"	"background"	20201
+"chr1"	16471817	16471817	"A"	"G"	20801	"EPHA2"	"background"	20201
+"chr1"	16473880	16473880	"C"	"T"	30822	"EPHA2"	"background"	20201
+"chr1"	16474576	16474576	"G"	"A"	23674	"EPHA2"	"background"	20201
+"chr1"	16475954	16475954	"C"	"T"	24550	"EPHA2"	"background"	20201
+"chr1"	16477967	16477967	"T"	"C"	32354	"EPHA2"	"background"	20201
+"chr1"	16479123	16479123	"T"	"A"	37146	"EPHA2"	"background"	20201
+"chr1"	16490766	16490766	"C"	"T"	29146	"EPHA2"	"background"	20201

@@ -1,0 +1,5 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr1"	23956371	23956371	"T"	"C"	23674	"MDS2"	"background"	4526
+"chr1"	23964346	23964346	"C"	"A"	27502	"MDS2"	"background"	4526
+"chr1"	23966513	23966513	"C"	"A"	25593	"MDS2"	"background"	4526
+"chr1"	23967851	23967851	"G"	"T"	26851	"MDS2"	"background"	4526

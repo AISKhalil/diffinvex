@@ -1,0 +1,15 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr10"	112343151	112343151	"C"	"T"	25980	"SMC3"	"target"	3461
+"chr10"	112360249	112360249	"G"	"A"	25356	"SMC3"	"target"	3461
+"chr10"	112327354	112327354	"A"	"G"	34120	"SMC3"	"background"	27054
+"chr10"	112333580	112333580	"C"	"T"	25590	"SMC3"	"background"	27054
+"chr10"	112335370	112335370	"A"	"G"	25437	"SMC3"	"background"	27054
+"chr10"	112336833	112336833	"T"	"C"	24045	"SMC3"	"background"	27054
+"chr10"	112340574	112340574	"C"	"T"	20115	"SMC3"	"background"	27054
+"chr10"	112349146	112349146	"C"	"G"	37080	"SMC3"	"background"	27054
+"chr10"	112351111	112351111	"T"	"G"	34120	"SMC3"	"background"	27054
+"chr10"	112359355	112359355	"T"	"G"	27723	"SMC3"	"background"	27054
+"chr10"	112362818	112362818	"G"	"A"	29146	"SMC3"	"background"	27054
+"chr10"	112363673	112363673	"G"	"C"	34120	"SMC3"	"background"	27054
+"chr10"	112364536	112364536	"T"	"A"	23454	"SMC3"	"background"	27054
+"chr10"	112368612	112368612	"C"	"T"	30822	"SMC3"	"background"	27054

@@ -1,0 +1,7 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr12"	50467554	50467554	"G"	"C"	25990	"SMARCD1"	"background"	16429
+"chr12"	50476173	50476173	"C"	"T"	38726	"SMARCD1"	"background"	16429
+"chr12"	50476332	50476332	"C"	"T"	25356	"SMARCD1"	"background"	16429
+"chr12"	50482689	50482689	"G"	"A"	25439	"SMARCD1"	"background"	16429
+"chr12"	50485445	50485445	"C"	"T"	30497	"SMARCD1"	"background"	16429
+"chr12"	50485653	50485653	"G"	"A"	23674	"SMARCD1"	"background"	16429

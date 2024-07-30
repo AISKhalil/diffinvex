@@ -1,0 +1,6 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr1"	155872826	155872826	"T"	"C"	31370	"RIT1"	"background"	6832
+"chr1"	155873600	155873600	"G"	"C"	25498	"RIT1"	"background"	6832
+"chr1"	155874642	155874642	"G"	"T"	30251	"RIT1"	"background"	6832
+"chr1"	155875248	155875248	"C"	"T"	29147	"RIT1"	"background"	6832
+"chr1"	155880393	155880393	"G"	"C"	27647	"RIT1"	"background"	6832

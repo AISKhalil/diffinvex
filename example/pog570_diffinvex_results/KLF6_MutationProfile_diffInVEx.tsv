@@ -1,0 +1,7 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr10"	3808766	3808766	"G"	"A"	29146	"KLF6"	"background"	8694
+"chr10"	3815989	3815989	"C"	"A"	37146	"KLF6"	"background"	8694
+"chr10"	3819790	3819790	"C"	"G"	38569	"KLF6"	"background"	8694
+"chr10"	3826373	3826373	"C"	"T"	30425	"KLF6"	"background"	8694
+"chr10"	3827673	3827673	"C"	"T"	29146	"KLF6"	"background"	8694
+"chr10"	3831003	3831003	"C"	"T"	31031	"KLF6"	"background"	8694

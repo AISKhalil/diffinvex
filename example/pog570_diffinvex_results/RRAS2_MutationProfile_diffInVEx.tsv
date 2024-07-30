@@ -1,0 +1,2 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr11"	14301214	14301214	"A"	"G"	25658	"RRAS2"	"background"	3534

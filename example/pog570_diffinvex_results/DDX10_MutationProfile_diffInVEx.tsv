@@ -1,0 +1,17 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr11"	108550197	108550197	"C"	"G"	20115	"DDX10"	"target"	2643
+"chr11"	108537469	108537469	"G"	"A"	13269	"DDX10"	"background"	26436
+"chr11"	108545707	108545707	"T"	"A"	37862	"DDX10"	"background"	26436
+"chr11"	108550808	108550808	"A"	"T"	14891	"DDX10"	"background"	26436
+"chr11"	108557255	108557255	"C"	"T"	28494	"DDX10"	"background"	26436
+"chr11"	108560294	108560294	"C"	"A"	27647	"DDX10"	"background"	26436
+"chr11"	108564119	108564119	"T"	"C"	26376	"DDX10"	"background"	26436
+"chr11"	108576308	108576308	"T"	"C"	27647	"DDX10"	"background"	26436
+"chr11"	108590725	108590725	"G"	"T"	28278	"DDX10"	"background"	26436
+"chr11"	108593529	108593529	"G"	"T"	34161	"DDX10"	"background"	26436
+"chr11"	108594686	108594686	"G"	"A"	37862	"DDX10"	"background"	26436
+"chr11"	108712497	108712497	"C"	"T"	30488	"DDX10"	"background"	26436
+"chr11"	108723203	108723203	"C"	"G"	29147	"DDX10"	"background"	26436
+"chr11"	108787496	108787496	"G"	"T"	37916	"DDX10"	"background"	26436
+"chr11"	108788347	108788347	"T"	"A"	30807	"DDX10"	"background"	26436
+"chr11"	108810492	108810492	"T"	"C"	38505	"DDX10"	"background"	26436

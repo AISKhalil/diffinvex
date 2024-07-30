@@ -1,0 +1,11 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr16"	12061506	12061506	"C"	"T"	15844	"TNFRSF17"	"target"	561
+"chr16"	12054785	12054785	"G"	"A"	19843	"TNFRSF17"	"background"	5600
+"chr16"	12059437	12059437	"G"	"A"	34115	"TNFRSF17"	"background"	5600
+"chr16"	12059733	12059733	"G"	"A"	27647	"TNFRSF17"	"background"	5600
+"chr16"	12060369	12060369	"G"	"C"	37311	"TNFRSF17"	"background"	5600
+"chr16"	12060534	12060534	"G"	"C"	20034	"TNFRSF17"	"background"	5600
+"chr16"	12060965	12060965	"C"	"T"	15844	"TNFRSF17"	"background"	5600
+"chr16"	12061110	12061110	"C"	"G"	15844	"TNFRSF17"	"background"	5600
+"chr16"	12061331	12061331	"C"	"A"	15844	"TNFRSF17"	"background"	5600
+"chr16"	12063034	12063034	"G"	"A"	19843	"TNFRSF17"	"background"	5600

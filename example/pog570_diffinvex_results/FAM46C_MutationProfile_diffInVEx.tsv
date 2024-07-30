@@ -1,0 +1,10 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr1"	118166325	118166325	"C"	"T"	29146	"FAM46C"	"target"	1116
+"chr1"	118166466	118166466	"C"	"T"	23674	"FAM46C"	"target"	1116
+"chr1"	118153213	118153213	"G"	"A"	36718	"FAM46C"	"background"	11182
+"chr1"	118157248	118157248	"C"	"G"	18625	"FAM46C"	"background"	11182
+"chr1"	118159326	118159326	"A"	"G"	38507	"FAM46C"	"background"	11182
+"chr1"	118160053	118160053	"C"	"A"	37916	"FAM46C"	"background"	11182
+"chr1"	118162652	118162652	"C"	"A"	29146	"FAM46C"	"background"	11182
+"chr1"	118175421	118175421	"G"	"A"	23674	"FAM46C"	"background"	11182
+"chr1"	118189419	118189419	"A"	"T"	29147	"FAM46C"	"background"	11182

@@ -1,0 +1,4 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr1"	151039920	151039920	"T"	"G"	19843	"MLLT11"	"target"	273
+"chr1"	151038698	151038698	"C"	"T"	25356	"MLLT11"	"background"	2715
+"chr1"	151040963	151040963	"C"	"G"	37311	"MLLT11"	"background"	2715

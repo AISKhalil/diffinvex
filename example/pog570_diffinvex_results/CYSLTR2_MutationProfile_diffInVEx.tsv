@@ -1,0 +1,15 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr13"	49281359	49281359	"C"	"T"	30080	"CYSLTR2"	"target"	1041
+"chr13"	49281860	49281860	"C"	"A"	38601	"CYSLTR2"	"target"	1041
+"chr13"	49270435	49270435	"C"	"A"	29147	"CYSLTR2"	"background"	10444
+"chr13"	49270967	49270967	"A"	"G"	34161	"CYSLTR2"	"background"	10444
+"chr13"	49276676	49276676	"T"	"G"	22186	"CYSLTR2"	"background"	10444
+"chr13"	49278766	49278766	"C"	"T"	32015	"CYSLTR2"	"background"	10444
+"chr13"	49279174	49279174	"C"	"G"	23701	"CYSLTR2"	"background"	10444
+"chr13"	49280481	49280481	"G"	"A"	35337	"CYSLTR2"	"background"	10444
+"chr13"	49282018	49282018	"C"	"A"	26851	"CYSLTR2"	"background"	10444
+"chr13"	49283000	49283000	"C"	"T"	33764	"CYSLTR2"	"background"	10444
+"chr13"	49283836	49283836	"G"	"C"	15844	"CYSLTR2"	"background"	10444
+"chr13"	49285858	49285858	"G"	"A"	35289	"CYSLTR2"	"background"	10444
+"chr13"	49286957	49286957	"A"	"G"	27647	"CYSLTR2"	"background"	10444
+"chr13"	49288189	49288189	"C"	"A"	27647	"CYSLTR2"	"background"	10444

@@ -1,0 +1,12 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr11"	64515563	64515563	"C"	"T"	34120	"SF1"	"background"	18955
+"chr11"	64515796	64515796	"G"	"A"	35258	"SF1"	"background"	18955
+"chr11"	64527006	64527006	"C"	"A"	27388	"SF1"	"background"	18955
+"chr11"	64534301	64534301	"G"	"C"	34120	"SF1"	"background"	18955
+"chr11"	64538005	64538005	"G"	"A"	30487	"SF1"	"background"	18955
+"chr11"	64541345	64541345	"A"	"G"	23674	"SF1"	"background"	18955
+"chr11"	64546615	64546615	"G"	"A"	25590	"SF1"	"background"	18955
+"chr11"	64546979	64546979	"G"	"A"	24423	"SF1"	"background"	18955
+"chr11"	64549603	64549603	"C"	"A"	35258	"SF1"	"background"	18955
+"chr11"	64556177	64556177	"G"	"T"	37620	"SF1"	"background"	18955
+"chr11"	64562421	64562421	"C"	"T"	23674	"SF1"	"background"	18955

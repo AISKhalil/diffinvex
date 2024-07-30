@@ -1,0 +1,15 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr17"	38508318	38508318	"C"	"A"	37077	"RARA"	"target"	1406
+"chr17"	38500070	38500070	"C"	"A"	23315	"RARA"	"background"	14058
+"chr17"	38500505	38500505	"C"	"A"	31042	"RARA"	"background"	14058
+"chr17"	38503728	38503728	"G"	"A"	23674	"RARA"	"background"	14058
+"chr17"	38505565	38505565	"T"	"G"	39044	"RARA"	"background"	14058
+"chr17"	38505757	38505757	"G"	"A"	32015	"RARA"	"background"	14058
+"chr17"	38508033	38508033	"C"	"T"	34118	"RARA"	"background"	14058
+"chr17"	38509091	38509091	"C"	"T"	30504	"RARA"	"background"	14058
+"chr17"	38509152	38509152	"G"	"A"	34121	"RARA"	"background"	14058
+"chr17"	38509269	38509269	"T"	"A"	33987	"RARA"	"background"	14058
+"chr17"	38510277	38510277	"G"	"A"	22186	"RARA"	"background"	14058
+"chr17"	38512909	38512909	"G"	"A"	25902	"RARA"	"background"	14058
+"chr17"	38518688	38518688	"G"	"A"	26850	"RARA"	"background"	14058
+"chr17"	38519031	38519031	"G"	"A"	20034	"RARA"	"background"	14058

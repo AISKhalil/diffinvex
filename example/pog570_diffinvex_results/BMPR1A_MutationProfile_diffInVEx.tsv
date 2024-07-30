@@ -1,0 +1,10 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr10"	88649819	88649819	"G"	"T"	29147	"BMPR1A"	"target"	808
+"chr10"	88659779	88659779	"G"	"T"	35337	"BMPR1A"	"target"	808
+"chr10"	88648913	88648913	"C"	"T"	25752	"BMPR1A"	"background"	8074
+"chr10"	88649256	88649256	"G"	"C"	34120	"BMPR1A"	"background"	8074
+"chr10"	88652307	88652307	"T"	"G"	19843	"BMPR1A"	"background"	8074
+"chr10"	88659168	88659168	"C"	"T"	15844	"BMPR1A"	"background"	8074
+"chr10"	88672362	88672362	"A"	"T"	38792	"BMPR1A"	"background"	8074
+"chr10"	88677422	88677422	"C"	"G"	37145	"BMPR1A"	"background"	8074
+"chr10"	88681526	88681526	"T"	"G"	19843	"BMPR1A"	"background"	8074

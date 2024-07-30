@@ -1,0 +1,16 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr12"	7065319	7065319	"G"	"A"	32408	"PTPN6"	"target"	1907
+"chr12"	7047557	7047557	"C"	"A"	23737	"PTPN6"	"background"	19116
+"chr12"	7049498	7049498	"G"	"A"	28497	"PTPN6"	"background"	19116
+"chr12"	7052179	7052179	"G"	"A"	30313	"PTPN6"	"background"	19116
+"chr12"	7052974	7052974	"C"	"A"	25658	"PTPN6"	"background"	19116
+"chr12"	7053223	7053223	"C"	"G"	28392	"PTPN6"	"background"	19116
+"chr12"	7056542	7056542	"G"	"A"	37076	"PTPN6"	"background"	19116
+"chr12"	7059833	7059833	"C"	"G"	21774	"PTPN6"	"background"	19116
+"chr12"	7066119	7066119	"C"	"G"	30425	"PTPN6"	"background"	19116
+"chr12"	7067296	7067296	"C"	"T"	30491	"PTPN6"	"background"	19116
+"chr12"	7074324	7074324	"C"	"G"	38536	"PTPN6"	"background"	19116
+"chr12"	7074976	7074976	"G"	"A"	23737	"PTPN6"	"background"	19116
+"chr12"	7075753	7075753	"C"	"T"	30822	"PTPN6"	"background"	19116
+"chr12"	7083696	7083696	"G"	"A"	11004	"PTPN6"	"background"	19116
+"chr12"	7093717	7093717	"C"	"A"	21721	"PTPN6"	"background"	19116

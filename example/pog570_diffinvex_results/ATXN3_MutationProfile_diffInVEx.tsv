@@ -1,0 +1,4 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr14"	92548559	92548559	"A"	"T"	13904	"ATXN3"	"background"	11066
+"chr14"	92564565	92564565	"T"	"A"	25658	"ATXN3"	"background"	11066
+"chr14"	92572744	92572744	"C"	"A"	23737	"ATXN3"	"background"	11066

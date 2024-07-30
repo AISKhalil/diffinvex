@@ -1,0 +1,17 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr1"	156830853	156830853	"C"	"T"	38725	"NTRK1"	"target"	2510
+"chr1"	156816140	156816140	"G"	"A"	34120	"NTRK1"	"background"	19751
+"chr1"	156825573	156825573	"C"	"T"	15123	"NTRK1"	"background"	19751
+"chr1"	156830391	156830391	"A"	"T"	23737	"NTRK1"	"background"	19751
+"chr1"	156831058	156831058	"C"	"A"	27034	"NTRK1"	"background"	19751
+"chr1"	156831360	156831360	"G"	"A"	23706	"NTRK1"	"background"	19751
+"chr1"	156833140	156833140	"C"	"T"	25356	"NTRK1"	"background"	19751
+"chr1"	156834890	156834890	"G"	"A"	37620	"NTRK1"	"background"	19751
+"chr1"	156839572	156839572	"G"	"A"	34121	"NTRK1"	"background"	19751
+"chr1"	156842052	156842052	"C"	"T"	29146	"NTRK1"	"background"	19751
+"chr1"	156846451	156846451	"C"	"T"	38887	"NTRK1"	"background"	19751
+"chr1"	156847949	156847949	"C"	"A"	27078	"NTRK1"	"background"	19751
+"chr1"	156853059	156853059	"G"	"A"	30822	"NTRK1"	"background"	19751
+"chr1"	156853417	156853417	"C"	"T"	36718	"NTRK1"	"background"	19751
+"chr1"	156860394	156860394	"C"	"T"	27647	"NTRK1"	"background"	19751
+"chr1"	156866693	156866693	"G"	"T"	14891	"NTRK1"	"background"	19751

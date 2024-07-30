@@ -1,0 +1,2 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr1"	161293230	161293230	"C"	"A"	29146	"SDHC"	"background"	2922

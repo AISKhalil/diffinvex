@@ -1,0 +1,5 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr1"	17349138	17349138	"G"	"T"	23674	"SDHB"	"target"	909
+"chr1"	17356589	17356589	"C"	"T"	28226	"SDHB"	"background"	9084
+"chr1"	17359294	17359294	"C"	"A"	29147	"SDHB"	"background"	9084
+"chr1"	17359452	17359452	"G"	"A"	27647	"SDHB"	"background"	9084

@@ -1,0 +1,16 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr17"	17120448	17120448	"C"	"T"	30807	"FLCN"	"target"	1809
+"chr17"	17122473	17122473	"C"	"T"	29146	"FLCN"	"target"	1809
+"chr17"	17131259	17131259	"C"	"A"	37719	"FLCN"	"target"	1809
+"chr17"	17110761	17110761	"G"	"T"	32015	"FLCN"	"background"	18137
+"chr17"	17111185	17111185	"A"	"T"	38536	"FLCN"	"background"	18137
+"chr17"	17111905	17111905	"C"	"T"	38725	"FLCN"	"background"	18137
+"chr17"	17112171	17112171	"A"	"C"	38725	"FLCN"	"background"	18137
+"chr17"	17112911	17112911	"C"	"G"	25966	"FLCN"	"background"	18137
+"chr17"	17121930	17121930	"G"	"A"	32959	"FLCN"	"background"	18137
+"chr17"	17123866	17123866	"G"	"T"	22186	"FLCN"	"background"	18137
+"chr17"	17124317	17124317	"T"	"C"	27216	"FLCN"	"background"	18137
+"chr17"	17126322	17126322	"C"	"A"	22597	"FLCN"	"background"	18137
+"chr17"	17129830	17129830	"C"	"T"	23674	"FLCN"	"background"	18137
+"chr17"	17134093	17134093	"A"	"G"	31911	"FLCN"	"background"	18137
+"chr17"	17134791	17134791	"C"	"T"	38725	"FLCN"	"background"	18137

@@ -1,0 +1,8 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr1"	201981171	201981171	"A"	"T"	25981	"ELF3"	"target"	1153
+"chr1"	201981174	201981174	"T"	"G"	13577	"ELF3"	"target"	1153
+"chr1"	201975900	201975900	"G"	"A"	23674	"ELF3"	"background"	11535
+"chr1"	201982772	201982772	"G"	"A"	30159	"ELF3"	"background"	11535
+"chr1"	201985856	201985856	"G"	"T"	25593	"ELF3"	"background"	11535
+"chr1"	201996686	201996686	"C"	"T"	38887	"ELF3"	"background"	11535
+"chr1"	201999142	201999142	"C"	"T"	37078	"ELF3"	"background"	11535

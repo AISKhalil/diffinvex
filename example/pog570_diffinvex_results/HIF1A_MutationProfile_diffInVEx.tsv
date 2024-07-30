@@ -1,0 +1,12 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr14"	62187266	62187266	"C"	"G"	25755	"HIF1A"	"target"	2581
+"chr14"	62213801	62213801	"T"	"C"	27090	"HIF1A"	"target"	2581
+"chr14"	62167037	62167037	"C"	"T"	29146	"HIF1A"	"background"	25822
+"chr14"	62167239	62167239	"T"	"C"	27502	"HIF1A"	"background"	25822
+"chr14"	62195088	62195088	"T"	"G"	18228	"HIF1A"	"background"	25822
+"chr14"	62199896	62199896	"C"	"T"	28226	"HIF1A"	"background"	25822
+"chr14"	62201790	62201790	"C"	"G"	32973	"HIF1A"	"background"	25822
+"chr14"	62202460	62202460	"C"	"T"	29146	"HIF1A"	"background"	25822
+"chr14"	62207058	62207058	"C"	"T"	25439	"HIF1A"	"background"	25822
+"chr14"	62210852	62210852	"A"	"G"	21933	"HIF1A"	"background"	25822
+"chr14"	62211930	62211930	"C"	"T"	23674	"HIF1A"	"background"	25822

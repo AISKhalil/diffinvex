@@ -1,0 +1,10 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr13"	73636583	73636583	"C"	"T"	20115	"KLF5"	"target"	1093
+"chr13"	73636648	73636648	"C"	"G"	25816	"KLF5"	"target"	1093
+"chr13"	73627540	73627540	"G"	"A"	29146	"KLF5"	"background"	10914
+"chr13"	73638774	73638774	"C"	"G"	25721	"KLF5"	"background"	10914
+"chr13"	73639341	73639341	"T"	"C"	28391	"KLF5"	"background"	10914
+"chr13"	73641471	73641471	"G"	"T"	33532	"KLF5"	"background"	10914
+"chr13"	73644851	73644851	"G"	"A"	25753	"KLF5"	"background"	10914
+"chr13"	73651850	73651850	"C"	"T"	30822	"KLF5"	"background"	10914
+"chr13"	73657218	73657218	"G"	"A"	30487	"KLF5"	"background"	10914

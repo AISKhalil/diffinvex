@@ -1,0 +1,3 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr17"	37031864	37031864	"C"	"T"	25980	"LASP1"	"background"	7923
+"chr17"	37040164	37040164	"A"	"T"	37145	"LASP1"	"background"	7923

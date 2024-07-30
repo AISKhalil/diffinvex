@@ -1,0 +1,16 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr16"	2089883	2089883	"G"	"T"	37619	"NTHL1"	"background"	9563
+"chr16"	2091354	2091354	"C"	"G"	33532	"NTHL1"	"background"	9563
+"chr16"	2093090	2093090	"C"	"T"	28494	"NTHL1"	"background"	9563
+"chr16"	2093305	2093305	"C"	"T"	28494	"NTHL1"	"background"	9563
+"chr16"	2096922	2096922	"G"	"A"	32034	"NTHL1"	"background"	9563
+"chr16"	2096999	2096999	"G"	"A"	32034	"NTHL1"	"background"	9563
+"chr16"	2097119	2097119	"G"	"A"	32034	"NTHL1"	"background"	9563
+"chr16"	2097163	2097163	"G"	"A"	32034	"NTHL1"	"background"	9563
+"chr16"	2097210	2097210	"C"	"T"	37076	"NTHL1"	"background"	9563
+"chr16"	2097260	2097260	"G"	"C"	37918	"NTHL1"	"background"	9563
+"chr16"	2097378	2097378	"G"	"A"	32034	"NTHL1"	"background"	9563
+"chr16"	2097409	2097409	"G"	"A"	32034	"NTHL1"	"background"	9563
+"chr16"	2097444	2097444	"G"	"A"	32034	"NTHL1"	"background"	9563
+"chr16"	2097448	2097448	"G"	"A"	32034	"NTHL1"	"background"	9563
+"chr16"	2103346	2103346	"G"	"T"	37619	"NTHL1"	"background"	9563

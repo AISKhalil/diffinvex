@@ -1,0 +1,9 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr17"	37922089	37922089	"A"	"G"	25027	"IKZF3"	"target"	1445
+"chr17"	37944817	37944817	"G"	"A"	25777	"IKZF3"	"background"	14434
+"chr17"	37947602	37947602	"C"	"A"	25966	"IKZF3"	"background"	14434
+"chr17"	37948322	37948322	"T"	"C"	36718	"IKZF3"	"background"	14434
+"chr17"	37982485	37982485	"G"	"A"	30321	"IKZF3"	"background"	14434
+"chr17"	37988087	37988087	"G"	"T"	37845	"IKZF3"	"background"	14434
+"chr17"	37988329	37988329	"G"	"C"	25027	"IKZF3"	"background"	14434
+"chr17"	38019744	38019744	"C"	"A"	25753	"IKZF3"	"background"	14434

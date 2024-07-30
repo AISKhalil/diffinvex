@@ -1,0 +1,16 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr1"	43803850	43803850	"G"	"A"	25777	"MPL"	"target"	1710
+"chr1"	43803857	43803857	"A"	"G"	30822	"MPL"	"target"	1710
+"chr1"	43804242	43804242	"C"	"T"	27034	"MPL"	"target"	1710
+"chr1"	43792225	43792225	"G"	"A"	34288	"MPL"	"background"	17102
+"chr1"	43796733	43796733	"G"	"A"	38725	"MPL"	"background"	17102
+"chr1"	43804154	43804154	"C"	"G"	31031	"MPL"	"background"	17102
+"chr1"	43807107	43807107	"G"	"A"	30822	"MPL"	"background"	17102
+"chr1"	43808942	43808942	"C"	"G"	29146	"MPL"	"background"	17102
+"chr1"	43810533	43810533	"T"	"C"	22592	"MPL"	"background"	17102
+"chr1"	43813622	43813622	"T"	"A"	25980	"MPL"	"background"	17102
+"chr1"	43814684	43814684	"C"	"T"	37312	"MPL"	"background"	17102
+"chr1"	43814756	43814756	"G"	"C"	32973	"MPL"	"background"	17102
+"chr1"	43821248	43821248	"T"	"C"	18625	"MPL"	"background"	17102
+"chr1"	43821397	43821397	"A"	"C"	23315	"MPL"	"background"	17102
+"chr1"	43829476	43829476	"C"	"G"	25721	"MPL"	"background"	17102

@@ -1,0 +1,9 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr11"	100909916	100909916	"T"	"G"	36718	"PGR"	"target"	2837
+"chr11"	100912816	100912816	"G"	"A"	34122	"PGR"	"target"	2837
+"chr11"	100920748	100920748	"G"	"A"	35258	"PGR"	"target"	2837
+"chr11"	100922238	100922238	"T"	"C"	38574	"PGR"	"target"	2837
+"chr11"	100933399	100933399	"T"	"G"	32972	"PGR"	"target"	2837
+"chr11"	100912648	100912648	"G"	"A"	15844	"PGR"	"background"	1498
+"chr11"	100962820	100962820	"A"	"G"	25658	"PGR"	"background"	1498
+"chr11"	100965686	100965686	"C"	"T"	32656	"PGR"	"background"	1498

@@ -1,0 +1,12 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr10"	104857134	104857134	"G"	"A"	25721	"NT5C2"	"target"	1767
+"chr10"	104861040	104861040	"C"	"A"	23454	"NT5C2"	"target"	1767
+"chr10"	104850145	104850145	"C"	"T"	33532	"NT5C2"	"background"	17696
+"chr10"	104850930	104850930	"T"	"C"	37718	"NT5C2"	"background"	17696
+"chr10"	104853299	104853299	"C"	"G"	27504	"NT5C2"	"background"	17696
+"chr10"	104853975	104853975	"C"	"T"	30248	"NT5C2"	"background"	17696
+"chr10"	104854019	104854019	"C"	"T"	27504	"NT5C2"	"background"	17696
+"chr10"	104860436	104860436	"C"	"G"	34120	"NT5C2"	"background"	17696
+"chr10"	104866583	104866583	"T"	"G"	25662	"NT5C2"	"background"	17696
+"chr10"	104932570	104932570	"C"	"A"	29147	"NT5C2"	"background"	17696
+"chr10"	104933842	104933842	"G"	"C"	34120	"NT5C2"	"background"	17696

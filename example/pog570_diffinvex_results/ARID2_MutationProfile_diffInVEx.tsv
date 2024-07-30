@@ -1,0 +1,16 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr12"	46246578	46246578	"G"	"C"	26851	"ARID2"	"target"	1209
+"chr12"	46246629	46246629	"C"	"T"	37862	"ARID2"	"target"	1209
+"chr12"	46285669	46285669	"C"	"T"	30159	"ARID2"	"target"	1209
+"chr12"	46287315	46287315	"C"	"T"	23674	"ARID2"	"target"	1209
+"chr12"	46298135	46298135	"G"	"A"	32015	"ARID2"	"target"	1209
+"chr12"	46246718	46246718	"C"	"G"	37862	"ARID2"	"background"	12081
+"chr12"	46249048	46249048	"A"	"T"	37076	"ARID2"	"background"	12081
+"chr12"	46249520	46249520	"G"	"T"	28278	"ARID2"	"background"	12081
+"chr12"	46255466	46255466	"C"	"T"	38726	"ARID2"	"background"	12081
+"chr12"	46282795	46282795	"A"	"C"	37076	"ARID2"	"background"	12081
+"chr12"	46284117	46284117	"A"	"T"	32015	"ARID2"	"background"	12081
+"chr12"	46286615	46286615	"T"	"A"	19843	"ARID2"	"background"	12081
+"chr12"	46287030	46287030	"C"	"T"	23674	"ARID2"	"background"	12081
+"chr12"	46288026	46288026	"G"	"A"	25440	"ARID2"	"background"	12081
+"chr12"	46288727	46288727	"T"	"C"	31509	"ARID2"	"background"	12081

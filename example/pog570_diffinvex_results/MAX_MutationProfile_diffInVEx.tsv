@@ -1,0 +1,7 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr14"	65543049	65543049	"C"	"T"	37080	"MAX"	"background"	4870
+"chr14"	65552812	65552812	"G"	"A"	34491	"MAX"	"background"	4870
+"chr14"	65561953	65561953	"T"	"C"	34115	"MAX"	"background"	4870
+"chr14"	65566233	65566233	"C"	"T"	25721	"MAX"	"background"	4870
+"chr14"	65573959	65573959	"C"	"T"	13268	"MAX"	"background"	4870
+"chr14"	65576003	65576003	"G"	"A"	30822	"MAX"	"background"	4870

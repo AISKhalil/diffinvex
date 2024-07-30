@@ -1,0 +1,7 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr11"	533452	533452	"C"	"G"	30807	"HRAS"	"target"	600
+"chr11"	528230	528230	"C"	"T"	15844	"HRAS"	"background"	5987
+"chr11"	531091	531091	"G"	"C"	34122	"HRAS"	"background"	5987
+"chr11"	531118	531118	"G"	"C"	36700	"HRAS"	"background"	5987
+"chr11"	534608	534608	"T"	"A"	26851	"HRAS"	"background"	5987
+"chr11"	546364	546364	"T"	"C"	30606	"HRAS"	"background"	5987

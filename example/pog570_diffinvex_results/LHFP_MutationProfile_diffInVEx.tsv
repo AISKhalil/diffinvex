@@ -1,0 +1,3 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr13"	39918223	39918223	"C"	"T"	28391	"LHFP"	"background"	5876
+"chr13"	39955082	39955082	"G"	"T"	37844	"LHFP"	"background"	5876

@@ -1,0 +1,6 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr14"	20779838	20779838	"G"	"A"	27502	"CCNB1IP1"	"target"	834
+"chr14"	20781171	20781171	"G"	"C"	28422	"CCNB1IP1"	"background"	8320
+"chr14"	20781276	20781276	"A"	"G"	25752	"CCNB1IP1"	"background"	8320
+"chr14"	20783370	20783370	"G"	"C"	37146	"CCNB1IP1"	"background"	8320
+"chr14"	20786163	20786163	"G"	"C"	34120	"CCNB1IP1"	"background"	8320

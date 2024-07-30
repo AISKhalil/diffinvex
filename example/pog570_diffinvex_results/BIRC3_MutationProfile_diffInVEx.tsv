@@ -1,0 +1,13 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr11"	102171842	102171842	"T"	"C"	29147	"BIRC3"	"background"	18096
+"chr11"	102174463	102174463	"C"	"G"	29146	"BIRC3"	"background"	18096
+"chr11"	102178406	102178406	"C"	"A"	15123	"BIRC3"	"background"	18096
+"chr11"	102181208	102181208	"C"	"T"	38759	"BIRC3"	"background"	18096
+"chr11"	102193219	102193219	"G"	"C"	32973	"BIRC3"	"background"	18096
+"chr11"	102193626	102193626	"A"	"T"	27078	"BIRC3"	"background"	18096
+"chr11"	102197658	102197658	"C"	"G"	25721	"BIRC3"	"background"	18096
+"chr11"	102199410	102199410	"A"	"C"	30265	"BIRC3"	"background"	18096
+"chr11"	102201220	102201220	"G"	"A"	29147	"BIRC3"	"background"	18096
+"chr11"	102202308	102202308	"C"	"A"	25721	"BIRC3"	"background"	18096
+"chr11"	102206645	102206645	"A"	"C"	37080	"BIRC3"	"background"	18096
+"chr11"	102208959	102208959	"G"	"C"	28131	"BIRC3"	"background"	18096

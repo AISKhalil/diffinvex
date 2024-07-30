@@ -1,0 +1,9 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr11"	111228519	111228519	"C"	"T"	25958	"POU2AF1"	"target"	771
+"chr11"	111222315	111222315	"G"	"C"	27078	"POU2AF1"	"background"	5751
+"chr11"	111225475	111225475	"G"	"A"	22256	"POU2AF1"	"background"	5751
+"chr11"	111226226	111226226	"C"	"A"	25593	"POU2AF1"	"background"	5751
+"chr11"	111232280	111232280	"G"	"A"	21933	"POU2AF1"	"background"	5751
+"chr11"	111232780	111232780	"C"	"G"	32573	"POU2AF1"	"background"	5751
+"chr11"	111240145	111240145	"C"	"A"	23674	"POU2AF1"	"background"	5751
+"chr11"	111244165	111244165	"C"	"T"	25664	"POU2AF1"	"background"	5751

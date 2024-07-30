@@ -1,0 +1,9 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr1"	2489187	2489187	"G"	"T"	32973	"TNFRSF14"	"target"	907
+"chr1"	2494624	2494624	"T"	"C"	25777	"TNFRSF14"	"target"	907
+"chr1"	2476080	2476080	"G"	"A"	38120	"TNFRSF14"	"background"	9048
+"chr1"	2486412	2486412	"C"	"T"	32973	"TNFRSF14"	"background"	9048
+"chr1"	2493998	2493998	"G"	"A"	25981	"TNFRSF14"	"background"	9048
+"chr1"	2498358	2498358	"C"	"G"	29146	"TNFRSF14"	"background"	9048
+"chr1"	2498488	2498488	"C"	"T"	29146	"TNFRSF14"	"background"	9048
+"chr1"	2502407	2502407	"G"	"A"	38850	"TNFRSF14"	"background"	9048

@@ -1,0 +1,7 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr14"	23441945	23441945	"A"	"G"	28665	"AJUBA"	"background"	7792
+"chr14"	23444842	23444842	"G"	"T"	23674	"AJUBA"	"background"	7792
+"chr14"	23447264	23447264	"C"	"A"	29147	"AJUBA"	"background"	7792
+"chr14"	23447918	23447918	"G"	"A"	32015	"AJUBA"	"background"	7792
+"chr14"	23449547	23449547	"C"	"G"	34120	"AJUBA"	"background"	7792
+"chr14"	23452889	23452889	"T"	"A"	25437	"AJUBA"	"background"	7792

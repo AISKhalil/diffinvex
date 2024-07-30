@@ -1,0 +1,7 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr1"	204497936	204497936	"G"	"T"	37013	"MDM4"	"background"	5037
+"chr1"	204498020	204498020	"G"	"A"	34120	"MDM4"	"background"	5037
+"chr1"	204514750	204514750	"G"	"C"	26124	"MDM4"	"background"	5037
+"chr1"	204514799	204514799	"G"	"C"	26124	"MDM4"	"background"	5037
+"chr1"	204515465	204515465	"G"	"C"	25980	"MDM4"	"background"	5037
+"chr1"	204515728	204515728	"G"	"A"	27339	"MDM4"	"background"	5037

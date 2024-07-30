@@ -1,0 +1,5 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr12"	92536679	92536679	"C"	"A"	25356	"BTG1"	"background"	3207
+"chr12"	92537696	92537696	"G"	"A"	31509	"BTG1"	"background"	3207
+"chr12"	92540762	92540762	"G"	"A"	23674	"BTG1"	"background"	3207
+"chr12"	92556138	92556138	"G"	"A"	37312	"BTG1"	"background"	3207

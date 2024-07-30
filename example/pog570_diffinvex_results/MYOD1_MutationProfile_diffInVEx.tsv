@@ -1,0 +1,4 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr11"	17717747	17717747	"C"	"T"	36748	"MYOD1"	"background"	2331
+"chr11"	17744227	17744227	"T"	"A"	34115	"MYOD1"	"background"	2331
+"chr11"	17744629	17744629	"G"	"A"	38501	"MYOD1"	"background"	2331

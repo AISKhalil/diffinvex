@@ -1,0 +1,3 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr1"	59249611	59249611	"C"	"G"	38569	"JUN"	"background"	2457
+"chr1"	59251458	59251458	"C"	"T"	13577	"JUN"	"background"	2457

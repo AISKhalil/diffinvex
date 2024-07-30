@@ -1,0 +1,17 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr17"	37618486	37618486	"G"	"T"	33129	"CDK12"	"target"	4501
+"chr17"	37673793	37673793	"C"	"T"	26051	"CDK12"	"target"	4501
+"chr17"	37676284	37676284	"G"	"A"	17584	"CDK12"	"target"	4501
+"chr17"	37682360	37682360	"C"	"G"	13577	"CDK12"	"target"	4501
+"chr17"	37648971	37648971	"T"	"G"	21774	"CDK12"	"background"	22962
+"chr17"	37658182	37658182	"C"	"T"	38501	"CDK12"	"background"	22962
+"chr17"	37659515	37659515	"G"	"A"	25962	"CDK12"	"background"	22962
+"chr17"	37667593	37667593	"G"	"A"	23674	"CDK12"	"background"	22962
+"chr17"	37668436	37668436	"G"	"C"	29147	"CDK12"	"background"	22962
+"chr17"	37672523	37672523	"C"	"G"	37013	"CDK12"	"background"	22962
+"chr17"	37673290	37673290	"C"	"T"	25990	"CDK12"	"background"	22962
+"chr17"	37675733	37675733	"T"	"C"	32354	"CDK12"	"background"	22962
+"chr17"	37680705	37680705	"C"	"G"	13577	"CDK12"	"background"	22962
+"chr17"	37681792	37681792	"C"	"G"	13577	"CDK12"	"background"	22962
+"chr17"	37683053	37683053	"G"	"A"	20115	"CDK12"	"background"	22962
+"chr17"	37685421	37685421	"C"	"A"	23674	"CDK12"	"background"	22962

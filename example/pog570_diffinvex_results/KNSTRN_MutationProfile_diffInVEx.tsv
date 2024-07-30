@@ -1,0 +1,7 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr15"	40675725	40675725	"C"	"T"	25981	"KNSTRN"	"background"	7741
+"chr15"	40676284	40676284	"C"	"T"	23674	"KNSTRN"	"background"	7741
+"chr15"	40677988	40677988	"C"	"G"	22256	"KNSTRN"	"background"	7741
+"chr15"	40679286	40679286	"T"	"A"	11307	"KNSTRN"	"background"	7741
+"chr15"	40681962	40681962	"G"	"C"	19661	"KNSTRN"	"background"	7741
+"chr15"	40682642	40682642	"G"	"A"	19661	"KNSTRN"	"background"	7741

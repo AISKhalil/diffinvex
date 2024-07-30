@@ -1,0 +1,16 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr12"	54367067	54367067	"G"	"A"	37080	"HOXC11"	"target"	1081
+"chr12"	54351995	54351995	"G"	"A"	25966	"HOXC11"	"background"	10812
+"chr12"	54354598	54354598	"C"	"T"	28494	"HOXC11"	"background"	10812
+"chr12"	54355186	54355186	"G"	"A"	21721	"HOXC11"	"background"	10812
+"chr12"	54355372	54355372	"C"	"T"	33480	"HOXC11"	"background"	10812
+"chr12"	54358075	54358075	"G"	"A"	29146	"HOXC11"	"background"	10812
+"chr12"	54364173	54364173	"G"	"T"	29147	"HOXC11"	"background"	10812
+"chr12"	54365667	54365667	"G"	"C"	14891	"HOXC11"	"background"	10812
+"chr12"	54366215	54366215	"G"	"T"	23676	"HOXC11"	"background"	10812
+"chr12"	54366244	54366244	"C"	"G"	25356	"HOXC11"	"background"	10812
+"chr12"	54366669	54366669	"C"	"T"	25356	"HOXC11"	"background"	10812
+"chr12"	54369514	54369514	"C"	"T"	32015	"HOXC11"	"background"	10812
+"chr12"	54369623	54369623	"C"	"T"	30822	"HOXC11"	"background"	10812
+"chr12"	54380011	54380011	"C"	"G"	27502	"HOXC11"	"background"	10812
+"chr12"	54387646	54387646	"G"	"A"	23454	"HOXC11"	"background"	10812

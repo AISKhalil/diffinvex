@@ -1,0 +1,10 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr12"	58142970	58142970	"G"	"C"	38536	"CDK4"	"target"	873
+"chr12"	58145430	58145430	"C"	"A"	18228	"CDK4"	"target"	873
+"chr12"	58139926	58139926	"T"	"G"	23675	"CDK4"	"background"	8738
+"chr12"	58143678	58143678	"G"	"A"	31911	"CDK4"	"background"	8738
+"chr12"	58145692	58145692	"C"	"G"	20034	"CDK4"	"background"	8738
+"chr12"	58146165	58146165	"G"	"A"	25721	"CDK4"	"background"	8738
+"chr12"	58150502	58150502	"C"	"G"	37916	"CDK4"	"background"	8738
+"chr12"	58151233	58151233	"G"	"C"	31185	"CDK4"	"background"	8738
+"chr12"	58165608	58165608	"G"	"A"	28494	"CDK4"	"background"	8738

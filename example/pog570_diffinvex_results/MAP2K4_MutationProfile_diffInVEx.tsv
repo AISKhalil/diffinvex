@@ -1,0 +1,13 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr17"	11984672	11984672	"G"	"C"	23674	"MAP2K4"	"target"	1175
+"chr17"	11998898	11998898	"C"	"T"	28225	"MAP2K4"	"target"	1175
+"chr17"	11998985	11998985	"C"	"T"	24838	"MAP2K4"	"target"	1175
+"chr17"	12011144	12011144	"C"	"T"	36621	"MAP2K4"	"target"	1175
+"chr17"	12011144	12011144	"C"	"T"	32015	"MAP2K4"	"target"	1175
+"chr17"	11998011	11998011	"C"	"G"	37620	"MAP2K4"	"background"	11766
+"chr17"	11998647	11998647	"A"	"T"	15227	"MAP2K4"	"background"	11766
+"chr17"	12011252	12011252	"C"	"T"	37916	"MAP2K4"	"background"	11766
+"chr17"	12017298	12017298	"C"	"T"	29146	"MAP2K4"	"background"	11766
+"chr17"	12032784	12032784	"G"	"A"	37312	"MAP2K4"	"background"	11766
+"chr17"	12042306	12042306	"A"	"G"	23676	"MAP2K4"	"background"	11766
+"chr17"	12043020	12043020	"A"	"G"	30822	"MAP2K4"	"background"	11766

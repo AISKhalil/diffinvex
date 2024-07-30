@@ -1,0 +1,6 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr10"	114207599	114207599	"C"	"T"	36701	"VTI1A"	"background"	7202
+"chr10"	114219148	114219148	"C"	"T"	23674	"VTI1A"	"background"	7202
+"chr10"	114219985	114219985	"C"	"T"	29146	"VTI1A"	"background"	7202
+"chr10"	114286360	114286360	"C"	"T"	32015	"VTI1A"	"background"	7202
+"chr10"	114297468	114297468	"G"	"C"	37620	"VTI1A"	"background"	7202

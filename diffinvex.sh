@@ -35,4 +35,4 @@ bash diffinvex_coefficients_gene_list.sh $mutFile $annFile $varFile $geneFile $o
 bash diffinvex_drivers_gene_list.sh $diffinvex_directory $output_directory $regression_var $regression_type > $logFile2
 # 
 #-- deleting DiffInvex temporary files --#
-find $output_directory -maxdepth 1 -type f -name "*.tsv" -delete
+# find $output_directory -maxdepth 1 -type f -name "*.tsv" -delete

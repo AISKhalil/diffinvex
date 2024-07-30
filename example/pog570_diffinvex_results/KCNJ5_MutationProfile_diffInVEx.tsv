@@ -1,0 +1,15 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr11"	128781287	128781287	"C"	"T"	25439	"KCNJ5"	"target"	1250
+"chr11"	128781555	128781555	"T"	"C"	23674	"KCNJ5"	"target"	1250
+"chr11"	128781841	128781841	"C"	"T"	24550	"KCNJ5"	"target"	1250
+"chr11"	128771178	128771178	"C"	"A"	19661	"KCNJ5"	"background"	12501
+"chr11"	128771779	128771779	"C"	"T"	30504	"KCNJ5"	"background"	12501
+"chr11"	128777734	128777734	"C"	"T"	21720	"KCNJ5"	"background"	12501
+"chr11"	128779679	128779679	"C"	"T"	18228	"KCNJ5"	"background"	12501
+"chr11"	128787741	128787741	"G"	"C"	32015	"KCNJ5"	"background"	12501
+"chr11"	128789106	128789106	"A"	"T"	33764	"KCNJ5"	"background"	12501
+"chr11"	128789156	128789156	"C"	"A"	35289	"KCNJ5"	"background"	12501
+"chr11"	128791499	128791499	"C"	"T"	37720	"KCNJ5"	"background"	12501
+"chr11"	128792557	128792557	"G"	"T"	30822	"KCNJ5"	"background"	12501
+"chr11"	128793093	128793093	"G"	"A"	30811	"KCNJ5"	"background"	12501
+"chr11"	128796900	128796900	"G"	"C"	32015	"KCNJ5"	"background"	12501

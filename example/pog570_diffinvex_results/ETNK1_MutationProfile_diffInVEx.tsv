@@ -1,0 +1,5 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr12"	22778157	22778157	"C"	"G"	25721	"ETNK1"	"target"	1356
+"chr12"	22778961	22778961	"C"	"T"	29146	"ETNK1"	"background"	11187
+"chr12"	22825031	22825031	"G"	"C"	34161	"ETNK1"	"background"	11187
+"chr12"	22837122	22837122	"C"	"T"	29146	"ETNK1"	"background"	11187

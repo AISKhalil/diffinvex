@@ -1,0 +1,6 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr10"	90767535	90767535	"C"	"T"	31042	"FAS"	"target"	1064
+"chr10"	90771753	90771753	"C"	"T"	15844	"FAS"	"target"	1064
+"chr10"	90741184	90741184	"C"	"T"	21720	"FAS"	"background"	10629
+"chr10"	90751263	90751263	"C"	"A"	27388	"FAS"	"background"	10629
+"chr10"	90766982	90766982	"C"	"G"	15844	"FAS"	"background"	10629

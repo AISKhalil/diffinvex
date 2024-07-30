@@ -1,0 +1,8 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr15"	57524623	57524623	"C"	"T"	30822	"TCF12"	"target"	1649
+"chr15"	57565322	57565322	"G"	"A"	28428	"TCF12"	"target"	1649
+"chr15"	57512114	57512114	"C"	"T"	34161	"TCF12"	"background"	16494
+"chr15"	57525901	57525901	"G"	"A"	36748	"TCF12"	"background"	16494
+"chr15"	57537732	57537732	"G"	"T"	24550	"TCF12"	"background"	16494
+"chr15"	57552834	57552834	"G"	"A"	25437	"TCF12"	"background"	16494
+"chr15"	57557151	57557151	"C"	"A"	37719	"TCF12"	"background"	16494

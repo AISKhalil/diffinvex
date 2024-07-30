@@ -1,0 +1,5 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr11"	118842342	118842342	"C"	"T"	11004	"FOXR1"	"background"	9050
+"chr11"	118842563	118842563	"G"	"A"	30080	"FOXR1"	"background"	9050
+"chr11"	118847459	118847459	"C"	"T"	25752	"FOXR1"	"background"	9050
+"chr11"	118850138	118850138	"C"	"G"	34120	"FOXR1"	"background"	9050

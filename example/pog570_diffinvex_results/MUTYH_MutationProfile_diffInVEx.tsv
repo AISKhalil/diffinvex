@@ -1,0 +1,14 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr1"	45795028	45795028	"G"	"A"	15227	"MUTYH"	"target"	1746
+"chr1"	45796901	45796901	"T"	"C"	28131	"MUTYH"	"target"	1746
+"chr1"	45797887	45797887	"G"	"A"	14891	"MUTYH"	"target"	1746
+"chr1"	45783688	45783688	"G"	"T"	38725	"MUTYH"	"background"	17500
+"chr1"	45783689	45783689	"C"	"T"	38725	"MUTYH"	"background"	17500
+"chr1"	45785289	45785289	"G"	"T"	29147	"MUTYH"	"background"	17500
+"chr1"	45792758	45792758	"G"	"A"	37620	"MUTYH"	"background"	17500
+"chr1"	45797550	45797550	"C"	"T"	28391	"MUTYH"	"background"	17500
+"chr1"	45799429	45799429	"C"	"T"	38726	"MUTYH"	"background"	17500
+"chr1"	45800873	45800873	"T"	"A"	25658	"MUTYH"	"background"	17500
+"chr1"	45801598	45801598	"C"	"T"	32971	"MUTYH"	"background"	17500
+"chr1"	45805660	45805660	"C"	"G"	17584	"MUTYH"	"background"	17500
+"chr1"	45826725	45826725	"G"	"C"	20115	"MUTYH"	"background"	17500

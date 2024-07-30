@@ -1,0 +1,12 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr11"	3026119	3026119	"C"	"T"	25590	"CARS"	"background"	23272
+"chr11"	3030985	3030985	"C"	"G"	29146	"CARS"	"background"	23272
+"chr11"	3033154	3033154	"C"	"G"	29146	"CARS"	"background"	23272
+"chr11"	3040925	3040925	"G"	"A"	37620	"CARS"	"background"	23272
+"chr11"	3044995	3044995	"G"	"C"	25721	"CARS"	"background"	23272
+"chr11"	3047830	3047830	"G"	"A"	23674	"CARS"	"background"	23272
+"chr11"	3060088	3060088	"A"	"T"	37311	"CARS"	"background"	23272
+"chr11"	3060396	3060396	"T"	"A"	38850	"CARS"	"background"	23272
+"chr11"	3064866	3064866	"C"	"T"	38060	"CARS"	"background"	23272
+"chr11"	3065092	3065092	"G"	"A"	23674	"CARS"	"background"	23272
+"chr11"	3077043	3077043	"A"	"G"	38726	"CARS"	"background"	23272

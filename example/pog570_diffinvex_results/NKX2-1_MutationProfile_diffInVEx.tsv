@@ -1,0 +1,4 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr14"	36984995	36984995	"C"	"A"	27647	"NKX2-1"	"background"	3720
+"chr14"	36985221	36985221	"G"	"T"	37013	"NKX2-1"	"background"	3720
+"chr14"	36985923	36985923	"G"	"A"	28278	"NKX2-1"	"background"	3720

@@ -1,0 +1,16 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr17"	5234711	5234711	"C"	"G"	30321	"RABEP1"	"background"	25950
+"chr17"	5237517	5237517	"T"	"A"	30822	"RABEP1"	"background"	25950
+"chr17"	5238093	5238093	"G"	"T"	28278	"RABEP1"	"background"	25950
+"chr17"	5240985	5240985	"C"	"T"	24423	"RABEP1"	"background"	25950
+"chr17"	5250252	5250252	"C"	"T"	15844	"RABEP1"	"background"	25950
+"chr17"	5256634	5256634	"C"	"G"	28278	"RABEP1"	"background"	25950
+"chr17"	5263228	5263228	"C"	"T"	32557	"RABEP1"	"background"	25950
+"chr17"	5263877	5263877	"G"	"A"	23674	"RABEP1"	"background"	25950
+"chr17"	5277210	5277210	"G"	"C"	29146	"RABEP1"	"background"	25950
+"chr17"	5279807	5279807	"C"	"G"	32973	"RABEP1"	"background"	25950
+"chr17"	5280680	5280680	"G"	"A"	37026	"RABEP1"	"background"	25950
+"chr17"	5280988	5280988	"T"	"A"	25902	"RABEP1"	"background"	25950
+"chr17"	5281375	5281375	"T"	"C"	24550	"RABEP1"	"background"	25950
+"chr17"	5281402	5281402	"A"	"G"	33480	"RABEP1"	"background"	25950
+"chr17"	5284147	5284147	"T"	"A"	38569	"RABEP1"	"background"	25950

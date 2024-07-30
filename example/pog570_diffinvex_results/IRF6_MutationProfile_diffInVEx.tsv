@@ -1,0 +1,15 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr1"	209964184	209964184	"T"	"G"	37919	"IRF6"	"target"	1464
+"chr1"	209964209	209964209	"G"	"A"	37620	"IRF6"	"target"	1464
+"chr1"	209957852	209957852	"G"	"A"	32274	"IRF6"	"background"	14639
+"chr1"	209958005	209958005	"C"	"A"	25582	"IRF6"	"background"	14639
+"chr1"	209959844	209959844	"C"	"T"	28392	"IRF6"	"background"	14639
+"chr1"	209960445	209960445	"C"	"A"	14891	"IRF6"	"background"	14639
+"chr1"	209961176	209961176	"C"	"T"	30159	"IRF6"	"background"	14639
+"chr1"	209963223	209963223	"C"	"G"	31923	"IRF6"	"background"	14639
+"chr1"	209968908	209968908	"G"	"A"	35258	"IRF6"	"background"	14639
+"chr1"	209971941	209971941	"G"	"A"	24045	"IRF6"	"background"	14639
+"chr1"	209972050	209972050	"T"	"C"	18625	"IRF6"	"background"	14639
+"chr1"	209972053	209972053	"A"	"G"	38601	"IRF6"	"background"	14639
+"chr1"	209974827	209974827	"C"	"T"	38726	"IRF6"	"background"	14639
+"chr1"	209986415	209986415	"C"	"T"	29146	"IRF6"	"background"	14639

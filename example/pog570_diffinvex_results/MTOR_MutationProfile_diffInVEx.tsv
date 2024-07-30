@@ -1,0 +1,17 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr1"	11187847	11187847	"A"	"G"	28494	"MTOR"	"target"	2455
+"chr1"	11188164	11188164	"G"	"T"	23673	"MTOR"	"target"	2455
+"chr1"	11169682	11169682	"C"	"G"	27647	"MTOR"	"background"	24585
+"chr1"	11170934	11170934	"C"	"G"	37145	"MTOR"	"background"	24585
+"chr1"	11174833	11174833	"C"	"A"	37145	"MTOR"	"background"	24585
+"chr1"	11175708	11175708	"G"	"T"	22499	"MTOR"	"background"	24585
+"chr1"	11177252	11177252	"C"	"G"	32973	"MTOR"	"background"	24585
+"chr1"	11178610	11178610	"C"	"T"	34115	"MTOR"	"background"	24585
+"chr1"	11178885	11178885	"G"	"A"	30609	"MTOR"	"background"	24585
+"chr1"	11179797	11179797	"T"	"C"	30822	"MTOR"	"background"	24585
+"chr1"	11184094	11184094	"C"	"A"	27647	"MTOR"	"background"	24585
+"chr1"	11186391	11186391	"C"	"T"	13577	"MTOR"	"background"	24585
+"chr1"	11187463	11187463	"T"	"G"	38574	"MTOR"	"background"	24585
+"chr1"	11189140	11189140	"C"	"T"	37620	"MTOR"	"background"	24585
+"chr1"	11191048	11191048	"G"	"A"	37078	"MTOR"	"background"	24585
+"chr1"	11201615	11201615	"G"	"A"	33532	"MTOR"	"background"	24585

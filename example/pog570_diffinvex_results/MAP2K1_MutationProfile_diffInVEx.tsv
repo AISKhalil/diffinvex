@@ -1,0 +1,6 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr15"	66772289	66772289	"C"	"T"	38759	"MAP2K1"	"background"	7035
+"chr15"	66773246	66773246	"C"	"A"	25441	"MAP2K1"	"background"	7035
+"chr15"	66773595	66773595	"A"	"G"	37719	"MAP2K1"	"background"	7035
+"chr15"	66776468	66776468	"T"	"C"	23674	"MAP2K1"	"background"	7035
+"chr15"	66780726	66780726	"C"	"T"	25777	"MAP2K1"	"background"	7035

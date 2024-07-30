@@ -1,0 +1,8 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr1"	15820780	15820780	"C"	"G"	29147	"CASP9"	"background"	13222
+"chr1"	15823270	15823270	"T"	"A"	13577	"CASP9"	"background"	13222
+"chr1"	15829804	15829804	"T"	"G"	19843	"CASP9"	"background"	13222
+"chr1"	15833005	15833005	"G"	"T"	32015	"CASP9"	"background"	13222
+"chr1"	15833591	15833591	"G"	"A"	36718	"CASP9"	"background"	13222
+"chr1"	15836368	15836368	"G"	"C"	29146	"CASP9"	"background"	13222
+"chr1"	15841621	15841621	"C"	"T"	25980	"CASP9"	"background"	13222

@@ -1,0 +1,6 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr12"	51175003	51175003	"C"	"A"	32274	"ATF1"	"background"	8585
+"chr12"	51175378	51175378	"C"	"T"	11004	"ATF1"	"background"	8585
+"chr12"	51203742	51203742	"G"	"A"	31911	"ATF1"	"background"	8585
+"chr12"	51204253	51204253	"C"	"T"	34118	"ATF1"	"background"	8585
+"chr12"	51206830	51206830	"G"	"C"	38725	"ATF1"	"background"	8585

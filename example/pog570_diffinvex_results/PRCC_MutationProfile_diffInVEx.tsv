@@ -1,0 +1,8 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr1"	156738078	156738078	"T"	"A"	36748	"PRCC"	"background"	13842
+"chr1"	156750812	156750812	"G"	"A"	23674	"PRCC"	"background"	13842
+"chr1"	156751199	156751199	"C"	"G"	27034	"PRCC"	"background"	13842
+"chr1"	156756020	156756020	"C"	"T"	28428	"PRCC"	"background"	13842
+"chr1"	156763020	156763020	"T"	"C"	25719	"PRCC"	"background"	13842
+"chr1"	156764195	156764195	"A"	"C"	25962	"PRCC"	"background"	13842
+"chr1"	156769397	156769397	"C"	"G"	20034	"PRCC"	"background"	13842

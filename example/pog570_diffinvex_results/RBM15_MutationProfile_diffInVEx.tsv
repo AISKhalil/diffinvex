@@ -1,0 +1,4 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr1"	110870041	110870041	"G"	"A"	23453	"RBM15"	"background"	8866
+"chr1"	110879502	110879502	"T"	"A"	30425	"RBM15"	"background"	8866
+"chr1"	110880430	110880430	"C"	"T"	37620	"RBM15"	"background"	8866

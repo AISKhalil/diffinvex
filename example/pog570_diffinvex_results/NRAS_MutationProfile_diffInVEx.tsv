@@ -1,0 +1,7 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr1"	115256530	115256530	"G"	"T"	25590	"NRAS"	"target"	590
+"chr1"	115247961	115247961	"C"	"A"	37716	"NRAS"	"background"	5880
+"chr1"	115253885	115253885	"G"	"A"	23674	"NRAS"	"background"	5880
+"chr1"	115258390	115258390	"G"	"T"	37026	"NRAS"	"background"	5880
+"chr1"	115259704	115259704	"C"	"T"	28428	"NRAS"	"background"	5880
+"chr1"	115266428	115266428	"C"	"A"	27647	"NRAS"	"background"	5880

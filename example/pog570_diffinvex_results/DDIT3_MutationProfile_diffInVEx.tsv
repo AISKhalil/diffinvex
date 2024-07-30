@@ -1,0 +1,6 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr12"	57910720	57910720	"C"	"T"	30822	"DDIT3"	"target"	500
+"chr12"	57910888	57910888	"C"	"T"	29146	"DDIT3"	"target"	500
+"chr12"	57907271	57907271	"C"	"T"	37719	"DDIT3"	"background"	4987
+"chr12"	57909185	57909185	"G"	"C"	21720	"DDIT3"	"background"	4987
+"chr12"	57912396	57912396	"C"	"T"	29146	"DDIT3"	"background"	4987

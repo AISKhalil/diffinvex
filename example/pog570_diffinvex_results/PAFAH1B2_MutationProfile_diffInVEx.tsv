@@ -1,0 +1,6 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr11"	117026008	117026008	"G"	"T"	37311	"PAFAH1B2"	"background"	7133
+"chr11"	117031105	117031105	"C"	"A"	25027	"PAFAH1B2"	"background"	7133
+"chr11"	117034773	117034773	"A"	"C"	22595	"PAFAH1B2"	"background"	7133
+"chr11"	117039020	117039020	"T"	"C"	30822	"PAFAH1B2"	"background"	7133
+"chr11"	117041603	117041603	"C"	"G"	38357	"PAFAH1B2"	"background"	7133

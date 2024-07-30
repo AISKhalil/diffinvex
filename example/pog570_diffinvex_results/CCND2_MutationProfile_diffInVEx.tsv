@@ -1,0 +1,4 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr12"	4392528	4392528	"G"	"A"	25752	"CCND2"	"background"	3125
+"chr12"	4396047	4396047	"T"	"C"	37097	"CCND2"	"background"	3125
+"chr12"	4408046	4408046	"C"	"T"	22595	"CCND2"	"background"	3125

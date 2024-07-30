@@ -1,0 +1,12 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr1"	205632328	205632328	"C"	"T"	37716	"SLC45A3"	"target"	1689
+"chr1"	205620411	205620411	"G"	"A"	27034	"SLC45A3"	"background"	15148
+"chr1"	205621267	205621267	"G"	"T"	15123	"SLC45A3"	"background"	15148
+"chr1"	205621901	205621901	"G"	"A"	19843	"SLC45A3"	"background"	15148
+"chr1"	205628065	205628065	"G"	"C"	37919	"SLC45A3"	"background"	15148
+"chr1"	205629353	205629353	"C"	"A"	30822	"SLC45A3"	"background"	15148
+"chr1"	205631933	205631933	"C"	"T"	30822	"SLC45A3"	"background"	15148
+"chr1"	205635120	205635120	"G"	"A"	23674	"SLC45A3"	"background"	15148
+"chr1"	205637357	205637357	"C"	"A"	34161	"SLC45A3"	"background"	15148
+"chr1"	205644497	205644497	"G"	"A"	38537	"SLC45A3"	"background"	15148
+"chr1"	205645484	205645484	"T"	"G"	37967	"SLC45A3"	"background"	15148

@@ -1,0 +1,14 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr1"	156100532	156100532	"G"	"A"	28391	"LMNA"	"target"	2019
+"chr1"	156085419	156085419	"C"	"T"	38063	"LMNA"	"background"	9209
+"chr1"	156085463	156085463	"G"	"A"	15844	"LMNA"	"background"	9209
+"chr1"	156100236	156100236	"G"	"A"	37146	"LMNA"	"background"	9209
+"chr1"	156100829	156100829	"G"	"T"	29146	"LMNA"	"background"	9209
+"chr1"	156100882	156100882	"G"	"A"	29146	"LMNA"	"background"	9209
+"chr1"	156101759	156101759	"G"	"C"	29146	"LMNA"	"background"	9209
+"chr1"	156103287	156103287	"G"	"A"	37026	"LMNA"	"background"	9209
+"chr1"	156104115	156104115	"C"	"T"	24077	"LMNA"	"background"	9209
+"chr1"	156106258	156106258	"C"	"G"	31370	"LMNA"	"background"	9209
+"chr1"	156106309	156106309	"G"	"C"	29146	"LMNA"	"background"	9209
+"chr1"	156107925	156107925	"C"	"G"	22592	"LMNA"	"background"	9209
+"chr1"	156114159	156114159	"G"	"A"	24550	"LMNA"	"background"	9209

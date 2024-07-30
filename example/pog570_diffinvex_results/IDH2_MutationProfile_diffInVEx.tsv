@@ -1,0 +1,10 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr15"	90630433	90630433	"A"	"G"	30822	"IDH2"	"target"	1247
+"chr15"	90619284	90619284	"C"	"G"	32034	"IDH2"	"background"	12484
+"chr15"	90620823	90620823	"G"	"C"	25752	"IDH2"	"background"	12484
+"chr15"	90623975	90623975	"C"	"T"	23674	"IDH2"	"background"	12484
+"chr15"	90626952	90626952	"G"	"T"	25901	"IDH2"	"background"	12484
+"chr15"	90627335	90627335	"G"	"A"	25721	"IDH2"	"background"	12484
+"chr15"	90628868	90628868	"G"	"C"	37013	"IDH2"	"background"	12484
+"chr15"	90630531	90630531	"G"	"A"	29146	"IDH2"	"background"	12484
+"chr15"	90636487	90636487	"C"	"G"	30309	"IDH2"	"background"	12484

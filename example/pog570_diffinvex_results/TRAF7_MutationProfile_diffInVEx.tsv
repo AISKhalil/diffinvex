@@ -1,0 +1,15 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr16"	2223528	2223528	"G"	"A"	30080	"TRAF7"	"target"	2116
+"chr16"	2223541	2223541	"G"	"A"	23674	"TRAF7"	"target"	2116
+"chr16"	2190553	2190553	"C"	"T"	30252	"TRAF7"	"background"	21170
+"chr16"	2190574	2190574	"G"	"A"	30822	"TRAF7"	"background"	21170
+"chr16"	2212338	2212338	"G"	"A"	32033	"TRAF7"	"background"	21170
+"chr16"	2214374	2214374	"T"	"G"	37919	"TRAF7"	"background"	21170
+"chr16"	2214504	2214504	"A"	"G"	18625	"TRAF7"	"background"	21170
+"chr16"	2217711	2217711	"C"	"T"	32015	"TRAF7"	"background"	21170
+"chr16"	2221067	2221067	"C"	"T"	38507	"TRAF7"	"background"	21170
+"chr16"	2233438	2233438	"C"	"T"	30822	"TRAF7"	"background"	21170
+"chr16"	2236395	2236395	"C"	"A"	37078	"TRAF7"	"background"	21170
+"chr16"	2237285	2237285	"T"	"G"	37716	"TRAF7"	"background"	21170
+"chr16"	2237686	2237686	"G"	"A"	34115	"TRAF7"	"background"	21170
+"chr16"	2250939	2250939	"C"	"T"	30425	"TRAF7"	"background"	21170

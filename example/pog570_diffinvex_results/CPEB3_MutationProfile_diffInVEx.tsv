@@ -1,0 +1,9 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr10"	93812050	93812050	"G"	"T"	37311	"CPEB3"	"target"	2033
+"chr10"	93902813	93902813	"C"	"T"	37026	"CPEB3"	"target"	2033
+"chr10"	93902868	93902868	"G"	"A"	25582	"CPEB3"	"target"	2033
+"chr10"	93952355	93952355	"C"	"T"	22595	"CPEB3"	"target"	2033
+"chr10"	93999440	93999440	"G"	"A"	20115	"CPEB3"	"target"	2033
+"chr10"	93999455	93999455	"C"	"T"	30635	"CPEB3"	"target"	2033
+"chr10"	93892010	93892010	"C"	"T"	29999	"CPEB3"	"background"	5025
+"chr10"	93953924	93953924	"C"	"T"	28497	"CPEB3"	"background"	5025

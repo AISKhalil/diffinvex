@@ -1,0 +1,6 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr10"	102890048	102890048	"G"	"T"	32972	"TLX1"	"background"	5962
+"chr10"	102895145	102895145	"C"	"T"	26376	"TLX1"	"background"	5962
+"chr10"	102899486	102899486	"G"	"A"	21932	"TLX1"	"background"	5962
+"chr10"	102906352	102906352	"G"	"C"	14891	"TLX1"	"background"	5962
+"chr10"	102906608	102906608	"T"	"C"	28324	"TLX1"	"background"	5962

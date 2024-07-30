@@ -1,0 +1,15 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr1"	154148029	154148029	"G"	"C"	32015	"TPM3"	"background"	9134
+"chr1"	154148134	154148134	"G"	"C"	32015	"TPM3"	"background"	9134
+"chr1"	154148307	154148307	"G"	"C"	32015	"TPM3"	"background"	9134
+"chr1"	154148490	154148490	"G"	"A"	23674	"TPM3"	"background"	9134
+"chr1"	154151707	154151707	"T"	"G"	30492	"TPM3"	"background"	9134
+"chr1"	154152176	154152176	"C"	"T"	37620	"TPM3"	"background"	9134
+"chr1"	154157646	154157646	"G"	"C"	29146	"TPM3"	"background"	9134
+"chr1"	154162480	154162480	"C"	"T"	11004	"TPM3"	"background"	9134
+"chr1"	154162946	154162946	"A"	"G"	37155	"TPM3"	"background"	9134
+"chr1"	154163355	154163355	"G"	"A"	30807	"TPM3"	"background"	9134
+"chr1"	154163586	154163586	"T"	"A"	13269	"TPM3"	"background"	9134
+"chr1"	154163880	154163880	"A"	"T"	33764	"TPM3"	"background"	9134
+"chr1"	154164240	154164240	"C"	"A"	29147	"TPM3"	"background"	9134
+"chr1"	154165403	154165403	"C"	"T"	29146	"TPM3"	"background"	9134

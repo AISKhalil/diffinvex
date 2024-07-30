@@ -1,0 +1,9 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr12"	6778290	6778290	"C"	"T"	37619	"ZNF384"	"target"	1579
+"chr12"	6768598	6768598	"G"	"T"	13268	"ZNF384"	"background"	15782
+"chr12"	6773253	6773253	"G"	"A"	30822	"ZNF384"	"background"	15782
+"chr12"	6776664	6776664	"C"	"T"	37311	"ZNF384"	"background"	15782
+"chr12"	6778734	6778734	"C"	"T"	33987	"ZNF384"	"background"	15782
+"chr12"	6779647	6779647	"C"	"G"	29146	"ZNF384"	"background"	15782
+"chr12"	6793721	6793721	"T"	"A"	25960	"ZNF384"	"background"	15782
+"chr12"	6803245	6803245	"G"	"T"	29146	"ZNF384"	"background"	15782

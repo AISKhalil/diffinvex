@@ -1,0 +1,8 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr1"	36742247	36742247	"C"	"T"	25582	"THRAP3"	"background"	22563
+"chr1"	36756117	36756117	"C"	"A"	30635	"THRAP3"	"background"	22563
+"chr1"	36756441	36756441	"G"	"T"	20801	"THRAP3"	"background"	22563
+"chr1"	36765177	36765177	"C"	"G"	25777	"THRAP3"	"background"	22563
+"chr1"	36765465	36765465	"G"	"C"	25721	"THRAP3"	"background"	22563
+"chr1"	36766184	36766184	"T"	"G"	36700	"THRAP3"	"background"	22563
+"chr1"	36771864	36771864	"G"	"A"	23674	"THRAP3"	"background"	22563

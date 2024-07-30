@@ -1,0 +1,5 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr11"	85959696	85959696	"G"	"A"	22595	"EED"	"background"	12973
+"chr11"	85964486	85964486	"G"	"T"	29147	"EED"	"background"	12973
+"chr11"	85967347	85967347	"A"	"G"	34120	"EED"	"background"	12973
+"chr11"	85979979	85979979	"G"	"T"	34161	"EED"	"background"	12973

@@ -1,0 +1,12 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr12"	27829363	27829363	"C"	"T"	27078	"PPFIBP1"	"target"	3060
+"chr12"	27800841	27800841	"A"	"G"	25966	"PPFIBP1"	"background"	27758
+"chr12"	27807494	27807494	"G"	"A"	27388	"PPFIBP1"	"background"	27758
+"chr12"	27808361	27808361	"G"	"A"	28427	"PPFIBP1"	"background"	27758
+"chr12"	27810280	27810280	"C"	"G"	32972	"PPFIBP1"	"background"	27758
+"chr12"	27810448	27810448	"G"	"A"	23674	"PPFIBP1"	"background"	27758
+"chr12"	27819932	27819932	"C"	"T"	29146	"PPFIBP1"	"background"	27758
+"chr12"	27821901	27821901	"C"	"A"	32973	"PPFIBP1"	"background"	27758
+"chr12"	27827841	27827841	"G"	"C"	18625	"PPFIBP1"	"background"	27758
+"chr12"	27831509	27831509	"G"	"A"	23674	"PPFIBP1"	"background"	27758
+"chr12"	27836916	27836916	"T"	"G"	38850	"PPFIBP1"	"background"	27758

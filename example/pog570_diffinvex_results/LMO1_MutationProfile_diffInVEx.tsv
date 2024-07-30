@@ -1,0 +1,8 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr11"	8252052	8252052	"C"	"A"	37719	"LMO1"	"target"	498
+"chr11"	8246374	8246374	"G"	"A"	21721	"LMO1"	"background"	5020
+"chr11"	8247582	8247582	"G"	"C"	22256	"LMO1"	"background"	5020
+"chr11"	8253479	8253479	"C"	"G"	37249	"LMO1"	"background"	5020
+"chr11"	8255692	8255692	"G"	"A"	32015	"LMO1"	"background"	5020
+"chr11"	8284543	8284543	"G"	"A"	28496	"LMO1"	"background"	5020
+"chr11"	8284987	8284987	"G"	"A"	24077	"LMO1"	"background"	5020

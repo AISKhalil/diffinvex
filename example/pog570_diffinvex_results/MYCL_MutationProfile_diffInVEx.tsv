@@ -1,0 +1,6 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr1"	40361588	40361588	"C"	"A"	27647	"MYCL"	"background"	5800
+"chr1"	40368129	40368129	"T"	"C"	30519	"MYCL"	"background"	5800
+"chr1"	40368185	40368185	"G"	"A"	38507	"MYCL"	"background"	5800
+"chr1"	40368186	40368186	"A"	"G"	38507	"MYCL"	"background"	5800
+"chr1"	40387814	40387814	"G"	"A"	37716	"MYCL"	"background"	5800

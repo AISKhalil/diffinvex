@@ -1,0 +1,6 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr12"	66219362	66219362	"G"	"C"	19843	"HMGA2"	"background"	2564
+"chr12"	66221702	66221702	"A"	"T"	32971	"HMGA2"	"background"	2564
+"chr12"	66232563	66232563	"C"	"G"	25356	"HMGA2"	"background"	2564
+"chr12"	66344995	66344995	"C"	"A"	15123	"HMGA2"	"background"	2564
+"chr12"	66346008	66346008	"T"	"C"	27090	"HMGA2"	"background"	2564

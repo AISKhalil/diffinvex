@@ -1,0 +1,5 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr1"	51439813	51439813	"G"	"A"	25962	"CDKN2C"	"target"	507
+"chr1"	51433382	51433382	"G"	"A"	37027	"CDKN2C"	"background"	5073
+"chr1"	51437093	51437093	"G"	"C"	23737	"CDKN2C"	"background"	5073
+"chr1"	51438898	51438898	"C"	"T"	23674	"CDKN2C"	"background"	5073

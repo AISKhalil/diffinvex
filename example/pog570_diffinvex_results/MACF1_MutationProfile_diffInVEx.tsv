@@ -1,0 +1,16 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr1"	39926426	39926426	"G"	"A"	29146	"MACF1"	"target"	1718
+"chr1"	39945561	39945561	"A"	"G"	38507	"MACF1"	"target"	1718
+"chr1"	39951244	39951244	"G"	"T"	29147	"MACF1"	"target"	1718
+"chr1"	39919911	39919911	"G"	"T"	27647	"MACF1"	"background"	17200
+"chr1"	39923979	39923979	"T"	"C"	25777	"MACF1"	"background"	17200
+"chr1"	39929745	39929745	"G"	"A"	37146	"MACF1"	"background"	17200
+"chr1"	39932207	39932207	"G"	"T"	25816	"MACF1"	"background"	17200
+"chr1"	39933125	39933125	"A"	"G"	27765	"MACF1"	"background"	17200
+"chr1"	39935093	39935093	"C"	"A"	37013	"MACF1"	"background"	17200
+"chr1"	39950462	39950462	"T"	"C"	23674	"MACF1"	"background"	17200
+"chr1"	39956429	39956429	"G"	"A"	37312	"MACF1"	"background"	17200
+"chr1"	39956663	39956663	"G"	"C"	25721	"MACF1"	"background"	17200
+"chr1"	39957357	39957357	"G"	"A"	25721	"MACF1"	"background"	17200
+"chr1"	39957501	39957501	"C"	"T"	32973	"MACF1"	"background"	17200
+"chr1"	39958075	39958075	"G"	"A"	22595	"MACF1"	"background"	17200

@@ -1,0 +1,15 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr15"	67457246	67457246	"C"	"T"	31911	"SMAD3"	"target"	1221
+"chr15"	67457352	67457352	"G"	"T"	14891	"SMAD3"	"target"	1221
+"chr15"	67479811	67479811	"G"	"A"	25424	"SMAD3"	"target"	1221
+"chr15"	67359259	67359259	"A"	"G"	37026	"SMAD3"	"background"	12199
+"chr15"	67449828	67449828	"C"	"T"	13268	"SMAD3"	"background"	12199
+"chr15"	67450732	67450732	"C"	"T"	28278	"SMAD3"	"background"	12199
+"chr15"	67452738	67452738	"C"	"T"	38887	"SMAD3"	"background"	12199
+"chr15"	67463628	67463628	"G"	"A"	18625	"SMAD3"	"background"	12199
+"chr15"	67463755	67463755	"G"	"A"	18228	"SMAD3"	"background"	12199
+"chr15"	67463791	67463791	"A"	"T"	29147	"SMAD3"	"background"	12199
+"chr15"	67464199	67464199	"C"	"T"	29999	"SMAD3"	"background"	12199
+"chr15"	67476727	67476727	"G"	"T"	31370	"SMAD3"	"background"	12199
+"chr15"	67478105	67478105	"G"	"A"	25901	"SMAD3"	"background"	12199
+"chr15"	67480112	67480112	"G"	"A"	37916	"SMAD3"	"background"	12199

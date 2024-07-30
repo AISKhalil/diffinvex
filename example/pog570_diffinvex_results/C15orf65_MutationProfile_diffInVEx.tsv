@@ -1,0 +1,5 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr15"	55710495	55710495	"T"	"C"	23674	"C15orf65"	"target"	376
+"chr15"	55701699	55701699	"A"	"G"	37311	"C15orf65"	"background"	3762
+"chr15"	55701816	55701816	"T"	"C"	32034	"C15orf65"	"background"	3762
+"chr15"	55708765	55708765	"G"	"A"	25777	"C15orf65"	"background"	3762

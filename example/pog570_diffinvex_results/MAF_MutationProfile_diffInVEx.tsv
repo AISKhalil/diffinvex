@@ -1,0 +1,4 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr16"	79632921	79632921	"C"	"A"	32015	"MAF"	"target"	989
+"chr16"	79633223	79633223	"G"	"T"	34118	"MAF"	"target"	989
+"chr16"	79623571	79623571	"G"	"A"	30159	"MAF"	"background"	1574

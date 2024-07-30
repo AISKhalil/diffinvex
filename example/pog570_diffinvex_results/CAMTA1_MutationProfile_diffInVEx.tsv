@@ -1,0 +1,2 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr1"	6929516	6929516	"G"	"A"	32971	"CAMTA1"	"background"	2674

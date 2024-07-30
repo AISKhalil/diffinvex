@@ -1,0 +1,5 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr17"	34151142	34151142	"G"	"T"	25962	"TAF15"	"target"	1910
+"chr17"	34151142	34151142	"G"	"A"	23701	"TAF15"	"target"	1910
+"chr17"	34172011	34172011	"C"	"T"	29147	"TAF15"	"target"	1910
+"chr17"	34164278	34164278	"C"	"A"	25356	"TAF15"	"background"	6789

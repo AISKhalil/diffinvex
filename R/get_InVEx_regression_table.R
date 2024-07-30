@@ -16,9 +16,9 @@ get_InVEx_regression_table = function(HGNC_symbol,
   chr <- as.character(grExons@seqnames[1])
   grSNPs <- mutations[mutations@seqnames == chr]
   #
-  # temp   <- sample_wise_filtering(grSNPs, sample_annotation, grExons)
-  # grSNPs <- temp[[1]]
-  # sample_annotation <- temp[[2]] 
+  temp   <- sample_wise_filtering(grSNPs, sample_annotation, grExons)
+  grSNPs <- temp[[1]]
+  sample_annotation <- temp[[2]] 
   #
   if(! is.null(sample_annotation_perGene_file)){
       sample_annotation <- load_gene_annotation(sample_annotation, sample_annotation_perGene_file, HGNC_symbol)

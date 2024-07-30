@@ -1,0 +1,16 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr15"	34647701	34647701	"C"	"T"	24077	"NUTM1"	"target"	3389
+"chr15"	34648226	34648226	"C"	"T"	37620	"NUTM1"	"target"	3389
+"chr15"	34628710	34628710	"C"	"T"	31190	"NUTM1"	"background"	28347
+"chr15"	34628742	34628742	"G"	"A"	28324	"NUTM1"	"background"	28347
+"chr15"	34635775	34635775	"G"	"C"	28278	"NUTM1"	"background"	28347
+"chr15"	34636851	34636851	"G"	"A"	14891	"NUTM1"	"background"	28347
+"chr15"	34637198	34637198	"G"	"T"	29147	"NUTM1"	"background"	28347
+"chr15"	34637816	34637816	"G"	"A"	20115	"NUTM1"	"background"	28347
+"chr15"	34641675	34641675	"T"	"C"	36037	"NUTM1"	"background"	28347
+"chr15"	34641826	34641826	"C"	"T"	25721	"NUTM1"	"background"	28347
+"chr15"	34642286	34642286	"G"	"A"	25356	"NUTM1"	"background"	28347
+"chr15"	34642765	34642765	"T"	"A"	33764	"NUTM1"	"background"	28347
+"chr15"	34644719	34644719	"G"	"A"	23673	"NUTM1"	"background"	28347
+"chr15"	34653207	34653207	"C"	"T"	29147	"NUTM1"	"background"	28347
+"chr15"	34656297	34656297	"G"	"C"	34120	"NUTM1"	"background"	28347

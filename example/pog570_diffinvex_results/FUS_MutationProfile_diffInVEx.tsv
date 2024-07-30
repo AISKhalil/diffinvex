@@ -1,0 +1,7 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr16"	31184972	31184972	"G"	"A"	32033	"FUS"	"background"	11109
+"chr16"	31191130	31191130	"C"	"T"	23706	"FUS"	"background"	11109
+"chr16"	31195919	31195919	"C"	"G"	33532	"FUS"	"background"	11109
+"chr16"	31204634	31204634	"T"	"G"	32034	"FUS"	"background"	11109
+"chr16"	31205266	31205266	"C"	"A"	38250	"FUS"	"background"	11109
+"chr16"	31205555	31205555	"G"	"A"	37249	"FUS"	"background"	11109

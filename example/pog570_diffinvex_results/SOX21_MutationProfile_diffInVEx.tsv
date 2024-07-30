@@ -1,0 +1,10 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr13"	95356203	95356203	"G"	"A"	28496	"SOX21"	"background"	2759
+"chr13"	95359066	95359066	"G"	"A"	28428	"SOX21"	"background"	2759
+"chr13"	95359983	95359983	"G"	"A"	38675	"SOX21"	"background"	2759
+"chr13"	95364318	95364318	"G"	"A"	33987	"SOX21"	"background"	2759
+"chr13"	95364393	95364393	"C"	"T"	23673	"SOX21"	"background"	2759
+"chr13"	95365183	95365183	"G"	"A"	29146	"SOX21"	"background"	2759
+"chr13"	95367387	95367387	"G"	"A"	29146	"SOX21"	"background"	2759
+"chr13"	95368869	95368869	"A"	"G"	23674	"SOX21"	"background"	2759
+"chr13"	95372687	95372687	"C"	"T"	32408	"SOX21"	"background"	2759

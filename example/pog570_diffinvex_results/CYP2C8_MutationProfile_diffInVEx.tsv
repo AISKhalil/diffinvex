@@ -1,0 +1,10 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr10"	96828998	96828998	"G"	"A"	23737	"CYP2C8"	"target"	1551
+"chr10"	96804582	96804582	"C"	"G"	30807	"CYP2C8"	"background"	15509
+"chr10"	96806796	96806796	"C"	"G"	38569	"CYP2C8"	"background"	15509
+"chr10"	96807262	96807262	"T"	"C"	21186	"CYP2C8"	"background"	15509
+"chr10"	96817477	96817477	"C"	"A"	32972	"CYP2C8"	"background"	15509
+"chr10"	96824088	96824088	"G"	"A"	29146	"CYP2C8"	"background"	15509
+"chr10"	96827504	96827504	"A"	"G"	37076	"CYP2C8"	"background"	15509
+"chr10"	96827927	96827927	"G"	"T"	23701	"CYP2C8"	"background"	15509
+"chr10"	96830111	96830111	"C"	"T"	23674	"CYP2C8"	"background"	15509

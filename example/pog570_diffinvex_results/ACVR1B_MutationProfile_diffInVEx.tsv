@@ -1,0 +1,14 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr12"	52369065	52369065	"C"	"T"	30822	"ACVR1B"	"target"	1575
+"chr12"	52370348	52370348	"G"	"T"	27647	"ACVR1B"	"target"	1575
+"chr12"	52374818	52374818	"G"	"A"	34491	"ACVR1B"	"target"	1575
+"chr12"	52380724	52380724	"G"	"T"	34288	"ACVR1B"	"target"	1575
+"chr12"	52385768	52385768	"G"	"C"	34120	"ACVR1B"	"target"	1575
+"chr12"	52365069	52365069	"C"	"T"	30252	"ACVR1B"	"background"	15754
+"chr12"	52367945	52367945	"A"	"T"	25662	"ACVR1B"	"background"	15754
+"chr12"	52369564	52369564	"G"	"T"	29147	"ACVR1B"	"background"	15754
+"chr12"	52372819	52372819	"C"	"T"	23674	"ACVR1B"	"background"	15754
+"chr12"	52377316	52377316	"G"	"A"	34121	"ACVR1B"	"background"	15754
+"chr12"	52380072	52380072	"C"	"T"	27723	"ACVR1B"	"background"	15754
+"chr12"	52380524	52380524	"G"	"A"	28494	"ACVR1B"	"background"	15754
+"chr12"	52388198	52388198	"G"	"A"	37719	"ACVR1B"	"background"	15754

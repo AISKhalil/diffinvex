@@ -1,0 +1,11 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr10"	104309799	104309799	"G"	"A"	20115	"SUFU"	"target"	1534
+"chr10"	104309837	104309837	"G"	"T"	18228	"SUFU"	"target"	1534
+"chr10"	104266198	104266198	"C"	"T"	32408	"SUFU"	"background"	15341
+"chr10"	104268814	104268814	"C"	"T"	27502	"SUFU"	"background"	15341
+"chr10"	104354326	104354326	"C"	"T"	27217	"SUFU"	"background"	15341
+"chr10"	104354514	104354514	"C"	"T"	32015	"SUFU"	"background"	15341
+"chr10"	104358961	104358961	"C"	"A"	23674	"SUFU"	"background"	15341
+"chr10"	104374442	104374442	"G"	"T"	15123	"SUFU"	"background"	15341
+"chr10"	104384840	104384840	"G"	"T"	37312	"SUFU"	"background"	15341
+"chr10"	104388838	104388838	"G"	"A"	30811	"SUFU"	"background"	15341

@@ -1,0 +1,13 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr12"	54332940	54332940	"C"	"G"	32973	"HOXC13"	"target"	950
+"chr12"	54333065	54333065	"C"	"T"	37916	"HOXC13"	"target"	950
+"chr12"	54333323	54333323	"C"	"T"	30159	"HOXC13"	"target"	950
+"chr12"	54331550	54331550	"A"	"G"	38536	"HOXC13"	"background"	7390
+"chr12"	54332210	54332210	"G"	"A"	38506	"HOXC13"	"background"	7390
+"chr12"	54332297	54332297	"C"	"A"	27647	"HOXC13"	"background"	7390
+"chr12"	54334338	54334338	"G"	"A"	25721	"HOXC13"	"background"	7390
+"chr12"	54337077	54337077	"C"	"T"	27647	"HOXC13"	"background"	7390
+"chr12"	54341858	54341858	"G"	"T"	38063	"HOXC13"	"background"	7390
+"chr12"	54342124	54342124	"C"	"A"	15123	"HOXC13"	"background"	7390
+"chr12"	54355186	54355186	"G"	"A"	21721	"HOXC13"	"background"	7390
+"chr12"	54358075	54358075	"G"	"A"	29146	"HOXC13"	"background"	7390

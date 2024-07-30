@@ -1,0 +1,5 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr11"	61563321	61563321	"G"	"C"	37620	"FEN1"	"target"	1143
+"chr11"	61559220	61559220	"T"	"C"	32015	"FEN1"	"background"	11448
+"chr11"	61560345	61560345	"G"	"T"	29147	"FEN1"	"background"	11448
+"chr11"	61574515	61574515	"G"	"A"	30822	"FEN1"	"background"	11448

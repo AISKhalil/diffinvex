@@ -1,0 +1,7 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr12"	112893206	112893206	"T"	"G"	31031	"PTPN11"	"background"	17675
+"chr12"	112920029	112920029	"C"	"G"	32973	"PTPN11"	"background"	17675
+"chr12"	112923131	112923131	"A"	"G"	37619	"PTPN11"	"background"	17675
+"chr12"	112926524	112926524	"C"	"T"	36065	"PTPN11"	"background"	17675
+"chr12"	112939348	112939348	"G"	"T"	38120	"PTPN11"	"background"	17675
+"chr12"	112939922	112939922	"C"	"G"	37025	"PTPN11"	"background"	17675

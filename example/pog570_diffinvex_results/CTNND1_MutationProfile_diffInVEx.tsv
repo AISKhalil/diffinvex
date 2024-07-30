@@ -1,0 +1,14 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr11"	57554073	57554073	"G"	"T"	23675	"CTNND1"	"background"	19044
+"chr11"	57566957	57566957	"T"	"A"	23674	"CTNND1"	"background"	19044
+"chr11"	57567971	57567971	"C"	"A"	23674	"CTNND1"	"background"	19044
+"chr11"	57568507	57568507	"A"	"C"	34121	"CTNND1"	"background"	19044
+"chr11"	57570736	57570736	"C"	"T"	39044	"CTNND1"	"background"	19044
+"chr11"	57571445	57571445	"T"	"C"	19843	"CTNND1"	"background"	19044
+"chr11"	57572512	57572512	"A"	"C"	27563	"CTNND1"	"background"	19044
+"chr11"	57572790	57572790	"T"	"G"	30488	"CTNND1"	"background"	19044
+"chr11"	57576965	57576965	"C"	"T"	38569	"CTNND1"	"background"	19044
+"chr11"	57579811	57579811	"G"	"A"	24045	"CTNND1"	"background"	19044
+"chr11"	57582348	57582348	"C"	"T"	25721	"CTNND1"	"background"	19044
+"chr11"	57584464	57584464	"C"	"G"	32571	"CTNND1"	"background"	19044
+"chr11"	57585638	57585638	"C"	"T"	37620	"CTNND1"	"background"	19044

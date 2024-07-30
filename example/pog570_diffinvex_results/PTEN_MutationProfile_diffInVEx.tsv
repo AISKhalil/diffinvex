@@ -1,0 +1,11 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr10"	89624305	89624305	"T"	"G"	36621	"PTEN"	"target"	845
+"chr10"	89690814	89690814	"G"	"C"	27647	"PTEN"	"target"	845
+"chr10"	89717672	89717672	"C"	"T"	23453	"PTEN"	"target"	845
+"chr10"	89720823	89720823	"T"	"C"	27503	"PTEN"	"target"	845
+"chr10"	89654168	89654168	"C"	"G"	25721	"PTEN"	"background"	8446
+"chr10"	89685320	89685320	"T"	"G"	27503	"PTEN"	"background"	8446
+"chr10"	89711385	89711385	"T"	"G"	37719	"PTEN"	"background"	8446
+"chr10"	89711544	89711544	"T"	"A"	38569	"PTEN"	"background"	8446
+"chr10"	89718588	89718588	"G"	"A"	25497	"PTEN"	"background"	8446
+"chr10"	89720191	89720191	"A"	"C"	38505	"PTEN"	"background"	8446

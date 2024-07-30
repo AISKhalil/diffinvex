@@ -1,0 +1,8 @@
+"seqnames"	"start"	"end"	"ref_allele"	"mutated_to_allele"	"Sample"	"DiffInVEx_gene"	"DiffInVEx_class"	"DiffInVEx_width"
+"chr17"	38812758	38812758	"A"	"T"	23675	"KRT222"	"target"	743
+"chr17"	38813658	38813658	"G"	"T"	27647	"KRT222"	"target"	743
+"chr17"	38812071	38812071	"C"	"T"	29146	"KRT222"	"background"	7439
+"chr17"	38812085	38812085	"C"	"T"	29146	"KRT222"	"background"	7439
+"chr17"	38812092	38812092	"C"	"T"	29146	"KRT222"	"background"	7439
+"chr17"	38813536	38813536	"G"	"A"	38506	"KRT222"	"background"	7439
+"chr17"	38823932	38823932	"C"	"T"	25356	"KRT222"	"background"	7439
