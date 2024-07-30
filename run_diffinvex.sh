@@ -48,7 +48,7 @@ output_directory=./example/pog570_diffinvex_results
 
 # 4) define DiffInvex parameters
 reference_genome=hg19
-no_cores=4
+no_cores=1
 
 # 5) run the DiffInvex framework
 bash diffinvex.sh $mutation_file $annotation_file $variable_file $gene_file $output_directory $diffinvex_directory $reference_genome $no_cores

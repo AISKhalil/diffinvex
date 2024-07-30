@@ -88,11 +88,6 @@ quiet(source(paste0(tool_directory,"/R/MutationsToTable.R")), all = T)
 quiet(source(paste0(tool_directory,"/R/RegressionsAndWriting.R")), all = T)
 quiet(source(paste0(tool_directory,"/R/glm.nb.safe_fast.R")), all = T)
 #
-#########################
-##### Data loading  #####
-#########################
-print("Data loading ...")
-start_time = Sys.time()
 #-------#
 #-Genes-#
 #-------#

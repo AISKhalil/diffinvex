@@ -25,7 +25,9 @@ diffinvex_coefficients = function(gene_list,
         #--------------------------#
         # target/background tracks #
         #--------------------------#
-
+        print("Data loading ...")
+        start_time = Sys.time()
+        #
         if(DiffInVEx_mode != 4){
             # use pre-computed target and background tracks
             trBg_tracks <- load_tracks(tool_directory,reference_genome,DiffInVEx_BW,DiffInVEx_cluster)
