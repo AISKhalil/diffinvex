@@ -39,7 +39,7 @@ diffinvex_drivers = function(output_directory,
                 noMutations <- dim(annResultsAll)[1]
                 annResultsAll$DiffInVEx_ID <- seq(1,noMutations,1)
                 #
-                fwrite(annResultsAll, file = paste0(figures_directory,"/cohort_MutationProfile_diffInVEx.tsv"), sep="\t", row.names=F, quote=T)
+                fwrite(annResultsAll, file = paste0(figures_directory,"/cohort_mutation_profile.tsv"), sep="\t", row.names=F, quote=T)
     }    
     ##
     ##----------- output coefficients -----------##
@@ -50,7 +50,7 @@ diffinvex_drivers = function(output_directory,
     #
     if(length(genesSelected) != 0){
         if(genesSelected[1] == "genesWtargetMut"){
-            x <- fread(file = paste0(figures_directory,"/cohort_MutationProfile_diffInVEx.tsv"))
+            x <- fread(file = paste0(figures_directory,"/cohort_mutation_profile.tsv"))
             x <- x %>% dplyr::filter(DiffInVEx_class == "target")
             x <- x %>% group_by_at(c("DiffInVEx_gene")) %>% dplyr::summarize(MutationNumber = length(Sample))
             #
@@ -61,135 +61,131 @@ diffinvex_drivers = function(output_directory,
             genesTested <- intersect(genesTested,genesSelected)
         }
     }
-    #
-    ## single or multiple cohorts
+    ##
+    ## single or multiple cohorts / regression variables ##
     fileName     <- paste0(output_directory,"/",genesTested[1],regression_type)
     geneResults  <- read.csv(fileName, header = TRUE)
     singleCohort <- !(c("ID") %in% colnames(geneResults))
+    regression_variables <- grep(regression_var, geneResults$coefName, value = TRUE)
     ##
-    ##
-    ##
-    if(singleCohort){
-                  ## results ##
-                  regResults <- lapply(genesTested, function(x){
-                                    fileName <- paste0(output_directory,"/",x,regression_type)
-                                    geneResults <- read.csv(fileName)
-                                    geneResults <- geneResults[geneResults$coefName == regression_var & geneResults$converged == TRUE,]
-                                    geneResults <- geneResults[c("coef","pVal","Std.error","HGNC")]
-                                })
-                  ##
-                  ## FDR ##
-                  tumorRegResults    <- bind_rows(lapply(regResults, function(x){x[,c("coef","pVal","Std.error")]}))
-                  convergedGeneNames <- unlist(lapply(regResults, function(x){x[,c("HGNC")]}))
-                  #
-                  rownames(tumorRegResults) <- convergedGeneNames
-                  tumorRegResults$gene <- convergedGeneNames
-                  #
-                  #
-                  tumorRegResults$pVal_adj <- p.adjust(tumorRegResults$pVal, method = "fdr", n = length(tumorRegResults$pVal)) 
-                  tumorRegResults$qVal <- qvalue(tumorRegResults$pVal)$qvalues
-                  tumorRegResults <- tumorRegResults[order(tumorRegResults$qVal),]
-                  #
-                  write.csv(tumorRegResults[c("gene","coef","pVal","Std.error","pVal_adj","qVal")], paste0(figures_directory,"/cohort_",regression_var,"_",reg_type,"_all.csv"), row.names = FALSE)
-                  #
-                  #
-                  sigGenes <- rownames(tumorRegResults[tumorRegResults$qVal < fdr,])
-                  write.table(sigGenes, file = paste0(figures_directory,"/cohort_",regression_var,"_",reg_type,"_sigGenes_qval_",fdr,"percent.csv"), col.names = FALSE, row.names = FALSE, sep = "")
-                  ##
-                  ##
-                  ## QQ-plot (p-value) ##
-                  #
-                  pValues <- tumorRegResults$pVal
-                  genes   <- tumorRegResults$gene 
-                  #
-                  genes <- genes[order(pValues)]
-                  pValues <- sort(pValues)
-                  ##
-                  ##
-                  figName2 <- paste0(figures_directory,"/cohort_",regression_var,"_",reg_type,"_DiffInVEx_pValues_QQplot_lambda.png")
-                  ##
-                  print(paste0("λ = ",inflation(pValues)))
-                  ##
-                  gg_qqplot(pValues) +
-                  theme_bw(base_size = 10) +
-                  theme(axis.ticks = element_line(linewidth = 0.4), panel.grid = element_blank()) +
-                  annotate(
-                  geom = "text",
-                  x = -Inf,
-                  y = Inf,
-                  hjust = -0.15,
-                  vjust = 1 + 0.15 * 3,
-                  label = sprintf("λ = %.2f", inflation(pValues)),
-                  size = 5) +
-                  coord_cartesian(xlim = c(0,4), expand=0) + 
-                  coord_cartesian(ylim = c(0,15), expand=0)      
-                  ggsave(figName2, width = 10, height = 10, units = "cm")
-    } else {
-    ## results ##
-                  regResults <- lapply(genesTested, function(x){
-                                    fileName <- paste0(output_directory,"/",x,regression_type)
-                                    geneResults <- read.csv(fileName)
-                                    geneResults <- geneResults[geneResults$coefName == regression_var & geneResults$converged == TRUE,]
-                                    geneResults <- geneResults[c("coef","pVal","Std.error","HGNC","ID")]
-                                })
-                  ## FDR ##
-                  IDs <- (unique(bind_rows(lapply(regResults, function(x){x[c("ID")]}))))$ID
-                  print(IDs)
-                  tumorRegResults <- list()
-                  #
-                  for(i in IDs){
-                    print(i)
-                    #
-                    y <- lapply(regResults, function(x){x[x$ID==i,c("coef","pVal","Std.error")]})
-                    tumorRegResults[[i]] <- bind_rows(y)
-                    convergedGeneNames <- unlist(lapply(regResults, function(x){x[x$ID==i,c("HGNC")]}))
-                    #
-                    rownames(tumorRegResults[[i]]) <- convergedGeneNames
-                    tumorRegResults[[i]]$gene <- convergedGeneNames
-                    #
-                    tumorRegResults[[i]]$pVal_adj <- p.adjust(tumorRegResults[[i]]$pVal, method = "fdr", n = length(tumorRegResults[[i]]$pVal)) 
-                    tumorRegResults[[i]]$qVal <- qvalue(tumorRegResults[[i]]$pVal)$qvalues
-                    tumorRegResults[[i]] <- tumorRegResults[[i]][order(tumorRegResults[[i]]$qVal),]
-		                #
-                    write.csv(tumorRegResults[[i]][c("gene","coef","pVal","Std.error","pVal_adj","qVal")], paste0(figures_directory,"/",i,"_",regression_var,"_",reg_type,"_all.csv"), row.names = FALSE)
-                    #
-                  }
-                  ##
-                  ## QQ-plot (p-value) ##
-                  tumorRegResults <- list()
-                  #
-                  for(i in IDs){
-                    tumorRegResults[[i]] <- read.csv(paste0(figures_directory,"/",i,"_",regression_var,"_",reg_type,"_all.csv"))
-                    #
-                    pValues <- tumorRegResults[[i]]$pVal
-                    genes   <- tumorRegResults[[i]]$gene 
-                    #
-                    genes <- genes[order(pValues)]
-                    pValues <- sort(pValues)
-                    ##
-                    ##
-                    figName1 <- paste0(figures_directory,"/",i,"_pValues_qqplot_DiffInVEx_",regression_var,"_",reg_type,".png")
-                    testPvalues(pValues, figName1)
-                    ##
-                    ##
-                    figName2 <- paste0(figures_directory,"/",i,"_pValues_QQplot_lambda_DiffInVEx_",regression_var,"_",reg_type,".png")
-                    #
-                    gg_qqplot(pValues) +
-                    theme_bw(base_size = 10) +
-                    theme(axis.ticks = element_line(linewidth = 0.4), panel.grid = element_blank()) +
-                    annotate(
-                    geom = "text",
-                    x = -Inf,
-                    y = Inf,
-                    hjust = -0.15,
-                    vjust = 1 + 0.15 * 3,
-                    label = sprintf("λ = %.2f", inflation(pValues)),
-                    size = 5) +
-                    coord_cartesian(xlim = c(0,4), expand=0) + 
-                    coord_cartesian(ylim = c(0,15), expand=0)      
-                    ggsave(figName2, width = 10, height = 10, units = "cm")
-                  }
-      }
+    ## output for each regression variables ##
+    for(reg_var in regression_variables){
+            ##
+            ##
+            if(singleCohort){
+                          ## results ##
+                          regResults <- lapply(genesTested, function(x){
+                                            fileName <- paste0(output_directory,"/",x,regression_type)
+                                            geneResults <- read.csv(fileName)
+                                            geneResults <- geneResults[geneResults$coefName == reg_var & geneResults$converged == TRUE,]
+                                            geneResults <- geneResults[c("coef","pVal","Std.error","HGNC")]
+                                        })
+                          ##
+                          ## FDR ##
+                          tumorRegResults    <- bind_rows(lapply(regResults, function(x){x[,c("coef","pVal","Std.error")]}))
+                          convergedGeneNames <- unlist(lapply(regResults, function(x){x[,c("HGNC")]}))
+                          #
+                          rownames(tumorRegResults) <- convergedGeneNames
+                          tumorRegResults$gene <- convergedGeneNames
+                          #
+                          #
+                          tumorRegResults$pVal_adj <- p.adjust(tumorRegResults$pVal, method = "fdr", n = length(tumorRegResults$pVal)) 
+                          tumorRegResults$qVal <- qvalue(tumorRegResults$pVal)$qvalues
+                          tumorRegResults <- tumorRegResults[order(tumorRegResults$qVal),]
+                          #
+                          write.csv(tumorRegResults[c("gene","coef","pVal","Std.error","pVal_adj","qVal")], paste0(figures_directory,"/cohort_",reg_var,"_",reg_type,"_all.csv"), row.names = FALSE)
+                          ##
+                          ##
+                          ## QQ-plot (p-value) ##
+                          #
+                          pValues <- tumorRegResults$pVal
+                          genes   <- tumorRegResults$gene 
+                          #
+                          genes <- genes[order(pValues)]
+                          pValues <- sort(pValues)
+                          ##
+                          ##
+                          figName2 <- paste0(figures_directory,"/cohort_",reg_var,"_",reg_type,"_pValues_QQplot.png")
+                          ##
+                          print(paste0("λ = ",inflation(pValues)))
+                          ##
+                          gg_qqplot(pValues) +
+                          theme_bw(base_size = 10) +
+                          theme(axis.ticks = element_line(linewidth = 0.4), panel.grid = element_blank()) +
+                          annotate(
+                          geom = "text",
+                          x = -Inf,
+                          y = Inf,
+                          hjust = -0.15,
+                          vjust = 1 + 0.15 * 3,
+                          label = sprintf("λ = %.2f", inflation(pValues)),
+                          size = 5) +
+                          coord_cartesian(xlim = c(0,4), expand=0) + 
+                          coord_cartesian(ylim = c(0,15), expand=0)      
+                          ggsave(figName2, width = 10, height = 10, units = "cm")
+            } else {
+            ## results ##
+                          regResults <- lapply(genesTested, function(x){
+                                            fileName <- paste0(output_directory,"/",x,regression_type)
+                                            geneResults <- read.csv(fileName)
+                                            geneResults <- geneResults[geneResults$coefName == reg_var & geneResults$converged == TRUE,]
+                                            geneResults <- geneResults[c("coef","pVal","Std.error","HGNC","ID")]
+                                        })
+                          ## FDR ##
+                          IDs <- (unique(bind_rows(lapply(regResults, function(x){x[c("ID")]}))))$ID
+                          print(IDs)
+                          tumorRegResults <- list()
+                          #
+                          for(i in IDs){
+                            print(i)
+                            #
+                            y <- lapply(regResults, function(x){x[x$ID==i,c("coef","pVal","Std.error")]})
+                            tumorRegResults[[i]] <- bind_rows(y)
+                            convergedGeneNames <- unlist(lapply(regResults, function(x){x[x$ID==i,c("HGNC")]}))
+                            #
+                            rownames(tumorRegResults[[i]]) <- convergedGeneNames
+                            tumorRegResults[[i]]$gene <- convergedGeneNames
+                            #
+                            tumorRegResults[[i]]$pVal_adj <- p.adjust(tumorRegResults[[i]]$pVal, method = "fdr", n = length(tumorRegResults[[i]]$pVal)) 
+                            tumorRegResults[[i]]$qVal <- qvalue(tumorRegResults[[i]]$pVal)$qvalues
+                            tumorRegResults[[i]] <- tumorRegResults[[i]][order(tumorRegResults[[i]]$qVal),]
+        		                #
+                            write.csv(tumorRegResults[[i]][c("gene","coef","pVal","Std.error","pVal_adj","qVal")], paste0(figures_directory,"/",i,"_",reg_var,"_",reg_type,"_all.csv"), row.names = FALSE)
+                            #
+                          }
+                          ##
+                          ## QQ-plot (p-value) ##
+                          tumorRegResults <- list()
+                          #
+                          for(i in IDs){
+                            tumorRegResults[[i]] <- read.csv(paste0(figures_directory,"/",i,"_",reg_var,"_",reg_type,"_all.csv"))
+                            #
+                            pValues <- tumorRegResults[[i]]$pVal
+                            genes   <- tumorRegResults[[i]]$gene 
+                            #
+                            genes <- genes[order(pValues)]
+                            pValues <- sort(pValues)
+                            ##
+                            ##
+                            figName2 <- paste0(figures_directory,"/",i,"_pValues_QQplot_",reg_var,"_",reg_type,".png")
+                            #
+                            gg_qqplot(pValues) +
+                            theme_bw(base_size = 10) +
+                            theme(axis.ticks = element_line(linewidth = 0.4), panel.grid = element_blank()) +
+                            annotate(
+                            geom = "text",
+                            x = -Inf,
+                            y = Inf,
+                            hjust = -0.15,
+                            vjust = 1 + 0.15 * 3,
+                            label = sprintf("λ = %.2f", inflation(pValues)),
+                            size = 5) +
+                            coord_cartesian(xlim = c(0,4), expand=0) + 
+                            coord_cartesian(ylim = c(0,15), expand=0)      
+                            ggsave(figName2, width = 10, height = 10, units = "cm")
+                          }
+              }
+    }
 }
 ############################################
 ############################################
