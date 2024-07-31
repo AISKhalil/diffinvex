@@ -1,3 +1,6 @@
+# diffinvex script for collecting individual gene-wise results and performing FDR correction
+# this generate "$output_directory"_figures directory that contains the target (exonic) and background (intronic) mutation profiles.
+# and the statistic measures of signficant genes.
 tool_directory=${1}
 output_directory=${2}
 regression_var=${3}
