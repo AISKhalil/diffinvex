@@ -1,3 +1,4 @@
+# diffinvex script for parallel execution of diffinvex regression coefficients using diffinvex Possion GLM.
 mutation_file=${1}
 annotation_file=${2}
 variable_file=${3}

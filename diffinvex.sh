@@ -1,3 +1,6 @@
+# The diffinvex script for computing selection coefficients and driver genes.
+# User need to first activate the diffinvex_env conda environment.
+# Then, run this provided scripts using the following 8 arguments.
 mutFile=${1}
 annFile=${2}
 varFile=${3}
