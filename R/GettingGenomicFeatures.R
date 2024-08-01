@@ -1,13 +1,32 @@
-###-------- loading data and libraries --------###
 packages <- c("BSgenome","ensembldb","Biostrings")
 invisible(quiet(lapply(packages, library, character.only = TRUE), all = T))
-###
-###
-###
-import_annotation_db = function(refGenome="hg19", annotationDb="ensemble"){
-  if(annotationDb == "ensemble") 
+
+
+
+#' import_annotation_db
+#'
+#' This function imports annotation databases and reference genomes based on the specified options for the human genome. It supports two types of annotation databases: Ensembl and UCSC. Depending on the chosen reference genome (hg19 or hg38) and the annotation database, the function loads the relevant data packages and prepares the appropriate objects for genomic analyses.
+#'
+#' @param refGenome Character string specifying the reference genome. Options are "hg19" for the UCSC genome version hg19 or "hg38" for the UCSC genome version hg38. [default="hg19"]
+#' @param annotationDb Character string specifying the annotation database. Options are "ensemble" for Ensembl annotations or "UCSC" for UCSC annotations. [default="ensemble"]
+#'
+#' @return A list containing three elements:
+#' \item{hs}{Annotation database object. For Ensembl, it returns the appropriate `EnsDb` object; for UCSC, it returns the `org.Hs.eg.db` object.}
+#' \item{genome}{BSgenome object for the specified reference genome. This provides the genome sequence data for hg19 or hg38.}
+#' \item{txdb}{Transcript database object. For Ensembl, this is `NULL`; for UCSC, it returns the appropriate `TxDb` object if available.}
+#'
+#' @examples
+#' # Import Ensembl annotations for hg19
+#' annotation_data <- import_annotation_db(refGenome="hg19", annotationDb="ensemble")
+#' 
+#' # Import UCSC annotations for hg38
+#' annotation_data <- import_annotation_db(refGenome="hg38", annotationDb="UCSC")
+#'
+#' @export
+import_annotation_db <- function(refGenome="hg19", annotationDb="ensemble"){
+  if(annotationDb == "ensemble")
     {
-      ##reference genome + annotation  
+      ##reference genome + annotation
       if(refGenome == "hg19")
         {
         suppressMessages(library(EnsDb.Hsapiens.v75))
@@ -51,11 +70,31 @@ import_annotation_db = function(refGenome="hg19", annotationDb="ensemble"){
         }
   }
   #
-  return(list(hs,genome,txdb))    
+  return(list(hs, genome, txdb))
 }
-###
-###
-###
+
+
+
+#' get_gene_info
+#'
+#' This function retrieves information about a specific gene using its HGNC symbol. 
+#' It fetches data from the specified annotation database (Ensembl or UCSC) and 
+#' provides the coding sequence (CDS) information for the gene, allowing users to analyze genomic regions of interest.
+#'
+#' @param HGNC_symbol Character string specifying the HGNC symbol of the gene for which information is to be retrieved.
+#' @param refGenome Character string specifying the reference genome. Options are "hg19" for the UCSC genome version hg19 or "hg38" for the UCSC genome version hg38. [default="hg19"]
+#' @param annotationDb Character string specifying the annotation database. Options are "ensemble" for Ensembl annotations or "UCSC" for UCSC annotations. [default="ensemble"]
+#' @param txPerGeneMethod Integer indicating the method for selecting one transcript per gene. `1` selects the most expressed transcript, with the longest transcript used as a fallback. [default=1]
+#' @param txGenePairs Data frame containing the most expressed transcript IDs for genes. It should have columns named "Transcript_id" and "Gene_name" to match transcripts with genes.
+#'
+#' @return A data frame containing CDS information with columns:
+#' \item{seqnames}{Chromosome name or sequence name.}
+#' \item{start}{Start position of the coding sequence.}
+#' \item{end}{End position of the coding sequence.}
+#' \item{strand}{Strand information (+ or -).}
+#'
+#'
+#' @export
 get_gene_info = function(HGNC_symbol, refGenome="hg19", annotationDb="ensemble", txPerGeneMethod=1, txGenePairs){
   libs   <- import_annotation_db(refGenome, annotationDb)
   #
@@ -149,13 +188,25 @@ get_gene_info = function(HGNC_symbol, refGenome="hg19", annotationDb="ensemble",
       ##
       ##
       cdsInfo <- data.frame(cdsReduced)
-      cdsInfo <- cdsInfo[,c(1:3,5)] 
+      cdsInfo <- cdsInfo[, c(1:3, 5)]
       return(cdsInfo)    }
 }
-###
-###
-###
-Genes_in_range = function(chromosome, leftBorder, rightBorder, refGenome="hg19", annotationDb="ensemble") {
+
+
+#' Find genes in a genomic region
+#'
+#' This function identifies genes within a specified chromosomal range. It retrieves gene symbols using either the Ensembl or UCSC annotation databases for a chosen reference genome.
+#'
+#' @param chromosome Integer or character string specifying the chromosome number (e.g., "1", "2", ..., "X", "Y").
+#' @param leftBorder Integer specifying the start position of the chromosomal range.
+#' @param rightBorder Integer specifying the end position of the chromosomal range.
+#' @param refGenome Character string specifying the reference genome. Options are "hg19" or "hg38". [default="hg19"]
+#' @param annotationDb Character string specifying the annotation database. Options are "ensemble" or "UCSC". [default="ensemble"]
+#'
+#' @return A character vector containing the HGNC symbols of the genes found within the specified range.
+#'
+#' @export
+Genes_in_range <- function(chromosome, leftBorder, rightBorder, refGenome="hg19", annotationDb="ensemble") {
   #
   libs <- import_annotation_db(refGenome, annotationDb)
   #
@@ -186,9 +237,29 @@ Genes_in_range = function(chromosome, leftBorder, rightBorder, refGenome="hg19",
   #
   return(genes_HGNC_symbol)
 }
-###
-###
-###
+
+
+
+#' find neighbor genes
+#'
+#' This function identifies neighboring genes around a specified genomic region and returns information on their coding sequences (CDS) and optionally their promoters. The function uses Ensembl or UCSC annotation databases for a chosen reference genome.
+#'
+#' @param chromosome Integer or character string specifying the chromosome number (e.g., "1", "2", ..., "X", "Y").
+#' @param start Integer specifying the start position of the genomic region.
+#' @param end Integer specifying the end position of the genomic region.
+#' @param HGNC_symbol Character string specifying the HGNC symbol of the target gene to exclude from the neighbor search.
+#' @param neighbors_window Integer specifying the size of the window (in base pairs) on each side of the specified region to search for neighboring genes. [default=1e+06]
+#' @param outlierNeighborsThreshold Numeric value specifying the threshold for determining outlier neighbors. [default=0.2]
+#' @param onlyNames Logical value indicating whether to return only the names of the neighboring genes (TRUE) or detailed CDS and promoter information (FALSE). [default=FALSE]
+#' @param providePromoters Logical value indicating whether to include promoter information in the output. [default=FALSE]
+#' @param refGenome Character string specifying the reference genome. Options are "hg19" or "hg38". [default="hg19"]
+#' @param annotationDb Character string specifying the annotation database. Options are "ensemble" or "UCSC". [default="ensemble"]
+#' @param txPerGeneMethod Integer specifying the method for selecting one transcript per gene. Options are 1 (most expressed transcript) or 2 (longest transcript). [default=1]
+#' @param txGenePairs Data frame containing transcript and gene pairing information, used for selecting transcripts.
+#'
+#' @return If `onlyNames` is TRUE, returns a character vector of HGNC symbols for the neighboring genes. If `onlyNames` is FALSE, returns a list containing GRanges objects for CDS (and optionally promoters) of the neighboring genes.
+#'
+#' @export
 get_neighbour_genes_granges = function(chromosome, start, end, HGNC_symbol, neighbors_window = 1e+06, outlierNeighborsThreshold = 0.2, onlyNames = F, providePromoters = F, refGenome="hg19", annotationDb="ensemble", txPerGeneMethod=1, txGenePairs) {
   #
   each_side_length  <- neighbors_window
@@ -287,37 +358,59 @@ get_neighbour_genes_granges = function(chromosome, start, end, HGNC_symbol, neig
     return(NULL)
   }
 }
-###
-###
-###
-# normalize each row to sum to 1. There may be a faster way.
-rowNorm =function(m) {
+
+
+#' rowNorm
+#'
+#' This function normalizes the rows of a matrix so that each row sums to 1.
+#'
+#' @param m A numeric matrix.
+#'
+#' @return A numeric matrix with each row normalized to sum to 1.
+#'
+#' @export
+rowNorm <- function(m) {
   t( apply(m, 1, function(x) { x/sum(x) } ) )
 }
-##
-##
-euclidean = function(a, b) {
+
+
+
+#' euclidean
+#'
+#' This function calculates the Euclidean distance between two numeric vectors.
+#'
+#' @param a A numeric vector.
+#' @param b A numeric vector of the same length as \code{a}.
+#'
+#' @return A numeric value representing the Euclidean distance between \code{a} and \code{b}.
+#'
+#' @export
+euclidean <- function(a, b) {
   sqrt(sum((a - b)^2))
-} 
-##
-##
-intron_sampling = function(countsAll){
-  ####
-  ####
-  # Exlude composition in which introns have more nucloeotide than exons as we don't exclude any exonics bps
-  # x <- as.vector(countsAll["exon",] < countsAll["intron",])
-  # counts <- countsAll[,x]
-  # countsUn <- countsAll[,!x] 
+}
+
+
+
+#' subsampling the intronic regions
+#'
+#' This function optimizes nucleotide counts in introns compared to exons to ensure the ratios are reasonable and do not exceed a set maximum intron-to-exon ratio.
+#'
+#' @param countsAll A numeric matrix with counts of nucleotides, where rows represent exons and introns.
+#'
+#' @return A list containing the initial tolerance, final tolerance, and the adjusted counts matrix.
+#'
+#' @export
+intron_sampling <- function(countsAll){
+  # Exlcude composition in which introns have more nucloeotide than exons as we don't exclude any exonics bps
   counts <- countsAll
-  ####
-  ####
+  #
   maxInExRatio = 10
   stoppingCriterion = 0.01 
   maxIter = min(100*length(counts),10000)  # to prevent endless loops (in reality this can be a very high #, this works quite fast)
   iter=0
   ####
   ####  
-  while ( TRUE ) {
+  while (TRUE) {
     #
     iter=iter+1;
     #
@@ -405,13 +498,23 @@ intron_sampling = function(countsAll){
   countsAll <- counts
   return(list(initTolerance, tolerance, countsAll))
 } 
-#
-################################################################################
-### --------------------- Base-pair representation setup ------------------- ###
-###
-###
-###
-getObjBps = function(grObj, refGenome = "hg19", isFlank = 0){
+
+
+
+#' Get Base Pair Context from Genomic Ranges
+#'
+#' This function retrieves the base pair positions and their context (tri-nucleotide and penta-nucleotide) for a given genomic range object.
+#'
+#' @param grObj A GRanges object containing genomic ranges.
+#' @param refGenome A character string specifying the reference genome, either "hg19" or "hg38". Default is "hg19".
+#' @param isFlank An integer indicating whether to consider flanking regions. Default is 0.
+#'
+#' @return A GRanges object with additional columns for base pair positions and context.
+#'
+#' @importFrom BSgenome.Hsapiens.UCSC.hg19
+#' @importFrom BSgenome.Hsapiens.UCSC.hg38
+#' @export
+getObjBps <- function(grObj, refGenome = "hg19", isFlank = 0){
   ##
   if(refGenome == "hg19"){suppressMessages(library(BSgenome.Hsapiens.UCSC.hg19))
   } else if(refGeneome == "hg38"){suppressMessages(library(BSgenome.Hsapiens.UCSC.hg38))}
@@ -461,10 +564,23 @@ getObjBps = function(grObj, refGenome = "hg19", isFlank = 0){
     return(grObjBps)
   }
 }
-###
-###
-###
-select_background = function(grIntrons, grFlanks, minBackgroundWidth, maxDistanceFromTarget){
+
+
+
+#' Select Background Genomic Ranges
+#'
+#' This function selects a background set of genomic ranges, based on intronic and flanking regions, to match specified criteria.
+#'
+#' @param grIntrons A GRanges object containing intronic genomic ranges.
+#' @param grFlanks A GRanges object containing flanking genomic ranges.
+#' @param minBackgroundWidth An integer specifying the minimum width of the background.
+#' @param maxDistanceFromTarget An integer specifying the maximum allowable distance from the target for background selection.
+#'
+#' @return A GRanges object representing the selected background ranges.
+#'
+#' @importFrom GenomicRanges sort
+#' @export
+select_background <- function(grIntrons, grFlanks, minBackgroundWidth, maxDistanceFromTarget){
   #
   totIntronsWidth     <- length(grIntrons)
   if(totIntronsWidth > 0){
@@ -519,10 +635,21 @@ select_background = function(grIntrons, grFlanks, minBackgroundWidth, maxDistanc
       }
   }
 }    
-###
-###
-###
-add_CpGs_info = function(grExons,grIntrons,uCpGs){
+
+
+
+#' Add DNA methylation Information to Genomic Ranges
+#'
+#' This function adds CpG methylation information to exon and intron genomic ranges.
+#'
+#' @param grExons A GRanges object containing exon genomic ranges.
+#' @param grIntrons A GRanges object containing intron genomic ranges.
+#' @param uCpGs A GRanges object containing unmethylated CpG sites.
+#'
+#' @return A list with two elements: GRanges objects for exons and introns with CpG information.
+#'
+#' @export
+add_CpGs_info = function(grExons, grIntrons, uCpGs){
         ##
         ##
         grExonsList <- list()
@@ -569,9 +696,21 @@ add_CpGs_info = function(grExons,grIntrons,uCpGs){
         ##
         return(list(grExonsCpG,grIntronsCpG))
 }
-###
-###
-###
+
+
+
+#' Add Mappability Information to Genomic Ranges
+#'
+#' This function adds mappability information to exon and intron genomic ranges using mappability tracks.
+#'
+#' @param grExons A GRanges object containing exon genomic ranges.
+#' @param grIntrons A GRanges object containing intron genomic ranges.
+#' @param mappTracks A data frame containing mappability track information.
+#'
+#' @return A list with two elements: GRanges objects for exons and introns with mappability information.
+#'
+#' @importFrom GenomicRanges sort
+#' @export
 add_mappability_info = function(grExons, grIntrons, mappTracks){
     #
     chromM <- as.vector(grExons@seqnames)[1]
@@ -645,10 +784,22 @@ add_mappability_info = function(grExons, grIntrons, mappTracks){
     ####
     return(list(grExonsMapp,grIntronsMapp))
 }
-###
-###
-###
-match_target_background = function(grTarget, grBackground, tri_or_penta = 1, use_Mappability = 1){
+
+
+
+#' Match Target and Background Genomic Ranges
+#'
+#' This function matches target genomic ranges with a background set based on nucleotide context and mappability.
+#'
+#' @param grTarget A GRanges object containing target genomic ranges.
+#' @param grBackground A GRanges object containing background genomic ranges.
+#' @param tri_or_penta An integer indicating whether to use tri-nucleotide (1) or penta-nucleotide (2) context. Default is 1.
+#' @param use_Mappability An integer indicating whether to use mappability information. Default is 1.
+#'
+#' @return A GRanges object representing the matched background ranges.
+#'
+#' @export
+match_target_background <- function(grTarget, grBackground, tri_or_penta = 1, use_Mappability = 1){
   #
   if(use_Mappability == 0){ #Strafiction by tri-nts or penta-nts only
         if(tri_or_penta == 1){
@@ -706,6 +857,3 @@ match_target_background = function(grTarget, grBackground, tri_or_penta = 1, use
   #
   return(newGrBackground)
 }
-###
-###
-###

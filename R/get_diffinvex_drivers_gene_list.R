@@ -1,4 +1,35 @@
-###  loading data abd libraries ###
+#' Run DiffInVEx Analysis and Generate Figures
+#'
+#' This R script executes the DiffInVEx (Differential Insertion/Deletion Variants and Exonic Variants) analysis and generates associated figures. It loads necessary libraries, parses command-line arguments, and runs the `diffinvex_drivers` function from a specified script.
+#'
+#' @section Libraries:
+#' The script loads the following libraries:
+#' \itemize{
+#'   \item `optparse`: For parsing command-line options.
+#'   \item `ddpcr`: A library required for the analysis.
+#' }
+#'
+#' @section Command-line Arguments:
+#' The script accepts the following command-line arguments:
+#' \itemize{
+#'   \item `-o` or `--output_directory`: The directory where the DiffInVEx output files will be stored.
+#'   \item `-v` or `--regression_var`: The name of the regression variable used in the analysis.
+#'   \item `-r` or `--regression_type`: The type of regression to be used in the analysis.
+#'   \item `-t` or `--tool_directory`: The directory containing the DiffInVEx R script and auxiliary files.
+#' }
+#'
+#' @section Script Execution:
+#' \itemize{
+#'   \item The script first creates a directory for figures, if it does not already exist.
+#'   \item It then sources the `diffinvex_drivers.R` script located in the specified `tool_directory`.
+#'   \item The `diffinvex_drivers` function is called with the parsed command-line arguments to perform the analysis and generate figures.
+#' }
+#'
+#' @examples
+#' # To run this script from the command line:
+#' Rscript this_script.R --output_directory /path/to/output --regression_var var_name --regression_type type_name --tool_directory /path/to/tool_directory
+#'
+#' @export
 suppressMessages(library("optparse"))
 suppressMessages(library("ddpcr"))
 ##

@@ -1,4 +1,28 @@
-get_cds_info = function(HGNC_symbol,toolDirectory, refGenome="hg19", annotationDb="ensemble"){
+#' Get CDS Information for a Specific Gene
+#'
+#' This function retrieves the coding sequence (CDS) information for a specified gene. It supports two types of annotation databases: Ensembl and UCSC. Depending on the selected database, it fetches the appropriate transcript and CDS information, potentially selecting the most-expressed or longest transcript if multiple options are available.
+#'
+#' @param HGNC_symbol A character string specifying the HGNC gene symbol for which CDS information is to be retrieved.
+#' @param toolDirectory A character string specifying the path to the directory containing reference files and tools.
+#' @param refGenome A character string specifying the reference genome (default is "hg19").
+#' @param annotationDb A character string specifying the annotation database to use. Choices are "ensemble" and "UCSC" (default is "ensemble").
+#'
+#' @return A `GRanges` object containing the reduced CDS regions for the specified gene. The output is in UCSC coordinate style.
+#'
+#' @details
+#' \itemize{
+#'   \item For the Ensembl database:
+#'     \item Fetches gene data based on the HGNC symbol.
+#'     \item Selects the most-expressed transcript if available; otherwise, chooses the longest transcript.
+#'     \item Retrieves the CDS for the selected transcript(s) and returns the reduced CDS regions.
+#'   \item For the UCSC database:
+#'     \item Fetches gene data using Entrez ID derived from the HGNC symbol.
+#'     \item Retrieves all transcripts associated with the gene.
+#'     \item Retrieves the CDS for the selected transcript(s) and returns the reduced CDS regions.
+#' }
+#'
+#' @export
+get_cds_info <- function(HGNC_symbol,toolDirectory, refGenome="hg19", annotationDb="ensemble"){
   #
   txPerGeneMethod=1
   txGenePairsFile     <- paste0(toolDirectory,"/references/GeneData/geneInfo/TREG_gene_transcript_pair.csv")
@@ -80,10 +104,30 @@ get_cds_info = function(HGNC_symbol,toolDirectory, refGenome="hg19", annotationD
       return(cdsReduced)
     }
 }
-###
-###
-###
-getGeneNames = function(refGenome="hg19", annotationDb="ensemble") {
+
+
+
+#' Retrieve Gene Names from an Annotation Database
+#'
+#' This function retrieves gene names from a specified annotation database. It supports two databases: Ensembl and UCSC. The function extracts gene symbols from the database and returns them as a vector of HGNC symbols.
+#'
+#' @param refGenome A character string specifying the reference genome (default is "hg19").
+#' @param annotationDb A character string specifying the annotation database to use. Choices are "ensemble" and "UCSC" (default is "ensemble").
+#'
+#' @return A character vector containing gene names (HGNC symbols) retrieved from the specified annotation database.
+#'
+#' @details
+#' \itemize{
+#'   \item For the Ensembl database:
+#'     \item Retrieves genes using the `genes` function and extracts gene names (HGNC symbols).
+#'     \item Converts gene names to UCSC coordinate style.
+#'   \item For the UCSC database:
+#'     \item Retrieves genes and extracts unique gene identifiers.
+#'     \item Uses these identifiers to query the Ensembl database for corresponding HGNC symbols.
+#' }
+#'
+#' @export
+getGeneNames <- function(refGenome="hg19", annotationDb="ensemble") {
   #
   libs <- import_annotation_db(refGenome, annotationDb)
   #
@@ -109,10 +153,29 @@ getGeneNames = function(refGenome="hg19", annotationDb="ensemble") {
   #
   return(genes_HGNC_symbol)
 }
-###
-###
-###
-extract_all_cds_regions = function(toolDirectory, refGenome="hg19", annotationDb="ensemble") {
+
+
+
+#' Extract All CDS Regions for Genes from Annotation Database
+#'
+#' This function retrieves coding sequence (CDS) regions for all genes listed in a specified annotation database. It generates and returns a consolidated GRanges object containing the CDS regions for the entire gene list.
+#'
+#' @param toolDirectory A character string specifying the path to the directory containing tools and reference files required for fetching CDS information.
+#' @param refGenome A character string specifying the reference genome (default is "hg19").
+#' @param annotationDb A character string specifying the annotation database to use. Choices are "ensemble" and "UCSC" (default is "ensemble").
+#'
+#' @return A GRanges object containing the sorted and reduced CDS regions for all genes from the specified annotation database.
+#'
+#' @details
+#' \itemize{
+#'   \item Retrieves a list of gene names using `getGeneNames`.
+#'   \item For each gene, fetches CDS regions using `get_cds_info`.
+#'   \item Consolidates all CDS regions into a single data frame.
+#'   \item Converts the data frame to a GRanges object, sorts, and reduces it to remove redundant or overlapping regions.
+#' }
+#'
+#' @export
+extract_all_cds_regions <- function(toolDirectory, refGenome="hg19", annotationDb="ensemble") {
   #
   geneList <- getGeneNames(refGenome,annotationDb)
   #
@@ -127,7 +190,5 @@ extract_all_cds_regions = function(toolDirectory, refGenome="hg19", annotationDb
   targetInfoGR <- GRanges(targetInfoDF)
   targetInfoGR <- GenomicRanges::sort(GenomicRanges::reduce(targetInfoGR))
   #
-  return(targetInfoGR)}
-###
-###
-###
+  return(targetInfoGR)
+}

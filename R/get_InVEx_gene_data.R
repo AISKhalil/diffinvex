@@ -1,11 +1,36 @@
-get_InVEx_gene_data = function(HGNC_symbol,
+#' Get InVEx Gene Data
+#'
+#' This function retrieves and processes genomic data for a given HGNC symbol. It prepares genomic tracks, exons, introns, and flanks, and filters these regions based on various criteria. The function also matches target regions with background regions and optionally includes CpG and mappability information.
+#'
+#' @param HGNC_symbol Character string. The HGNC symbol for the gene of interest.
+#' @param genomic_tracks A list of genomic tracks. This should include elements for mappability regions, mappability scores, filter regions, filter conditions, filter inclusions, blacklisted regions, microsatellites, CTCF regions, background hotspots, uCpGs, promoter motifs, SHM regions, and all target regions.
+#' @param toolDirectory Character string. The path to the directory containing tool references.
+#' @param refGenome Character string. The reference genome to use. Default is "hg19".
+#' @param neighbors_window Numeric. The size of the window around the gene to consider. Default is 25000.
+#' @param outputDirectory Character string. The directory where output files will be saved.
+#' @param diffInVEx_mode Integer. Specifies the mode for differential InVEx analysis. Default is 1.
+#' @param diffInVEx_BW Numeric. The bin width for differential InVEx analysis in kilobases. Default is 50.
+#'
+#' @return A list of GRanges objects. Includes target regions, background regions with no matching, tri-matching background regions, and penta-matching background regions.
+#'
+#' @details
+#' The function performs the following steps:
+#' \itemize{
+#'   \item Reads and processes genomic data, including exons, introns, and flanks.
+#'   \item Filters these regions based on various criteria including mappability, microsatellites, CTCF regions, blacklisted regions, and background hotspots.
+#'   \item Optionally matches target regions with background regions based on CpG and mappability information.
+#'   \item Saves the processed data to a file in the specified output directory.
+#' }
+#' 
+#' @export
+get_InVEx_gene_data <- function(HGNC_symbol,
                               genomic_tracks,
-                              toolDirectory,                                      
+                              toolDirectory,
                               refGenome="hg19",
                               neighbors_window=25000,
                               outputDirectory,
                               diffInVEx_mode=1,
-                              diffInVEx_BW=50){  
+                              diffInVEx_BW=50){
   ################
   ## parameters ##
   ################
@@ -218,7 +243,7 @@ get_InVEx_gene_data = function(HGNC_symbol,
       return(NULL)} 
   ####
   ####
-  ########################  
+  ########################
   # Target & background  #
   ########################
   #-Background selection-#
@@ -229,7 +254,7 @@ get_InVEx_gene_data = function(HGNC_symbol,
   if(matchingByCpGs == 1){
       grCpGs <- add_CpGs_info(grTarget, grBackground, uCpGs)
       grTarget <- grCpGs[[1]]
-      grBackground <- grCpGs[[2]]}  
+      grBackground <- grCpGs[[2]]}
   #
   #-Adding mappability-information per base-pair-#
   if(matchingByMappability == 1){
@@ -265,13 +290,28 @@ get_InVEx_gene_data = function(HGNC_symbol,
   #
   return(grDict)
 }
-###
-###
-###
-load_InVEx_gene_data = function(HGNC_symbol,
-                                toolDirectory,                                      
+
+
+
+#' Load InVEx Gene Data
+#'
+#' This function loads preprocessed genomic data for a given HGNC symbol from an RDS file. The data includes target regions, background regions with no matching, tri-matching background regions, and penta-matching background regions.
+#'
+#' @param HGNC_symbol Character string. The HGNC symbol for the gene of interest.
+#' @param toolDirectory Character string. The path to the directory containing tool references.
+#' @param refGenome Character string. The reference genome used for data processing. Default is "hg19".
+#' @param diffInVEx_BW Numeric. The bin width used for differential InVEx analysis in kilobases. Default is 50.
+#'
+#' @return A list of GRanges objects if the file exists. The list includes target regions, background regions with no matching, tri-matching background regions, and penta-matching background regions. Returns NULL if the file does not exist.
+#'
+#' @details
+#' The function attempts to load the preprocessed gene data from an RDS file. The file is located in a subdirectory specified by the `toolDirectory`, `refGenome`, and `diffInVEx_BW` parameters. If the file is found, it is read and returned. If the file is not found, a message is printed, and the function returns NULL.
+#'
+#' @export
+load_InVEx_gene_data <- function(HGNC_symbol,
+                                toolDirectory,
                                 refGenome="hg19",
-                                diffInVEx_BW=50){  
+                                diffInVEx_BW=50){
   ###
   geneDB_Dir <- paste0(toolDirectory,"/references/GeneData/geneDB_",refGenome,"_",diffInVEx_BW,"Kb")
   geneFile   <- paste0(geneDB_Dir,"/",HGNC_symbol,"_diffInVEx.RDS")
@@ -286,10 +326,31 @@ load_InVEx_gene_data = function(HGNC_symbol,
   }
   ###
 }
-###
-###
-###
-# get exon/intron information
+
+
+
+#' Get Genomic Information for a List of Genes
+#'
+#' This function retrieves and processes genomic information for a list of genes by loading preprocessed data from RDS files. The function extracts and consolidates exon information for the specified genomic region and returns a `GRanges` object with the reduced genomic ranges.
+#'
+#' @param geneList Character vector. A list of HGNC symbols for the genes of interest.
+#' @param toolDirectory Character string. The path to the directory containing tool references.
+#' @param region Character string. The genomic region to extract from the gene data (e.g., "target", "background_NoMatching", "background_tri", "background_penta").
+#' @param BW Numeric. The bin width used for differential InVEx analysis in kilobases. Default is 50.
+#'
+#' @return A `GRanges` object containing the reduced genomic ranges for the specified region across all genes in the list.
+#'
+#' @details
+#' The function performs the following steps:
+#' \itemize{
+#'   \item Constructs the path to the directory containing the gene data files based on the `toolDirectory` and `BW` parameters.
+#'   \item Retrieves the list of gene files from the specified directory and intersects it with the provided `geneList`.
+#'   \item For each gene in the intersected list, it loads the preprocessed gene data using the `load_InVEx_gene_data` function.
+#'   \item Extracts and processes the genomic information for the specified `region` from the gene data.
+#'   \item Consolidates the exon information into a single `GRanges` object by combining and reducing the ranges.
+#' }
+#' 
+#' @export
 get_info <- function(geneList,toolDirectory,region, BW = 50){
         #
         geneFiles <- paste0(toolDirectory,"/references/GeneData/geneDB_hg19_",BW,"Kb")
@@ -303,9 +364,9 @@ get_info <- function(geneList,toolDirectory,region, BW = 50){
               #
               geneExon <- geneRDS[[region]]
               names(geneExon) <- NULL
-              geneExon <- GenomicRanges::reduce(geneExon)      
+              geneExon <- GenomicRanges::reduce(geneExon)
               geneExon <- as.data.frame(geneExon)
-              geneExon <- geneExon[,c("seqnames","start","end")]
+              geneExon <- geneExon[, c("seqnames", "start", "end")]
               return(geneExon)})
         exonInfoDF <- do.call(rbind, exonInfo)
         exonInfoGR <- GRanges(exonInfoDF)
@@ -313,6 +374,3 @@ get_info <- function(geneList,toolDirectory,region, BW = 50){
         #
         return(exonInfoGR)
 }
-###
-###
-###
