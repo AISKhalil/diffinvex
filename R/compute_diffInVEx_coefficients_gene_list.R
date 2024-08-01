@@ -1,4 +1,46 @@
-###   loading data abd libraries  ###
+#' Run DiffInVEx Analysis with Custom Parameters
+#'
+#' This R script performs the DiffInVEx (Differential Insertion/Deletion Variants and Exonic Variants) analysis based on 
+#' user-provided parameters. It loads necessary libraries, parses command-line arguments, and executes the analysis functions. 
+#' This script includes functionality to handle custom gene lists, mutation files, and annotation data.
+#'
+#' @section Libraries:
+#' The script loads the following libraries:
+#' \itemize{
+#'   \item `optparse`: For parsing command-line options.
+#'   \item `ddpcr`: Required for performing the analysis.
+#' }
+#'
+#' @section Command-line Arguments:
+#' The script accepts the following command-line arguments:
+#' \itemize{
+#'   \item `-g` or `--gene_file`: Path to the gene list file.
+#'   \item `-m` or `--mutation_file`: Path to the mutation file.
+#'   \item `-a` or `--annotation_file`: Path to the annotation file.
+#'   \item `-v` or `--variable_file`: Path to the variable file.
+#'   \item `-s` or `--sample_annotation_perGene_file`: Path to the gene-wise annotation file.
+#'   \item `-r` or `--reference_genome`: Reference genome (default is "hg19").
+#'   \item `-n` or `--no_cores`: Number of CPU cores to use (default is 1).
+#'   \item `-b` or `--DiffInVEx_BW`: Background width in Kb (default is 50).
+#'   \item `-c` or `--DiffInVEx_cluster`: Cluster number for background matching (default is 1).
+#'   \item `-d` or `--DiffInVEx_mode`: Mode for gene data processing (default is 1).
+#'   \item `-t` or `--tool_directory`: Full path to the directory containing DiffInVEx R scripts and auxiliary files.
+#'   \item `-o` or `--output_directory`: Directory where the output files will be saved.
+#' }
+#'
+#' @section Script Execution:
+#' \itemize{
+#'   \item The script starts by creating a directory for figures if it does not exist.
+#'   \item It then sources various R scripts from the `tool_directory`, including functions for computing selection coefficients, handling gene data, and generating regression tables.
+#'   \item If the specified gene file exists, it is read and used; otherwise, a default gene list is used.
+#'   \item The main function `diffinvex_coefficients` is called with the parsed arguments to perform the analysis and generate output files.
+#' }
+#'
+#' @examples
+#' # To run this script from the command line:
+#' Rscript this_script.R --gene_file /path/to/gene_file.txt --mutation_file /path/to/mutation_file.txt --annotation_file /path/to/annotation_file.txt --variable_file /path/to/variable_file.txt --sample_annotation_perGene_file /path/to/sample_annotation_perGene_file.txt --reference_genome hg19 --no_cores 4 --DiffInVEx_BW 50 --DiffInVEx_cluster 1 --DiffInVEx_mode 1 --tool_directory /path/to/tool_directory --output_directory /path/to/output_directory
+#'
+#' @export
 suppressMessages(library("optparse"))
 suppressMessages(library("ddpcr"))
 #
@@ -60,7 +102,6 @@ if (! "DiffInVEx_mode" %in% names(optInfo)) {
 if (! "reference_genome" %in% names(optInfo)) {
   optInfo <- c(optInfo, list(reference_genome = "hg19"))
 }
-#
 #
 gene_file         <- optInfo$gene_file
 mutation_file     <- optInfo$mutation_file

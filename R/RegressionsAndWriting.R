@@ -1,4 +1,19 @@
-summarize_regress_table = function(TableToRegress, MSnumber) {
+#' Summarize Regression Table
+#'
+#' This function processes a regression table by summarizing mutation data based on the specified mutation number (MSnumber).
+#' It groups and aggregates data based on the matching method we are applying.
+#'
+#' @param TableToRegress A data frame or data table containing regression data, including mutation-related columns.
+#' @param MSnumber An integer indicating the the DiffInvex matching approach.
+#' MSnumber = 0: penta-nucleotide matching between target and background regions.
+#' MSnumber = 1: tri-nucleotide matching between target and background regions.
+#'
+#' @return A processed data table with aggregated mutation data. 
+#'
+#' @import dplyr
+#' @import data.table
+#' @export
+summarize_regress_table <- function(TableToRegress, MSnumber) {
   if (MSnumber==0 | MSnumber==1) { 
       #
       if(MSnumber== 1) {
@@ -22,9 +37,29 @@ summarize_regress_table = function(TableToRegress, MSnumber) {
       return(TableToRegress)
   }
 }
-###
-###
-###
+
+
+
+#' Perform Regression on a Data Table
+#'
+#' This function applies generalized linear model (GLM) regressions on a specified data table. 
+#' The table is first preprocessed by creating unique identifiers for groups of interest, 
+#' then summarized if necessary, and finally, regressions are run on either grouped or 
+#' the entire dataset based on the number of grouping variables.
+#'
+#' @param TableToRegress A data frame or data table containing the data to be regressed.
+#' @param clusterNumber An integer indicating the mutation type clustering; 
+#' 0: penta-nucelotide matching and 1: tri-nucelotide matching.
+#' @param regression_types A character vector specifying the types of regression models to be applied 
+#' (e.g., "bayes.possion", "poisson").
+#' @param colNamesToRegress A character vector specifying the names of columns to be included in the regression.
+#'
+#' @return A list of regression results, with each element corresponding to a different regression type. 
+#' Each result is a data table of regression coefficients and statistics.
+#'
+#' @import dplyr
+#' @import data.table
+#' @export
 regress_table = function(TableToRegress,
                          clusterNumber,
                          regression_types,
@@ -44,8 +79,6 @@ regress_table = function(TableToRegress,
   colnames_perGroup =  strat_features_forMSdescreasing %>% setdiff(colNamesToRegress)
   ##
   ##
-  #print(TableToRegress_clustered)
-  #print(colNamesToRegress)
   ##
   # Appling GLM regression 
   # 1) No more variables, apply regression once
@@ -101,10 +134,26 @@ regress_table = function(TableToRegress,
   names(Gene_coeffs) = regression_types
   return(Gene_coeffs)
 }
-###
-###
-###
-compute_regress_table = function(TableToRegress,
+
+
+
+#' Perform Regression on the input table
+#'
+#' This function reads a file containing controlled variables and prepares a data table for regression analysis.
+#' It applies GLM regression across specified variables and returns summarized regression results.
+#'
+#' @param TableToRegress A data frame or data table containing data for regression.
+#' @param clusterNumber An integer specifying the type of matching (penta-nucelotide:0, tri-nucleotide:1).
+#' @param regression_types A character vector of regression types to be applied.
+#' @param controlled_variables_input A file path to a list of variables to control for in the regression.
+#' @param HGNC_symbol A character string representing the gene symbol for which regression is being computed.
+#'
+#' @return A list of summarized regression results, each element corresponding to a different regression type.
+#'
+#' @import dplyr
+#' @import data.table
+#' @export
+compute_regress_table <- function(TableToRegress,
                                  clusterNumber,
                                  regression_types,
                                  controlled_variables_input,
@@ -127,8 +176,7 @@ compute_regress_table = function(TableToRegress,
         TableToRegress[[columnNameToRegress]] = relevel(TableToRegress[[columnNameToRegress]], "0")
     }}
   }
-  ##
-  ##
+  #
   # Applying the GLM regression iteratively
   ntimes <- 1
   regression_output = lapply(1:ntimes, function(seed){
@@ -137,21 +185,19 @@ compute_regress_table = function(TableToRegress,
                       error=function(err){  NULL  },  
                       finally = {})
                       })
-  # print(regression_output)
   # 
   regression_output = lapply(regression_types, function(regression_type) {
                      rbindlist(lapply(regression_output, function(x) x[[regression_type]]))
                      })
   names(regression_output) = regression_types
-  ##
-  ##
+  #
   # summarize the regression table
   regression_output_summarized = lapply(regression_types, function(regression) {
                                  single_regression_output = regression_output[[regression]]
                                  if (!(is.null(single_regression_output))) {
                                   # for  having one summarized result instead of many
                                     if ("coefName" %in% colnames(single_regression_output)) {
-                                        if ("ID" %!in% colnames(single_regression_output)) {
+                                        if (! "ID" %in% colnames(single_regression_output)) {
                                               single_regression_output = single_regression_output %>% 
                                                                                       data.frame() %>%
                                                                                       dplyr::group_by(coefName, converged) %>% 
@@ -183,18 +229,29 @@ compute_regress_table = function(TableToRegress,
   #
   names(regression_output_summarized) = regression_types
   return(regression_output_summarized)
-
 }
-##
-##
-writing_table = function(TableToRegress, directory, HGNC_symbol, Method){
+
+
+
+#' Write Summarized Regression Table to File
+#'
+#' This function writes a summarized version of the regression table to a specified directory.
+#'
+#' @param TableToRegress A data frame or data table containing regression data to be summarized and saved.
+#' @param directory A string specifying the directory where the output file will be saved.
+#' @param HGNC_symbol A character string representing the gene symbol to be included in the output.
+#' @param Method A string indicating the method used for regression, included in the output filename.
+#'
+#' @return None. The function writes the output directly to a file.
+#'
+#' @import dplyr
+#' @import data.table
+#' @export
+writing_table <- function(TableToRegress, directory, HGNC_symbol, Method){
     #
     if (!dir.exists(directory)){
         dir.create(directory)
     }
-    #
-    #suppressMessages(TableToRegress <- TableToRegress %>% group_by_at(setdiff(colnames(TableToRegress), c("Mutation","MutationNumber","ntAtRisk"))) %>%
-    #                                     dplyr::summarize(MutationNumber = sum(MutationNumber), ntAtRisk = sum(ntAtRisk)))
     #
     suppressMessages(TableToRegress <- TableToRegress %>% group_by_at(setdiff(colnames(TableToRegress), c("MutationNumber","ntAtRisk"))) %>%
                                          dplyr::summarize(MutationNumber = sum(MutationNumber), ntAtRisk = sum(ntAtRisk)))    
@@ -206,9 +263,25 @@ writing_table = function(TableToRegress, directory, HGNC_symbol, Method){
           finally = {}
           )
 }
-##
-##
-writing_files = function(Gene_coeffs, directory, HGNC_symbol, Method){
+
+
+
+#' Write Regression Coefficients to Files
+#'
+#' This function writes regression coefficients for different regression types to separate CSV files 
+#' in a specified directory. Each file includes the HGNC symbol and is named based on the regression 
+#' type and method used.
+#'
+#' @param Gene_coeffs A list of data tables containing regression coefficients for each regression type.
+#' @param directory A string specifying the directory where the output files will be saved.
+#' @param HGNC_symbol A character string representing the gene symbol to be included in each output file.
+#' @param Method A string indicating the method used for regression, included in the output filenames.
+#'
+#' @return None. The function writes the output directly to files.
+#'
+#' @import data.table
+#' @export
+writing_files <- function(Gene_coeffs, directory, HGNC_symbol, Method){
     #
     if (!dir.exists(directory)){
         dir.create(directory)
@@ -223,5 +296,3 @@ writing_files = function(Gene_coeffs, directory, HGNC_symbol, Method){
       }
     })
 }
-##
-##

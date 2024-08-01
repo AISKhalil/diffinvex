@@ -1,4 +1,3 @@
-###  loading data abd libraries ##
 suppressMessages(library("ddpcr"))
 suppressMessages(library("optparse"))
 #
@@ -6,13 +5,39 @@ packages <- c("arm","biomaRt","rtracklayer","GenomicRanges","GenomicFeatures", "
                "readxl","qvalue","Matrix","ggplot2")
 #
 invisible(quiet(lapply(packages, library, character.only = TRUE), all = T)) # invisible for suppressing output of the lapply, suppresMessages for libraries
-###
-###
-###
-diffinvex_drivers = function(output_directory,
+
+
+
+#' Identify DiffInVEx Putative Drivers and Generate Results
+#'
+#' This function analyzes the results of a DiffInVEx (Differential Insertion/Deletion Variants and Exonic Variants) analysis 
+#' to identify putative drivers. It generates various outputs, including mutation profiles, regression coefficients, 
+#' and figures such as QQ-plots of p-values. The function supports single or multiple cohorts and applies multiple 
+#' filtering criteria based on the provided parameters.
+#'
+#' @param output_directory Character string. Path to the directory containing the output files from the DiffInVEx analysis.
+#' @param regression_var Character string. Name of the regression variable to be used for analysis (default is "isTarget1").
+#' @param reg_type Character string. Type of regression model used (default is "bayes.poisson").
+#' @param fdr Numeric. False discovery rate threshold for significance (default is 0.1).
+#' @param genesSelected Character vector. List of selected genes for filtering. If `NULL`, no gene filtering is applied (default is `NULL`).
+#' @param mutationsTh Integer. Threshold for the number of mutations to filter genes (default is 10).
+#'
+#' @section Process:
+#' The function performs the following steps:
+#' \itemize{
+#'   \item Creates a directory for figures if it does not already exist.
+#'   \item Outputs mutation profiles for each gene analyzed, saving the results to a TSV file.
+#'   \item Outputs regression coefficients for the specified regression variable and type, applying FDR correction.
+#'   \item Generates QQ-plots of p-values for the regression results and saves them as PNG files.
+#' }
+#'
+#' @return None. The function generates and saves various results and figures to the specified `output_directory`.
+#'
+#' @export
+diffinvex_drivers <- function(output_directory,
                                        regression_var = "isTarget1",
                                        reg_type = "bayes.poisson",
-                                       fdr = 0.1,                                       
+                                       fdr = 0.1,
                                        genesSelected = NULL,
                                        mutationsTh = 10){
     ##------------------ output figures ------------------##
@@ -187,35 +212,39 @@ diffinvex_drivers = function(output_directory,
               }
     }
 }
-############################################
-############################################
-###-------- plotting p-values -----------###
-#
-testPvalues = function(pvalues, qqPlotFile){
-  #
-  #png(qqPlotFile, width = 800, height = 600)
-  #qqunif(pvalues, logscale = TRUE, col = col)
-  #dev.off()
-  #
-  n =length(pvalues)
-  y = runif(n,min = 0, max = 1)
-  png(qqPlotFile, width = 600, height = 600, res = 100)
-  attach(USJudgeRatings)
-  q <- qqplot(-log10(y),-log10(pvalues), main="qq-plot (uniform distribution)", 
-         xlab = "-log10(Expected p-value)",
-         ylim = c(0,15),
-         xlim = c(0,4.5),
-         ylab = "-log10(Observed p-value)",
-         lwd = 0.5) 
-  q + theme(axis.text=element_text(size=20),
-            axis.title=element_text(size=14,face="bold")) 
-  abline(coef = c(0,1), lwd=2)
-  detach(USJudgeRatings)
-  dev.off()
-  #
-  return(ks.test(pvalues,"punif",0,1))
-}
-#
+
+
+
+#' Generate a QQ-Plot for p-values
+#'
+#' This function creates a QQ-plot to visualize the distribution of p-values. The QQ-plot compares the observed 
+#' p-values against the expected distribution under the null hypothesis, with confidence intervals provided for 
+#' the expected values.
+#'
+#' @param ps Numeric vector. The p-values to be plotted.
+#' @param ci Numeric. The confidence interval level to be used for the confidence bands (default is 0.95).
+#'
+#' @return A ggplot2 object representing the QQ-plot of the p-values.
+#'
+#' @details
+#' The function calculates the observed and expected -log10(p-values) and plots them against each other. 
+#' It also includes confidence intervals for the expected -log10(p-values) using the beta distribution.
+#'
+#' The plot includes:
+#' \itemize{
+#'   \item A ribbon representing the confidence interval for the expected -log10(p-values).
+#'   \item Points representing the observed -log10(p-values).
+#'   \item A diagonal line indicating where the observed p-values would fall if they were uniformly distributed.
+#' }
+#'
+#' @import ggplot2
+#'
+#' @examples
+#' # Example usage:
+#' p_values <- runif(1000) # Generate random p-values
+#' gg_qqplot(p_values)
+#'
+#' @export
 gg_qqplot <- function(ps, ci = 0.95) {
   n  <- length(ps)
   df <- data.frame(
@@ -234,9 +263,24 @@ gg_qqplot <- function(ps, ci = 0.95) {
   geom_point(aes(expected, observed), shape = 1, size = 2) +
   geom_abline(intercept = 0, slope = 1, alpha = 0.5) +
   xlab(log10Pe)  +
-  ylab(log10Po)  
+  ylab(log10Po)
 }
-#
+
+
+
+#' Calculate the Inflation Factor for p-values
+#'
+#' This function computes the inflation factor (λ) for a set of p-values. The inflation factor is used to assess 
+#' the extent of deviation from the null hypothesis in a dataset, often in the context of genomic studies. It 
+#' helps to detect whether there is an excess of significant p-values compared to what would be expected under 
+#' the null hypothesis.
+#'
+#' @param ps Numeric vector. The p-values for which the inflation factor is to be calculated.
+#'
+#' @return Numeric. The inflation factor (λ), which is the median of the chi-squared statistics divided by 
+#' the chi-squared value at the 0.5 quantile.
+#'
+#' @export
 inflation <- function(ps) {
   chisq <- qchisq(1 - ps, 1)
   lambda <- median(chisq) / qchisq(0.5, 1)

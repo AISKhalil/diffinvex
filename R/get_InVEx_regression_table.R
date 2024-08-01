@@ -1,14 +1,46 @@
-get_InVEx_regression_table = function(HGNC_symbol,
+#' Generate Regression Table for InVEx Analysis
+#'
+#' This function constructs a regression table for InVEx (Insertion/Deletion Variants and Exonic Variants) analysis. It processes mutation data, filters samples, and prepares a regression table for both target gene exons and neighboring introns. The output is suitable for statistical modeling and analysis.
+#'
+#' @param HGNC_symbol Character string. The HGNC symbol of the gene of interest.
+#' @param grExons `GRanges` object. Genomic ranges representing exonic regions of the target gene.
+#' @param grIntrons `GRanges` object. Genomic ranges representing intronic regions of the target gene.
+#' @param clusterNumber Numeric. The cluster number to use for filtering samples. Default is 1.
+#' @param mutations `GRanges` object. Genomic ranges representing mutation data.
+#' @param sample_annotation `data.frame`. A data frame containing sample annotations.
+#' @param sample_annotation_perGene_file Character string. Path to a file containing additional sample annotations specific to the gene. Default is `NULL`.
+#' @param controlled_variables_input Character string. Path to a file containing controlled variables for the regression analysis.
+#' @param toolDirectory Character string. The path to the directory containing tool references.
+#' @param outputDirectory Character string. The path to the directory where results will be saved.
+#' @param refGenome Character string. Reference genome assembly. Default is "hg19".
+#'
+#' @return A `data.frame` containing the regression table for mutations in exons and introns. Returns `NULL` if no mutations are found within the specified regions.
+#'
+#' @details
+#' The function performs the following steps:
+#' \itemize{
+#'   \item Filters the mutation data to include only those located on the same chromosome as the exonic regions.
+#'   \item Applies sample-wise filtering based on the mutation data and sample annotations.
+#'   \item Loads additional sample annotations if a specific file for the gene is provided.
+#'   \item Writes mutation data to a file for further analysis.
+#'   \item Reads controlled variables from a specified input file.
+#'   \item Prepares regression tables for both exonic and intronic regions using the `Mutations_toRegress` function.
+#'   \item Combines these tables, updates them with relevant variables, and prepares the final regression table.
+#'   \item Returns the final regression table or `NULL` if no relevant data is present.
+#' }
+#'
+#' @export
+get_InVEx_regression_table <- function(HGNC_symbol,
                                       grExons,
                                       grIntrons,
-                                      clusterNumber=1, 
+                                      clusterNumber=1,
                                       mutations,
                                       sample_annotation,
                                       sample_annotation_perGene_file,
                                       controlled_variables_input,
                                       toolDirectory,
-                                      outputDirectory,                                      
-                                      refGenome="hg19"){  
+                                      outputDirectory,
+                                      refGenome="hg19"){
   ###########################
   ####  loading mutations ###
   ###########################
@@ -48,10 +80,10 @@ get_InVEx_regression_table = function(HGNC_symbol,
   #
   #
   TargetGeneTABLEforGLM <- Mutations_toRegress(grObject_within = grExons, 
-                                                grMutations = grSNPs,
-                                                HGNC_symbol = HGNC_symbol,
-                                                annotation  = sample_annotation1,
-                                                clusterNumber = clusterNumber)
+                                               grMutations = grSNPs,
+                                               HGNC_symbol = HGNC_symbol,
+                                               annotation  = sample_annotation1,
+                                               clusterNumber = clusterNumber)
   #
   NeighboursTABLEforGLM <- Mutations_toRegress(grObject_within = grIntrons, 
                                               grMutations = grSNPs,
