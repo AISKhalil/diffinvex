@@ -87,7 +87,7 @@ toolDirectory   <- optInfo$tool_directory
 quiet(source(paste0(toolDirectory,"/R/get_InVEx_gene_data.R")), all = T)
 #
 #
-geneDir   <- paste0(toolDirectory,"/references/GeneData/geneDB_hg19_",BW,"Kb")
+geneDir   <- paste0(toolDirectory,"/data/GeneData/geneDB_hg19_",BW,"Kb")
 geneFiles <- list.files(geneDir)
 geneList  <- gsub("_diffInVEx.RDS","",geneFiles)
 #
@@ -104,5 +104,5 @@ totalGenomicRegions$background_penta   <- genomeIntronicRegions_penta
 totalGenomicRegions$background_NoMatching <- genomeIntronicRegions_NoMatching
 #
 #
-regionFile <- paste0(toolDirectory,"/references/GeneData/geneDB_hg19_",BW,"Kb","_GenomicRegions.RDS")
+regionFile <- paste0(toolDirectory,"/data/GeneData/geneDB_hg19_",BW,"Kb","_GenomicRegions.RDS")
 saveRDS(totalGenomicRegions,regionFile)

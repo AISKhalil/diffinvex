@@ -25,7 +25,7 @@
 get_cds_info <- function(HGNC_symbol,toolDirectory, refGenome="hg19", annotationDb="ensemble"){
   #
   txPerGeneMethod=1
-  txGenePairsFile     <- paste0(toolDirectory,"/references/GeneData/geneInfo/TREG_gene_transcript_pair.csv")
+  txGenePairsFile     <- paste0(toolDirectory,"/data/GeneData/geneInfo/TREG_gene_transcript_pair.csv")
   txGenePairs         <- read.csv(txGenePairsFile)
   txGenePairs         <- data.frame(txGenePairs$Gene_name, sub("[.].*","",txGenePairs$Transcript_id))
   colnames(txGenePairs) <- c("Gene_name","Transcript_id")  

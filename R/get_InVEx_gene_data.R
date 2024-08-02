@@ -47,7 +47,7 @@ get_InVEx_gene_data <- function(HGNC_symbol,
   ###################
   annotationDb        <- "ensemble"
   txPerGeneMethod     <- 1 #1: most GTEx expressed transcript, 2: collapse all transcripts per gene, 3: test each transcript separatelly (to be implemented)
-  txGenePairsFile     <- paste0(toolDirectory,"/references/GeneData/geneInfo/TREG_gene_transcript_pair.csv")
+  txGenePairsFile     <- paste0(toolDirectory,"/data/GeneData/geneInfo/TREG_gene_transcript_pair.csv")
   txGenePairs         <- read.csv(txGenePairsFile)
   txGenePairs         <- data.frame(txGenePairs$Gene_name, sub("[.].*","",txGenePairs$Transcript_id))
   colnames(txGenePairs) <- c("Gene_name","Transcript_id")
@@ -75,7 +75,7 @@ get_InVEx_gene_data <- function(HGNC_symbol,
   cat(HGNC_symbol, file = logFile, sep="\n", append = TRUE)
   ##
   ## gene information output files ##
-  geneDB_Dir <- paste0(toolDirectory,"/references/GeneData/geneDB_",refGenome,"_",diffInVEx_BW,"Kb")
+  geneDB_Dir <- paste0(toolDirectory,"/data/GeneData/geneDB_",refGenome,"_",diffInVEx_BW,"Kb")
   #
   if (!dir.exists(geneDB_Dir)){
         dir.create(geneDB_Dir)
@@ -313,7 +313,7 @@ load_InVEx_gene_data <- function(HGNC_symbol,
                                 refGenome="hg19",
                                 diffInVEx_BW=50){
   ###
-  geneDB_Dir <- paste0(toolDirectory,"/references/GeneData/geneDB_",refGenome,"_",diffInVEx_BW,"Kb")
+  geneDB_Dir <- paste0(toolDirectory,"/data/GeneData/geneDB_",refGenome,"_",diffInVEx_BW,"Kb")
   geneFile   <- paste0(geneDB_Dir,"/",HGNC_symbol,"_diffInVEx.RDS")
   ###
   if(file.exists(geneFile)){ 
@@ -353,7 +353,7 @@ load_InVEx_gene_data <- function(HGNC_symbol,
 #' @export
 get_info <- function(geneList,toolDirectory,region, BW = 50){
         #
-        geneFiles <- paste0(toolDirectory,"/references/GeneData/geneDB_hg19_",BW,"Kb")
+        geneFiles <- paste0(toolDirectory,"/data/GeneData/geneDB_hg19_",BW,"Kb")
         geneFiles <- list.files(geneFiles)
         geneFiles <- gsub("_diffInVEx.RDS","",geneFiles)
         geneList <- intersect(geneList,geneFiles)
