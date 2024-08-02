@@ -27,7 +27,7 @@ Finally, some DiffInvex parameters:
 	- reference_genome: reference genome that is used for DiffInVEx (default "hg19")
 	- no_cores: number of CPUs to be used. So, DiffInvex can be applied for many genes in parallel
 
-You can test the diffinvex installation by running the given script on a pog570 data sample in the "example" directory inside the diffinvex_directory.
+You can test the diffinvex installation by running the given script on a pog570 data sample in the "tests" directory inside the diffinvex_directory.
 Please modify the script based on your data.
 '
 
@@ -37,14 +37,14 @@ diffinvex_R="$diffinvex_directory"/R
 export PATH="$PATH:$diffinvex_directory:$diffinvex_R"
 
 # 2) define your input files
-data_dir="./example"
+data_dir="./tests"
 mutation_file="$data_dir"/pog570_SBSs.csv
 annotation_file="$data_dir"/pog570_annotations.csv
 variable_file="$data_dir"/pog570_variables.txt
 gene_file="$data_dir"/cgc_tcga_genes.txt
 
 # 3) set the output directory
-output_directory=./example/pog570_diffinvex_results
+output_directory=./tests/pog570_diffinvex_results
 
 # 4) define DiffInvex parameters
 reference_genome=hg19

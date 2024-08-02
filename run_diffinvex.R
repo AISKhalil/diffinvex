@@ -32,15 +32,15 @@ diffinvex_top_module <- paste0(diffinvex_directory,"/R/diffinvex.R")
 source(diffinvex_top_module)
 #
 # 2) define your input files
-mutation_file   <- paste0(diffinvex_directory,"/example/pog570_SBSs.csv")
-annotation_file <- paste0(diffinvex_directory,"/example/pog570_annotations.csv")
-variable_file   <- paste0(diffinvex_directory,"/example/pog570_variables.txt") 
+mutation_file   <- paste0(diffinvex_directory,"/tests/pog570_SBSs.csv")
+annotation_file <- paste0(diffinvex_directory,"/tests/pog570_annotations.csv")
+variable_file   <- paste0(diffinvex_directory,"/tests/pog570_variables.txt") 
 #
-gene_file  <- paste0(diffinvex_directory,"/example/cgc_tcga_genes.txt")
+gene_file  <- paste0(diffinvex_directory,"/tests/cgc_tcga_genes.txt")
 gene_list  <- read.table(file = gene_file, col.names = "Gene", sep = "")$Gene
 #
 # 3) set the output directory
-output_directory <- paste0(diffinvex_directory,"/example/pog570_diffinvex_results")
+output_directory <- paste0(diffinvex_directory,"/tests/pog570_diffinvex_results")
 #
 # 4) define DiffInvex parameters
 reference_genome <- "hg19"

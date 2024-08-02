@@ -43,7 +43,7 @@ conda activate diffinvex_env
   
 ### <a name="input_preparation"></a>Input Preparation
 **DiffInvex** requires 4 main files for quanifying selection and conditional selection during tumor progression.
-Please check the provided files in `example` folder.
+Please check the provided files in `tests` folder.
 
     mutation_file       - input .csv file with mutation data (single base substitutions and multi base substitutions) in the following format: 
                         	chrom,pos,ref,alt,Sample
@@ -78,7 +78,7 @@ The main parameters of **DiffInvex**:
    
      
 ### <a name="usage"></a>Usage 
-We provided `run_diffinvex.sh` bash script that could be used for testing the installation of **DiffInvex** using subsample of POG570 dataset in `example` folder.
+We provided `run_diffinvex.sh` bash script that could be used for testing the installation of **DiffInvex** using subsample of POG570 dataset in `tests` folder.
 Users can easily modify it to run **DiffInvex** on their own data.
 
 1) add DiffInvex directory to the environment variable $PATH:
@@ -89,7 +89,7 @@ export PATH="$PATH:$diffinvex_directory:$diffinvex_R"
 ```
 2) define your input files:
 ```
-data_dir="./example"
+data_dir="./tests"
 mutation_file="$data_dir"/pog570_SBSs.csv
 annotation_file="$data_dir"/pog570_annotations.csv
 variable_file="$data_dir"/pog570_variables.txt
@@ -97,7 +97,7 @@ gene_file="$data_dir"/cgc_tcga_genes.txt
 ```
 3) set the output directory and DiffInvex parameters:
 ```
-output_directory=./example/pog570_diffinvex_results
+output_directory=./tests/pog570_diffinvex_results
 reference_genome=hg19
 no_cores=4
 ```
