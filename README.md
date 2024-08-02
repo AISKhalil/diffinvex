@@ -111,9 +111,13 @@ Alternatively, user can use `run_diffinvex.R` Rscript for running **DiffInvex**.
 ### <a name="output"></a>Output 
 **DiffInvex** generates many output files for evaluating the selection and conditional selection. 
 
-At the `$output_directory` folder, it generates two files per each gene. First, file `"$gene_name"_bayes.poisson_diffInVEx.csv"` includes the effect sizes and p-values of the **DiffInvex** regression explanatory variables (e.g. `isTarget` and `isTarget:isTreated`). Second, file `"$gene_name"_MutationProfile_diffInVEx.tsv"` contains the target (exonic) mutations and background (intronic) mutations for each gene.
+At the `$output_directory` folder, it generates two files per each gene: 
+1) `"$gene_name"_bayes.poisson_diffInVEx.csv"` includes the effect sizes and p-values of the **DiffInvex** regression explanatory variables (e.g. `isTarget` and `isTarget:isTreated`). 
+2) `"$gene_name"_MutationProfile_diffInVEx.tsv"` contains the target (exonic) mutations and background (intronic) mutations for each gene.
 
-Additionally, it creates another folder `"$output_directory"_figures` that contains the summary of **DiffInvex** results. In this folder, for each selection/conditional selection variable (e.g. `isTarget` and `isTarget:isTreated`), it provides a file that contains the effect sizes, p-values and q-values for that regression variable across all genes (e.g. `cohort_isTarget1_bayes.poisson_all.csv`). It also provides a QQ-plot for the p-values of that variable. In same folder, it also generates `cohort_mutation_profile.tsv` that contains the target (exonic) mutations and background (intronic) mutations for all genes.
-
+Additionally, it creates another folder `"$output_directory"_figures` that contains the summary of **DiffInvex** results. In this folder, it provides:
+1) a file (e.g. `cohort_isTarget1_bayes.poisson_all.csv`) that contains the effect sizes, p-values and q-values for for each selection/conditional selection variable (e.g. `isTarget` and `isTarget:isTreated`) across all genes.
+2) a QQ-plot for the p-values of that variable.
+3) `cohort_mutation_profile.tsv` file that contains the target (exonic) mutations and background (intronic) mutations for all genes.
 
 ## We are adding examples of applying DiffInvex on different biological problems ...
