@@ -26,6 +26,7 @@ Additionally, you need to provide the path to diffInvex and output directories:
 Finally, some DiffInvex parameters:
 	- reference_genome: reference genome that is used for DiffInVEx (default "hg19")
 	- no_cores: number of CPUs to be used. So, DiffInvex can be applied for many genes in parallel
+	- diffinvex_matching: nucleotide-composition matching approach between target (exonic) and background (intronic) regions; 0: penta-nucleotide matching (default), 1: tri-nuclotide matching
 
 You can test the diffinvex installation by running the given script on a pog570 data sample in the "tests" directory inside the diffinvex_directory.
 Please modify the script based on your data.
@@ -49,6 +50,7 @@ output_directory=./tests/pog570_diffinvex_results
 # 4) define DiffInvex parameters
 reference_genome=hg19
 no_cores=1
+diffinvex_matching=0
 
 # 5) run the DiffInvex framework
-bash diffinvex.sh $mutation_file $annotation_file $variable_file $gene_file $output_directory $diffinvex_directory $reference_genome $no_cores
+bash diffinvex.sh $mutation_file $annotation_file $variable_file $gene_file $output_directory $diffinvex_directory $reference_genome $no_cores $diffinvex_matching
