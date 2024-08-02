@@ -87,7 +87,7 @@ read_GRanges <- function(inputFile) {
 #' @export
 load_tracks <- function(tool_directory,reference_genome,DiffInVEx_BW,DiffInVEx_cluster){
       #
-      tracksFile <- paste0(tool_directory,"/references/GeneData/geneDB_",reference_genome,"_",DiffInVEx_BW,"Kb","_GenomicRegions.RDS")
+      tracksFile <- paste0(tool_directory,"/data/GeneData/geneDB_",reference_genome,"_",DiffInVEx_BW,"Kb","_GenomicRegions.RDS")
       #
       if(file.exists(tracksFile)){
                 x <- readRDS(tracksFile)
@@ -386,30 +386,30 @@ read_genomic_tracks <- function(reference_genome,
   ##
   ##  auxiliary files
   if(reference_genome == "hg19"){
-      MicrosatellitesTracks  <- paste0(toolDirectory,"/references/GenomicTracks/Repeats/hg19_repeats_more6nts.bed")
-      CTCF_Tracks            <- paste0(toolDirectory,"/references/GenomicTracks/CTCF_regions/CTCF_Cohesion_peaks_RenLab_Motifs_hg19.bed")
-      BlackListedTracks      <- paste0(toolDirectory,"/references/GenomicTracks/BlackListedRegions/hg19_consensusBlacklist.v3.bed")
-      mappabilityTracks      <- paste0(toolDirectory,"/references/GenomicTracks/MappTracks/uMap/UMAP_hg19_all_mappability_100bpTrack.csv")
-      mappabilityScores      <- paste0(toolDirectory,"/references/GenomicTracks/MappTracks/uMap/UMAP_hg19_high_medium_low_mappability_track.csv")
-      backgroundHotspotsFile <- paste0(toolDirectory,"/references/GenomicTracks/Background_hotspots/hg19_background_hotspots_min3muts.csv")
-      uCpGsFile              <- paste0(toolDirectory,"/references/GenomicTracks/Methylation/hg19_uMethylated_CpGs_solid_tumors.csv")
-      promoterMotifFile      <- paste0(toolDirectory,"/references/GenomicTracks/PromotersMotifs/hg19_promoter_NYTTCCG_regions.csv")
-      shmOnFile              <- paste0(toolDirectory,"/references/GenomicTracks/SHM/hg19_shmOnTargets_PROCESSED_CRG75.bed") 
-      shmOffFile             <- paste0(toolDirectory,"/references/GenomicTracks/SHM/hg19_shmOffTargets_PROCESSED_CRG75.bed")
-      all_cds_file           <- paste0(toolDirectory,"/references/GeneData/geneDB_hg19_ensemble_cdss.RDS")
+      MicrosatellitesTracks  <- paste0(toolDirectory,"/data/GenomicTracks/Repeats/hg19_repeats_more6nts.bed")
+      CTCF_Tracks            <- paste0(toolDirectory,"/data/GenomicTracks/CTCF_regions/CTCF_Cohesion_peaks_RenLab_Motifs_hg19.bed")
+      BlackListedTracks      <- paste0(toolDirectory,"/data/GenomicTracks/BlackListedRegions/hg19_consensusBlacklist.v3.bed")
+      mappabilityTracks      <- paste0(toolDirectory,"/data/GenomicTracks/MappTracks/uMap/UMAP_hg19_all_mappability_100bpTrack.csv")
+      mappabilityScores      <- paste0(toolDirectory,"/data/GenomicTracks/MappTracks/uMap/UMAP_hg19_high_medium_low_mappability_track.csv")
+      backgroundHotspotsFile <- paste0(toolDirectory,"/data/GenomicTracks/Background_hotspots/hg19_background_hotspots_min3muts.csv")
+      uCpGsFile              <- paste0(toolDirectory,"/data/GenomicTracks/Methylation/hg19_uMethylated_CpGs_solid_tumors.csv")
+      promoterMotifFile      <- paste0(toolDirectory,"/data/GenomicTracks/PromotersMotifs/hg19_promoter_NYTTCCG_regions.csv")
+      shmOnFile              <- paste0(toolDirectory,"/data/GenomicTracks/SHM/hg19_shmOnTargets_PROCESSED_CRG75.bed") 
+      shmOffFile             <- paste0(toolDirectory,"/data/GenomicTracks/SHM/hg19_shmOffTargets_PROCESSED_CRG75.bed")
+      all_cds_file           <- paste0(toolDirectory,"/data/GeneData/geneDB_hg19_ensemble_cdss.RDS")
 
   } else if(reference_genome == "hg38"){ #To-be-updated
-      MicrosatellitesTracks  <- paste0(toolDirectory,"/references/GenomicTracks/Repeats/hg19_repeats_more6nts.bed")
-      CTCF_Tracks            <- paste0(toolDirectory,"/references/GenomicTracks/CTCF_regions/CTCF_Cohesion_peaks_RenLab_Motifs_hg19.bed")
-      BlackListedTracks      <- paste0(toolDirectory,"/references/GenomicTracks/BlackListedRegions/hg38_consensusBlacklist.v3.bed")
-      mappabilityTracks      <- paste0(toolDirectory,"/references/GenomicTracks/MappTracks/uMap/UMAP_hg19_all_mappability_100bpTrack.csv")
-      mappabilityScores      <- paste0(toolDirectory,"/references/GenomicTracks/MappTracks/uMap/UMAP_hg19_high_medium_low_mappability_track.csv")
-      backgroundHotspotsFile <- paste0(toolDirectory,"/references/GenomicTracks/Background_hotspots/hg19_background_hotspots_min3muts.csv") 
-      uCpGsFile              <- paste0(toolDirectory,"/references/GenomicTracks/Methylation/hg19_uMethylated_CpGs_solid_tumors.csv")
-      promoterMotifFile      <- paste0(toolDirectory,"/references/GenomicTracks/PromotersMotifs/hg19_promoter_NYTTCCG_regions.csv")
-      shmOnFile              <- paste0(toolDirectory,"/references/GenomicTracks/SHM/hg19_shmOnTargets_PROCESSED_CRG75.bed") 
-      shmOffFile             <- paste0(toolDirectory,"/references/GenomicTracks/SHM/hg19_shmOffTargets_PROCESSED_CRG75.bed")
-      all_cds_file           <- paste0(toolDirectory,"/references/GeneData/geneDB_hg38_ensemble_cdss.RDS")
+      MicrosatellitesTracks  <- paste0(toolDirectory,"/data/GenomicTracks/Repeats/hg19_repeats_more6nts.bed")
+      CTCF_Tracks            <- paste0(toolDirectory,"/data/GenomicTracks/CTCF_regions/CTCF_Cohesion_peaks_RenLab_Motifs_hg19.bed")
+      BlackListedTracks      <- paste0(toolDirectory,"/data/GenomicTracks/BlackListedRegions/hg38_consensusBlacklist.v3.bed")
+      mappabilityTracks      <- paste0(toolDirectory,"/data/GenomicTracks/MappTracks/uMap/UMAP_hg19_all_mappability_100bpTrack.csv")
+      mappabilityScores      <- paste0(toolDirectory,"/data/GenomicTracks/MappTracks/uMap/UMAP_hg19_high_medium_low_mappability_track.csv")
+      backgroundHotspotsFile <- paste0(toolDirectory,"/data/GenomicTracks/Background_hotspots/hg19_background_hotspots_min3muts.csv") 
+      uCpGsFile              <- paste0(toolDirectory,"/data/GenomicTracks/Methylation/hg19_uMethylated_CpGs_solid_tumors.csv")
+      promoterMotifFile      <- paste0(toolDirectory,"/data/GenomicTracks/PromotersMotifs/hg19_promoter_NYTTCCG_regions.csv")
+      shmOnFile              <- paste0(toolDirectory,"/data/GenomicTracks/SHM/hg19_shmOnTargets_PROCESSED_CRG75.bed") 
+      shmOffFile             <- paste0(toolDirectory,"/data/GenomicTracks/SHM/hg19_shmOffTargets_PROCESSED_CRG75.bed")
+      all_cds_file           <- paste0(toolDirectory,"/data/GeneData/geneDB_hg38_ensemble_cdss.RDS")
   } else {
       stop("Error: Reference genome should be hg19 or hg38")
   }

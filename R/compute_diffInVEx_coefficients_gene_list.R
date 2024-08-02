@@ -137,7 +137,7 @@ if(is_file(gene_file)){
 } else{
     print("gene file does not exist")
     print("DiffInVEx will use the default TREG gene list instead")
-    gene_file  <- paste0(tool_directory,"/references/GeneData/geneInfo/TREG_18215Genes_goldenProteinCoding.txt")
+    gene_file  <- paste0(tool_directory,"/data/GeneData/geneInfo/TREG_18215Genes_goldenProteinCoding.txt")
     gene_list <- read.table(file = gene_file, col.names = "Gene", sep = "")$Gene
 }
 #
