@@ -18,9 +18,9 @@ suppressMessages(library("optparse"))
 #' @param output_directory Character string. Directory where the output files will be saved.
 #' @param no_cores Integer. Number of CPU cores to use (default is 1).
 #' @param reference_genome Character string. Reference genome to be used (default is "hg19").
-#' @param DiffInVEx_BW Integer. Background width in kilobases (default is 50).
-#' @param DiffInVEx_cluster Integer. Cluster number for background matching (default is 0).
-#' @param DiffInVEx_mode Integer. Mode for gene data processing (default is 1).
+#' @param diffinvex_matching Integer. Parameter for choosing background matching 0: penta-matching (default), 1: tri-matching.
+#' @param diffinvex_BW Integer. Background width in kilobases (default is 50).
+#' @param diffinvex_mode Integer. Mode for gene data processing (default is 1).
 #' @param regression_var Character string. Name of the regression variable (default is "isTarget1").
 #' @param regression_type Character string. Type of regression model to be used (default is "bayes.poisson").
 #' @param sample_annotation_perGene_file Character string. Path to the file containing gene-wise sample annotations (default is NULL).
@@ -44,9 +44,9 @@ diffinvex <- function(gene_list,
                      output_directory,
                      no_cores = 1,
                      reference_genome = "hg19",
-                     DiffInVEx_BW = 50,
-                     DiffInVEx_cluster = 0,
-                     DiffInVEx_mode = 1,
+                     diffinvex_matching = 0,
+                     diffinvex_BW = 50,
+                     diffinvex_mode = 1,
                      regression_var = "isTarget1",
                      regression_type = "bayes.poisson",
                      sample_annotation_perGene_file = NULL){
@@ -64,7 +64,7 @@ diffinvex <- function(gene_list,
             #
             # compute diffinvex regression coefficients
             diffinvex_coefficients(gene_list, mutation_file, annotation_file, variable_file, tool_directory, output_directory, 
-                                no_cores, reference_genome, DiffInVEx_BW, DiffInVEx_cluster, DiffInVEx_mode, sample_annotation_perGene_file)
+                                no_cores, reference_genome, diffinvex_BW, diffinvex_matching, diffinvex_mode, sample_annotation_perGene_file)
             #
             # get diffinvex putative drivers
             diffinvex_drivers(output_directory,regression_var,regression_type)

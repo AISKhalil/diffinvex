@@ -21,6 +21,7 @@
 # Finally, some DiffInvex parameters:
 # 	- reference_genome: reference genome that is used for DiffInVEx (default "hg19")
 # 	- no_cores: number of CPUs to be used. So, DiffInvex can be applied for many genes in parallel
+#	- diffinvex_matching: nucleotide-composition matching approach between target (exonic) and background (intronic) regions; 0: penta-nucleotide matching (default), 1: tri-nuclotide matching
 
 # You can run this script on a data sample in the "input" directory inside the diffinvex_directory.
 # Please modify this script based on your data
@@ -45,6 +46,7 @@ output_directory <- paste0(diffinvex_directory,"/tests/pog570_diffinvex_results"
 # 4) define DiffInvex parameters
 reference_genome <- "hg19"
 no_cores <- 4
+diffinvex_matching <- 0
 #
 # 5) run diffinvex
 diffinvex(gene_list,
@@ -54,4 +56,6 @@ diffinvex(gene_list,
           diffinvex_directory,
           output_directory,
           no_cores,
-          reference_genome)
+          reference_genome,
+          diffinvex_matching
+          )
