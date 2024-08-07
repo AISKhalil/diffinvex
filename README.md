@@ -11,7 +11,7 @@ Next, **DiffInvex** utilized a Poisson regression model, further regularized by 
 ## Contents
 - [Download](#Download)
 - [Installation](#installation)
-- [Input Preparation](#input_preparation)
+- [Input](#input)
 - [Parameters](#parameters)
 - [Usage](#usage)
 - [Output](#output)  
@@ -41,7 +41,7 @@ conda activate diffinvex_env
 ```  
 
   
-### <a name="input_preparation"></a>Input Preparation
+### <a name="input"></a>Input
 **DiffInvex** requires 4 main files for quanifying selection and conditional selection during tumor progression.
 Please check the provided files in `tests` folder.
 
