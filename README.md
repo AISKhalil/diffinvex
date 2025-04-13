@@ -123,4 +123,3 @@ Additionally, it creates another folder `"$output_directory"_figures` that conta
 2) a QQ-plot for the p-values of that variable.
 3) `cohort_mutation_profile.tsv` file that contains the target (exonic) mutations and background (intronic) mutations for all genes.
 
-## We are adding examples of applying DiffInvex on different biological problems ...
